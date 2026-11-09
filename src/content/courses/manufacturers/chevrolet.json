@@ -1,0 +1,266 @@
+{
+  "id": "chevrolet",
+  "name": "Chevrolet",
+  "country": "United States",
+  "intro": "Chevrolet, often called Chevy, is an American General Motors brand. Its everyday range spans small SUVs, family SUVs, large SUVs, pickups and Corvette sports cars. Some gas and electric products share a name, making the full name particularly important.",
+  "naming": "LS, LT, RS, RST, Z71 and other names describe specific versions or equipment contexts, not every vehicle. Equinox EV and Blazer EV are distinct electric products from similarly named combustion families. Silverado 1500 and HD trucks belong to different load classes.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.chevrolet.ca/en",
+  "deep": true,
+  "models": [
+    {
+      "id": "silverado",
+      "name": "Silverado",
+      "body": "Pickup families",
+      "role": "Chevrolet pickup range",
+      "explanation": "Silverado identifies Chevrolet pickup families. 1500 and heavy-duty versions such as 2500HD/3500HD are different classes; the numbers are not the payload in kilograms.",
+      "tradeoff": "The Silverado belongs in a comparison for chevrolet pickup range. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare exact cab, bed, drivetrain, payload and towing ratings. Silverado EV is an electric truck family, so do not transfer the gas truck’s fuel or charging routine.",
+      "memory": "Silverado = pickup; HD = check the class",
+      "scenario": "A friend mentions a Silverado. Explain its role as chevrolet pickup range, then ask for the year, powertrain and equipment before comparing it with another Chevrolet.",
+      "power": "Silverado 1500 and 2500HD/3500HD are different pickup classes, with multiple configurations. Silverado EV is an electric product. Payload and towing depend on the particular cab, bed, drivetrain and equipment.",
+      "source": "https://www.chevrolet.ca/en",
+      "knowledgeCheck": {
+        "prompt": "Does Silverado 1500 mean it can always carry 1,500 kilograms?",
+        "correct": "No — use the vehicle’s actual ratings",
+        "wrong": [
+          "Yes, that is a universal metric payload",
+          "Only with a silver paint colour",
+          "It always means 1,500 horsepower"
+        ],
+        "why": "The model/class number is not a universal payload figure in kilograms."
+      },
+      "photos": ["chevrolet-silverado"],
+      "image": "chevrolet-silverado"
+    },
+    {
+      "id": "equinox",
+      "name": "Equinox & Equinox EV",
+      "body": "SUV families",
+      "role": "Core Chevrolet SUV names",
+      "explanation": "Equinox is a Chevrolet SUV name, while Equinox EV identifies an electric SUV product. A shared name does not mean the two have identical dimensions, body or mechanical systems.",
+      "tradeoff": "The Equinox & Equinox EV belongs in a comparison for core chevrolet suv names. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare the specific gas and electric products on real space and energy needs. Blazer and Blazer EV also demonstrate why a name plus EV needs a complete specification.",
+      "memory": "Equinox and Equinox EV need separate specs",
+      "scenario": "A friend mentions a Equinox & Equinox EV. Explain its role as core chevrolet suv names, then ask for the year, powertrain and equipment before comparing it with another Chevrolet.",
+      "power": "Equinox and Equinox EV are distinct gas and electric products. A shared name does not guarantee matching body dimensions, energy system or equipment. Keep their model-year specifications separate.",
+      "source": "https://www.chevrolet.ca/en",
+      "knowledgeCheck": {
+        "prompt": "Can an Equinox gas review supply the battery specification of Equinox EV?",
+        "correct": "No — they are different products",
+        "wrong": [
+          "Yes, EV is just a paint option",
+          "Yes, all SUVs use the same battery",
+          "Only if both have LT trim"
+        ],
+        "why": "Shared naming does not make gas and electric products mechanically identical."
+      },
+      "photos": ["chevrolet-equinox", "chevrolet-equinox-ev"],
+      "image": "chevrolet-equinox"
+    },
+    {
+      "id": "corvette",
+      "name": "Corvette",
+      "body": "Sports-car family",
+      "role": "Chevrolet sports car",
+      "explanation": "Corvette is Chevrolet’s sports-car family. It has a different role from a Silverado pickup or Equinox SUV, even though all wear Chevrolet branding.",
+      "tradeoff": "The Corvette belongs in a comparison for chevrolet sports car. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare exact Corvette versions by intended use, roof, powertrain and cost. A dedicated performance version may involve compromises that do not help an everyday commute.",
+      "memory": "Corvette = the sports-car shelf",
+      "scenario": "A friend mentions a Corvette. Explain its role as chevrolet sports car, then ask for the year, powertrain and equipment before comparing it with another Chevrolet.",
+      "power": "Corvette versions can have different engines and electrified systems; E-Ray, Z06 and other names identify particular products. A Corvette family badge does not by itself settle that specification.",
+      "source": "https://www.chevrolet.ca/en",
+      "knowledgeCheck": {
+        "prompt": "What does a Corvette family name leave unresolved?",
+        "correct": "The exact performance/powertrain version",
+        "wrong": [
+          "Whether it is a Chevrolet brand",
+          "Whether every Corvette is a pickup",
+          "The owner’s favourite colour only"
+        ],
+        "why": "Family recognition is the first layer; engine, drivetrain and equipment require the version."
+      },
+      "photos": ["chevrolet-corvette"],
+      "image": "chevrolet-corvette"
+    },
+    {
+      "id": "trax",
+      "name": "Trax",
+      "body": "Small SUV",
+      "role": "Chevrolet’s smaller everyday crossover",
+      "explanation": "Trax is a smaller Chevrolet crossover family. It sits in a different role from Equinox, Traverse and the large Tahoe/Suburban. A low starting price is not a complete description of its equipment.",
+      "tradeoff": "Check actual passenger space and driven-wheel availability. Do not assume that every SUV automatically has all-wheel drive.",
+      "compare": "Compare Trax with Trailblazer as distinct small-SUV families, then Equinox for a different size role. Similar exterior dimensions do not guarantee the same drivetrain.",
+      "memory": "Trax = smaller crossover; check driven wheels",
+      "scenario": "A friend chooses it because they think SUV always means AWD. Read the exact Canadian drive specification together.",
+      "power": "Engine and driven-wheel choices are model/year-specific. Turbo indicates engine induction, not an automatic promise of performance or AWD.",
+      "source": "https://www.chevrolet.ca/en",
+      "photos": ["chevrolet-trax"],
+      "image": "chevrolet-trax"
+    },
+    {
+      "id": "trailblazer",
+      "name": "Trailblazer",
+      "body": "Small SUV",
+      "role": "Another Chevrolet small-SUV family",
+      "explanation": "Trailblazer is a small Chevrolet SUV family distinct from Trax. The name has also existed in earlier generations with different hardware, so year is essential.",
+      "tradeoff": "Compare exact cabin shape, dimensions and drivetrain. An older review of a vehicle sharing the name may describe a substantially different product.",
+      "compare": "Compare Trailblazer and Trax directly rather than assuming one is simply a trim of the other. Check AWD availability on the chosen Canadian version.",
+      "memory": "Trailblazer and Trax = separate families",
+      "scenario": "Two small Chevrolets have different names and similar prices. Make a version-by-version comparison instead of treating their family names as equipment grades.",
+      "power": "Powertrain and drivetrain depend on model year and configuration. A historic TrailBlazer specification is not a substitute for a current small-crossover specification.",
+      "source": "https://www.chevrolet.ca/en",
+      "photos": ["chevrolet-trailblazer"],
+      "image": "chevrolet-trailblazer"
+    },
+    {
+      "id": "traverse",
+      "name": "Traverse",
+      "body": "Three-row crossover",
+      "role": "Chevrolet family crossover with three rows",
+      "explanation": "Traverse is a three-row Chevrolet crossover. Its passenger role is larger than the compact Equinox but different from the large utility-SUV Tahoe/Suburban families.",
+      "tradeoff": "Sit in the third row and check luggage with the required seats upright. A three-row category can include quite different dimensions and loading arrangements.",
+      "compare": "Compare Traverse with Equinox if a third row is unnecessary, and with Tahoe when a different utility configuration is genuinely required.",
+      "memory": "Traverse = three-row crossover",
+      "scenario": "A household needs a full passenger group and luggage. Ask whether the load fits with the third row in use before looking at wheels or screens.",
+      "power": "Engine and drivetrain change by generation. Read the year-specific specification rather than assuming the newest Traverse still uses a remembered older engine.",
+      "source": "https://www.chevrolet.ca/en",
+      "photos": ["chevrolet-traverse"],
+      "image": "chevrolet-traverse"
+    },
+    {
+      "id": "tahoe",
+      "name": "Tahoe & Suburban",
+      "body": "Large SUV families",
+      "role": "Chevrolet’s large passenger/utility SUVs",
+      "explanation": "Tahoe and Suburban are Chevrolet’s large SUV families; Suburban occupies the longer-body role. Their larger size must be distinguished from a mere trim upgrade on Traverse.",
+      "tradeoff": "Check total length, parking, passenger fit and the cargo area behind the third row. A longer body can solve luggage needs while creating daily manoeuvring compromises.",
+      "compare": "Compare Tahoe and Suburban by actual space and length. Compare with Traverse when the passenger job may not require the larger utility-SUV configuration.",
+      "memory": "Suburban = the longer-body large-SUV role",
+      "scenario": "A family carries passengers plus holiday luggage. The decisive difference may be space behind upright rear seats, not maximum space with every seat folded.",
+      "power": "Engine, drivetrain and equipment affect capability. Exact towing and payload ratings must come from the configured vehicle, not a family-wide headline.",
+      "source": "https://www.chevrolet.ca/en",
+      "photos": ["chevrolet-tahoe", "chevrolet-suburban"],
+      "image": "chevrolet-tahoe"
+    },
+    {
+      "id": "blazer",
+      "name": "Blazer & Blazer EV",
+      "body": "Gas/electric SUV families",
+      "role": "Chevrolet shared-name SUV example",
+      "explanation": "Blazer and Blazer EV are separately specified SUV products. EV identifies electric propulsion, not simply a nicer trim on an otherwise identical gas vehicle.",
+      "tradeoff": "Compare actual passenger/cargo shape, charging requirements and price. A shared badge makes it especially easy to borrow the wrong specification.",
+      "compare": "Compare Blazer EV with Equinox EV by electric-SUV role and size, then compare gas Blazer separately using the chosen engine and configuration.",
+      "memory": "Read Blazer EV as a complete product name",
+      "scenario": "Your friend gives you a gas fuel-consumption number for a Blazer EV. Spot the mismatch before trying to compare the number.",
+      "power": "Gas Blazer and battery-electric Blazer EV use different propulsion systems. Their specifications and availability need exact year checks.",
+      "source": "https://www.chevrolet.ca/en",
+      "photos": ["chevrolet-blazer", "chevrolet-blazer-ev"],
+      "image": "chevrolet-blazer"
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt EV / Bolt EUV / new Bolt",
+      "body": "Electric hatch/crossover recognition",
+      "role": "Chevrolet’s smaller electric-car names",
+      "explanation": "Bolt EV, Bolt EUV and a newer Bolt product refer to different electric-car generations/bodies. Older Bolt EV/EUV examples remain relevant for road and used-car recognition.",
+      "tradeoff": "Check the exact year, battery/service history, range and charging capability. Do not assume a newer product’s advertised charging specification applies to a used older Bolt.",
+      "compare": "Compare the particular Bolt generation with other smaller EVs on usable space and charging. EUV is a product/body distinction, not proof that every Bolt has identical equipment.",
+      "memory": "Bolt = ask EV, EUV or which new generation",
+      "scenario": "A friend quotes a new Bolt charging claim for an older used Bolt EV. Ask for the year before accepting it.",
+      "power": "Battery-electric. Charging hardware and capability differ by generation; family-name continuity is not a guarantee of identical hardware.",
+      "source": "https://www.chevrolet.ca/en",
+      "photos": ["chevrolet-bolt", "chevrolet-bolt-euv"],
+      "image": "chevrolet-bolt"
+    }
+  ],
+  "comparisonAnchor": "corvette",
+  "popular": true,
+  "workshops": [
+    {
+      "id": "shared-ev-names",
+      "title": "Chevrolet: shared names, different vehicles",
+      "subtitle": "Equinox EV, Silverado classes and three-row choices.",
+      "pages": [
+        {
+          "title": "Equinox versus Equinox EV",
+          "text": "The shared Equinox name does not mean a gas and electric product use identical bodies and mechanical systems. Use the full product name and year.",
+          "example": "Do not compare an EV battery figure with a gas-only engine specification from an unrelated review.",
+          "paragraphs": [
+            "A shared name is not proof of interchangeable propulsion or body specifications."
+          ]
+        },
+        {
+          "title": "1500 versus HD",
+          "text": "Silverado 1500 and heavy-duty 2500HD/3500HD are different classes. The number is not a universal payload in kilograms.",
+          "example": "A heavier-duty class should answer a real load requirement, with configuration-specific ratings checked.",
+          "paragraphs": ["Truck-class names must not be read as universal metric load ratings."]
+        },
+        {
+          "title": "Traverse versus Tahoe/Suburban",
+          "text": "Traverse has a three-row crossover role; Tahoe/Suburban occupy large utility-SUV roles, with Suburban a longer body. Compare physical size and actual use.",
+          "example": "A family may meet its passenger needs in a crossover without needing the largest utility SUV.",
+          "paragraphs": [
+            "Maximum folded-seat space is not the luggage space available while carrying all required passengers."
+          ]
+        },
+        {
+          "title": "A used Bolt needs its own generation check",
+          "text": "Older Bolt EV/EUV and a new Bolt product can have different charging hardware and capabilities. A family name is not a hardware guarantee.",
+          "example": "Ask the year and exact product before applying a new-car charging claim to a used listing.",
+          "paragraphs": [
+            "Charging and battery hardware can change substantially across generations."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Can Equinox gas specifications stand in for Equinox EV?",
+          "options": [
+            "No — use the exact electric product",
+            "Yes, EV is just a trim colour",
+            "Only if both have LT badges",
+            "All Chevrolets share one battery"
+          ],
+          "answer": 0,
+          "why": "A shared name is not proof of interchangeable propulsion or body specifications."
+        },
+        {
+          "prompt": "What does the Silverado class number fail to establish by itself?",
+          "options": [
+            "The actual configured payload/tow rating",
+            "The brand name on the vehicle",
+            "That a pickup has an open bed",
+            "The owner’s favourite colour"
+          ],
+          "answer": 0,
+          "why": "Truck-class names must not be read as universal metric load ratings."
+        },
+        {
+          "prompt": "Which question is most useful for a full group plus bags?",
+          "options": [
+            "Space with the required seats upright",
+            "Maximum space with all seats folded",
+            "Which wheel design looks fastest",
+            "Whether every three-row vehicle is the same length"
+          ],
+          "answer": 0,
+          "why": "Maximum folded-seat space is not the luggage space available while carrying all required passengers."
+        },
+        {
+          "prompt": "Can a new Bolt charging claim automatically describe an older Bolt EV?",
+          "options": [
+            "No — check the exact generation",
+            "Yes, names freeze every specification",
+            "Only paint changes by year",
+            "All EVs charge at the same rate"
+          ],
+          "answer": 0,
+          "why": "Charging and battery hardware can change substantially across generations."
+        }
+      ],
+      "source": "https://www.chevrolet.ca/en"
+    }
+  ],
+  "streetOrder": 6
+}

@@ -1,0 +1,83 @@
+.dictionary-search {
+  max-width: 750px;
+  padding: 16px;
+}
+.popular-terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 19px 0 27px;
+}
+.popular-terms > span {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #64738a;
+  margin-right: 4px;
+}
+.popular-terms button {
+  background: #eaf0fc;
+  color: #64738a;
+  border-radius: 4px;
+  padding: 7px 11px;
+  font-size: 11px;
+}
+.dictionary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  margin-top: 17px;
+}
+.term-card {
+  padding: 23px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-align: left;
+  align-self: start;
+}
+.term-card:hover,
+.term-card.expanded {
+  border-color: #a9bee5;
+  background: #f9fbff;
+}
+.term-card > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.term-card h3 {
+  font-size: 16px;
+}
+.term-card svg {
+  color: #64738a;
+}
+.term-card > p {
+  font-size: 12px;
+  margin-top: 13px;
+  line-height: 1.9;
+  min-height: 64px;
+}
+.term-card > small {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64738a;
+  margin-top: 19px;
+}
+.term-card > section {
+  padding: 16px 14px;
+  background: #eef4ff;
+  margin-top: 17px;
+  border-radius: 6px;
+}
+.term-card .eyebrow {
+  font-size: 9px;
+  color: #64738a;
+}
+.term-card > section > p {
+  font-size: 12px;
+  margin-top: 8px;
+}

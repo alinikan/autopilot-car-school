@@ -1,0 +1,105 @@
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 29px;
+  gap: 24px;
+}
+.eyebrow {
+  display: block;
+  font-size: 10px;
+  font-weight: 550;
+  letter-spacing: 1.35px;
+  color: #64738a;
+  line-height: 1.7;
+}
+.section-heading .eyebrow {
+  margin-bottom: 9px;
+}
+.section-heading p {
+  font-size: 13px;
+  margin-top: 9px;
+  max-width: 700px;
+}
+.date-pill {
+  font-size: 11px;
+  color: #64738a;
+  white-space: nowrap;
+  align-self: flex-start;
+  margin-top: 37px;
+}
+.section-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.section-row .eyebrow {
+  margin-bottom: 5px;
+  font-size: 9px;
+}
+.section-row h2 {
+  font-size: 19px;
+}
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 550;
+  padding: 6px 0;
+  color: #4e65b0;
+}
+.text-button:hover {
+  color: #233d9e;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  padding: 12px 17px;
+  min-height: 44px;
+  font-size: 12px;
+  font-weight: 550;
+  border-radius: 6px;
+  line-height: 1.4;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.btn.primary,
+.btn.lime,
+.btn.dark {
+  color: #fff;
+  background: var(--blue);
+  border: 1px solid var(--blue);
+}
+.btn.primary:hover,
+.btn.lime:hover,
+.btn.dark:hover {
+  background: #2b49c2;
+  border-color: #2b49c2;
+}
+.btn.outline {
+  border: 1px solid #d8dee8;
+  background: #fff;
+  color: #42526e;
+}
+.btn.outline:hover {
+  background: #f4f6fb;
+  border-color: #b8c5df;
+}
+.soft-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  background: #f1f3f7;
+  font-family: 'DM Sans';
+  font-size: 10px;
+  font-weight: 450;
+  letter-spacing: 0;
+  color: #657186;
+  border-radius: 4px;
+  white-space: nowrap;
+}

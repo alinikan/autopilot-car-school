@@ -1,0 +1,259 @@
+{
+  "id": "honda",
+  "name": "Honda",
+  "country": "Japan",
+  "intro": "Honda is a Japanese brand. Start with Civic and Accord on the lower-car shelf, HR-V and CR-V on the SUV shelf, and Pilot, Passport, Odyssey and Ridgeline as different larger-body jobs. Shared trim words do not make these families mechanically identical.",
+  "naming": "LX, EX, Sport and Touring are version names whose equipment depends on the family and year. Civic Si and Type R are specific performance products, not just sporty wheels. Honda Hybrid names identify a powertrain; AWD describes which wheels can be driven.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.honda.ca/en/vehicles",
+  "deep": true,
+  "models": [
+    {
+      "id": "civic",
+      "name": "Civic",
+      "body": "Compact car family",
+      "role": "Compact everyday Honda car",
+      "explanation": "Civic is Honda’s compact passenger-car family. Sedan and hatchback shapes need to be distinguished; a hybrid or performance version adds another layer to the name.",
+      "tradeoff": "The Civic belongs in a comparison for compact everyday honda car. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Civic with Accord for a larger sedan role, and with HR-V or CR-V for a taller SUV. Ask about the body and engine separately.",
+      "memory": "Civic = compact car",
+      "scenario": "Jules hears “Civic Sport” and imagines a Type R. Translate the actual family, body, grade and powertrain first; similar performance language can describe different products.",
+      "power": "Civic sedans/hatchbacks have offered different gas, hybrid and performance configurations. Si and Type R are separate specifications, not synonyms for every Civic Sport trim. A hybrid’s electric assistance does not make it a plug-in car.",
+      "source": "https://www.honda.ca/en/vehicles",
+      "knowledgeCheck": {
+        "prompt": "Is Civic Sport mechanically identical to Civic Type R?",
+        "correct": "No — Type R is a distinct performance product",
+        "wrong": [
+          "Yes, Sport always means Type R",
+          "Only the emblem is different",
+          "All Civics use the same engine"
+        ],
+        "why": "Family, body, trim and dedicated performance product are different layers."
+      },
+      "image": "honda-civic",
+      "practicalDetails": [
+        "Civic sedan and hatchback bodies should be identified separately before comparing cargo access. Then distinguish ordinary equipment grades from Si and Type R performance products. “Sport” in a listing is not enough to establish Type R hardware.",
+        "A hybrid-versus-gas comparison should use the exact year, powertrain, equipment and Canadian efficiency rating. More power or a sporty badge does not automatically change rear-seat room."
+      ],
+      "photos": ["honda-civic"]
+    },
+    {
+      "id": "accord",
+      "name": "Accord",
+      "body": "Midsize sedan",
+      "role": "Larger everyday Honda sedan",
+      "explanation": "Accord is a larger sedan family than Civic. Sedan means a separate trunk; a larger model number or engine badge is not needed to establish that body type.",
+      "tradeoff": "The Accord belongs in a comparison for larger everyday honda sedan. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Accord with Civic on rear-seat/trunk fit and exact costs. Compare Accord with CR-V when deciding between a lower car and SUV.",
+      "memory": "Accord = larger sedan",
+      "scenario": "A friend mentions a Accord. Explain its role as larger everyday honda sedan, then ask for the year, powertrain and equipment before comparing it with another Honda.",
+      "power": "Recent Canadian Accords include gas and conventional-hybrid configurations depending on version. A hybrid can use a different engine/motor system without changing the family’s sedan role. Check the year and grade.",
+      "source": "https://www.honda.ca/en/vehicles",
+      "knowledgeCheck": {
+        "prompt": "Does Accord Hybrid change the basic body category to an SUV?",
+        "correct": "No — it remains an Accord sedan",
+        "wrong": [
+          "Yes, every hybrid is a taller vehicle",
+          "Yes, the battery creates a third row",
+          "Only if it has Touring equipment"
+        ],
+        "why": "Powertrain and body style describe separate parts of the car."
+      },
+      "photos": ["honda-accord"],
+      "image": "honda-accord"
+    },
+    {
+      "id": "crv",
+      "name": "CR-V",
+      "body": "Compact SUV family",
+      "role": "Core Honda family SUV",
+      "explanation": "CR-V is Honda’s core compact-SUV family. HR-V is a different, smaller SUV family, while Pilot occupies a larger three-row role. Similar letters are not identical cars.",
+      "tradeoff": "The CR-V belongs in a comparison for core honda family suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare CR-V with HR-V for size/packaging and Pilot when a third seating row is a real requirement. Compare hybrid versions on the exact year’s specifications.",
+      "memory": "CR-V = core family SUV",
+      "scenario": "Two neighbours compare CR-V payments, but one quote is for a gas base version and the other a higher-grade Hybrid. Match the year, equipment, powertrain and itemized totals before drawing a conclusion.",
+      "power": "Canadian CR-V ranges have included turbo-gas and conventional-hybrid versions. Those have different powertrain specifications and prices. CR-V Hybrid is not a claim that you must install a home charger.",
+      "source": "https://www.honda.ca/en/vehicles",
+      "knowledgeCheck": {
+        "prompt": "What is the key distinction between CR-V and CR-V Hybrid?",
+        "correct": "The powertrain, not a different manufacturer",
+        "wrong": [
+          "Hybrid means it has seven seats",
+          "Hybrid means it is a plug-in Tesla",
+          "Only the wheel colour changes"
+        ],
+        "why": "The hybrid is an electrified powertrain choice in the CR-V family, not a new body category."
+      },
+      "price": {
+        "amount": 37075,
+        "year": 2026,
+        "label": "CR-V LX FWD — Canadian retailer MSRP reference",
+        "source": "https://www.teamhonda.ca/models/honda/cr-v/",
+        "note": "Dated retailer base MSRP reference. Freight/PDI, the retailer’s listed fees/levies, licensing and applicable taxes are extra. Not an active quote; verify the exact configuration and current total."
+      },
+      "image": "honda-crv",
+      "practicalDetails": [
+        "HR-V, CR-V and Pilot are different families, not three trim grades of one SUV. CR-V belongs in the core family-SUV comparison; a third-row requirement needs an actual different seating configuration/family check.",
+        "Compare a gas CR-V and CR-V Hybrid as complete versions. A price difference may include both mechanical and equipment changes, so separate what you are paying for before judging value."
+      ],
+      "photos": ["honda-crv"]
+    },
+    {
+      "id": "hrv",
+      "name": "HR-V",
+      "body": "Smaller SUV",
+      "role": "Honda’s smaller SUV",
+      "explanation": "HR-V is Honda’s smaller SUV family, below CR-V in this course’s size map. Its similar letters are worth learning because HR-V and CR-V are different products.",
+      "tradeoff": "Check whether the rear seat and hatch suit your needs rather than choosing from the first letter. A smaller exterior can be useful while limiting particular loading tasks.",
+      "compare": "Compare HR-V with CR-V for size and with Civic for a lower-car option. Do not apply a foreign-market HR-V hybrid review to the Canadian version without checking.",
+      "memory": "HR-V = smaller; CR-V = core family SUV",
+      "scenario": "A friend found a review from another country. Check the Canadian year and powertrain before using its engine numbers.",
+      "power": "Engine and hybrid availability are market-specific. The HR-V name does not guarantee that overseas and Canadian examples have the same system.",
+      "source": "https://www.honda.ca/en/vehicles",
+      "photos": ["honda-hrv"],
+      "image": "honda-hrv"
+    },
+    {
+      "id": "pilot",
+      "name": "Pilot",
+      "body": "Three-row SUV",
+      "role": "Honda’s three-row SUV",
+      "explanation": "Pilot is Honda’s larger three-row SUV family. It is a different passenger-carrying role from the two-row CR-V and Passport. The exact seat configuration still needs checking.",
+      "tradeoff": "Test the third row, access and bags with all required passengers. A higher trim can add equipment without solving an unsuitable seat layout.",
+      "compare": "Compare Pilot with Odyssey for people access and with Passport if you do not need a third row. Seats, doors and luggage are more relevant than a prestige ranking.",
+      "memory": "Pilot = three-row Honda SUV",
+      "scenario": "A family needs more than five usable places. Begin with real seating and luggage tests before comparing infotainment screens.",
+      "power": "Recent Pilot generations use a V6 gas powertrain. V6 describes six cylinders in two banks, not the number of seats or an efficiency score.",
+      "source": "https://www.honda.ca/en/vehicles",
+      "photos": ["honda-pilot"],
+      "image": "honda-pilot"
+    },
+    {
+      "id": "passport",
+      "name": "Passport",
+      "body": "Two-row SUV",
+      "role": "Larger Honda SUV without a third row",
+      "explanation": "Passport is a larger Honda SUV with two seating rows. It is separate from Pilot; fewer rows do not automatically make its exterior as small as a CR-V.",
+      "tradeoff": "Check the actual cargo layout and parking dimensions. A two-row layout may fit equipment-oriented needs while giving up the extra passenger row.",
+      "compare": "Compare Passport with Pilot by seating requirement and with CR-V by size and use. Trail-oriented trim equipment must be checked rather than inferred from the name alone.",
+      "memory": "Passport = larger two-row SUV",
+      "scenario": "Two adults carry bulky equipment and rarely extra passengers. Ask whether they value cargo layout more than a seldom-used third row.",
+      "power": "Recent Passport generations use a V6 gas engine and year-specific drivetrain equipment. An appearance or adventure trim does not define all its mechanical limits.",
+      "source": "https://www.honda.ca/en/vehicles",
+      "photos": ["honda-passport"],
+      "image": "honda-passport"
+    },
+    {
+      "id": "odyssey",
+      "name": "Odyssey",
+      "body": "Minivan",
+      "role": "Honda sliding-door people carrier",
+      "explanation": "Odyssey is Honda’s minivan family, with sliding rear doors and a passenger-focused layout. It is not an SUV trim level.",
+      "tradeoff": "Evaluate everyday entry, child-seat access, third-row use and luggage together. Large sliding doors can be a practical feature even when the van’s overall size remains substantial.",
+      "compare": "Compare Odyssey with Pilot for the same passenger task. A family can prefer one door and seat layout without claiming that a body category is universally better.",
+      "memory": "Odyssey = minivan with sliding rear doors",
+      "scenario": "A parent loading children in a narrow stall should test door access and seat movement rather than compare only engine output.",
+      "power": "Recent Canadian Odyssey generations use a V6 gas engine. Do not assume that every current minivan is a hybrid because another brand’s minivan uses one.",
+      "source": "https://www.honda.ca/en/vehicles",
+      "photos": ["honda-odyssey"],
+      "image": "honda-odyssey"
+    },
+    {
+      "id": "ridgeline",
+      "name": "Ridgeline",
+      "body": "Pickup",
+      "role": "Honda pickup for passengers and an open bed",
+      "explanation": "Ridgeline is Honda’s pickup family. The open rear bed gives it a different loading role from Pilot or Passport, even where the broader brand’s engineering is related.",
+      "tradeoff": "Test bed dimensions, load limits and the actual cab. A comfortable cabin does not answer whether the load fits or whether a particular trailer is within the vehicle’s limits.",
+      "compare": "Compare Ridgeline with midsize pickups on configuration-specific payload, towing and everyday use. Do not call every pickup a full-size truck.",
+      "memory": "Ridgeline = Honda pickup",
+      "scenario": "A friend needs occasional open-bed transport. Check the real objects, load and total vehicle size before assuming they need the largest truck.",
+      "power": "Recent Ridgeline generations use a V6 gas engine. Bed/cab role, engine layout and load ratings are separate specifications.",
+      "source": "https://www.honda.ca/en/vehicles",
+      "photos": ["honda-ridgeline"],
+      "image": "honda-ridgeline"
+    }
+  ],
+  "comparisonAnchor": "crv",
+  "popular": true,
+  "workshops": [
+    {
+      "id": "families-performance",
+      "title": "Honda: Civic, CR-V or something larger?",
+      "subtitle": "Choose the body and understand Hybrid, Si and Type R.",
+      "pages": [
+        {
+          "title": "Civic and CR-V solve different body needs",
+          "text": "Civic is a lower compact-car family; CR-V is an SUV family. Body shape, passenger entry and cargo opening are useful first comparisons. Hybrid versus gas is a second layer.",
+          "example": "A buyer carries a bicycle. Test the actual opening/seat arrangement instead of assuming every SUV automatically fits it better.",
+          "paragraphs": ["Family and body category come before trim and powertrain details."]
+        },
+        {
+          "title": "Sport is not Type R",
+          "text": "A Civic Sport version and a Civic Type R are not the same mechanical product. Si and Type R are performance product names with their own specifications.",
+          "example": "A used listing advertises Sport wheels and claims Type R mechanics. Ask for the exact model/VIN specification.",
+          "paragraphs": [
+            "A sporty equipment name does not prove a dedicated performance model’s hardware."
+          ]
+        },
+        {
+          "title": "Hybrid does not mean plug-in",
+          "text": "Honda conventional-hybrid products use engine/electric assistance without the same external charging routine as a plug-in or battery-electric car. Identify the full powertrain.",
+          "example": "A friend asks where to fast-charge a conventional CR-V Hybrid. Explain its energy system before searching for chargers.",
+          "paragraphs": ["Electrified systems do not all use the same charging routine."]
+        },
+        {
+          "title": "Pilot, Passport, Odyssey, Ridgeline",
+          "text": "Pilot has a three-row SUV role; Passport a larger two-row SUV role; Odyssey a minivan role; Ridgeline a pickup role. Those physical jobs cannot be exchanged by adding an equipment package.",
+          "example": "Choose the actual body/seat/access arrangement for the trip, then compare engine and trim.",
+          "paragraphs": [
+            "Odyssey’s minivan layout and sliding rear doors create a distinct passenger-access role."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What does Civic versus CR-V first distinguish?",
+          "options": [
+            "Different body/product families",
+            "Only two equipment grades of one car",
+            "A universal engine-size code",
+            "The number of cylinders"
+          ],
+          "answer": 0,
+          "why": "Family and body category come before trim and powertrain details."
+        },
+        {
+          "prompt": "Does Civic Sport automatically equal Type R?",
+          "options": [
+            "No — they are distinct specifications",
+            "Yes, all sporty Hondas are Type R",
+            "Only the paint differs",
+            "Every hatchback is Type R"
+          ],
+          "answer": 0,
+          "why": "A sporty equipment name does not prove a dedicated performance model’s hardware."
+        },
+        {
+          "prompt": "What is the first check before advising a Honda owner about charging?",
+          "options": [
+            "The exact powertrain type",
+            "Whether the steering wheel is heated",
+            "Whether the body is tall",
+            "Whether all hybrids use fast chargers"
+          ],
+          "answer": 0,
+          "why": "Electrified systems do not all use the same charging routine."
+        },
+        {
+          "prompt": "Which Honda family has the sliding-door people-carrier role?",
+          "options": ["Odyssey", "Ridgeline", "Passport", "Civic"],
+          "answer": 0,
+          "why": "Odyssey’s minivan layout and sliding rear doors create a distinct passenger-access role."
+        }
+      ],
+      "source": "https://www.honda.ca/en/vehicles"
+    }
+  ],
+  "streetOrder": 2
+}

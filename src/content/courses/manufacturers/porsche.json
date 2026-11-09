@@ -1,0 +1,58 @@
+{
+  "id": "porsche",
+  "name": "Porsche",
+  "country": "Germany",
+  "intro": "Porsche originated in Germany. This course teaches selected recognizable model families, organized by the jobs they do. It is a guided starting map, not a claim that these are every current or historical model.",
+  "naming": "Porsche family names and version names do different jobs. Carrera, S, GTS, Turbo and GT badges refer to specific variants in their context. Turbo in an electric Porsche name is performance branding, not evidence of a turbocharged petrol engine.",
+  "warning": "The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.porsche.com/canada/en/models/",
+  "deep": false,
+  "models": [
+    {
+      "id": "911",
+      "name": "911",
+      "body": "Sports coupe / open-top families",
+      "role": "Porsche’s rear-engined sports-car family",
+      "explanation": "911 is Porsche’s long-running sports-car family. Carrera, Cabriolet and Targa names describe different versions or roofs; they are not all different manufacturers.",
+      "tradeoff": "The 911 belongs in a comparison for porsche’s rear-engined sports-car family. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare exact 911 versions on use, transmission, roof, equipment and price. A higher performance version can involve compromises that are irrelevant to everyday travel.",
+      "memory": "911 = the iconic sports-car family",
+      "scenario": "A friend mentions a 911. Explain its role as porsche’s rear-engined sports-car family, then ask for the year, powertrain and equipment before comparing it with another Porsche.",
+      "power": "Check the exact Canadian model year and version for the available engine, hybrid or electric system. Do not infer the powertrain from the family name alone.",
+      "source": "https://www.porsche.com/canada/en/models/",
+      "photos": ["porsche-911"],
+      "image": "porsche-911"
+    },
+    {
+      "id": "cayenne",
+      "name": "Cayenne",
+      "body": "Larger SUV family",
+      "role": "Larger Porsche SUV",
+      "explanation": "Cayenne is Porsche’s larger SUV family. It occupies a very different practical role from a 911 sports car, despite sharing the Porsche badge.",
+      "tradeoff": "The Cayenne belongs in a comparison for larger porsche suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Cayenne with Macan for different SUV roles. Coupe body versions need a roof/headroom/loading comparison; the word Coupe does not necessarily mean two doors.",
+      "memory": "Cayenne = larger SUV",
+      "scenario": "A friend mentions a Cayenne. Explain its role as larger porsche suv, then ask for the year, powertrain and equipment before comparing it with another Porsche.",
+      "power": "Check the exact Canadian model year and version for the available engine, hybrid or electric system. Do not infer the powertrain from the family name alone.",
+      "source": "https://www.porsche.com/canada/en/models/",
+      "photos": ["porsche-cayenne"],
+      "image": "porsche-cayenne"
+    },
+    {
+      "id": "taycan",
+      "name": "Taycan",
+      "body": "Electric sports-car family",
+      "role": "Porsche electric performance car",
+      "explanation": "Taycan is an electric Porsche family, including different body versions. A familiar performance badge such as Turbo does not turn its electric motors into a petrol engine.",
+      "tradeoff": "The Taycan belongs in a comparison for porsche electric performance car. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Taycan versions using charging, passenger/cargo needs and exact configuration. Do not apply a gas 911’s fuel routine to an electric Taycan.",
+      "memory": "Taycan = electric, even when badged Turbo",
+      "scenario": "A friend mentions a Taycan. Explain its role as porsche electric performance car, then ask for the year, powertrain and equipment before comparing it with another Porsche.",
+      "power": "Check the exact Canadian model year and version for the available engine, hybrid or electric system. Do not infer the powertrain from the family name alone.",
+      "source": "https://www.porsche.com/canada/en/models/",
+      "photos": ["porsche-taycan"],
+      "image": "porsche-taycan"
+    }
+  ],
+  "comparisonAnchor": "taycan"
+}

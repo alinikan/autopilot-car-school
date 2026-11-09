@@ -1,0 +1,280 @@
+{
+  "id": "ford",
+  "name": "Ford",
+  "country": "United States",
+  "intro": "Ford is an American brand with pickups, SUVs, commercial vans and the Mustang sports-car family. Learn the job before the badge: F-150, Ranger and Maverick are different pickup sizes; Bronco and Bronco Sport are different families; Mustang Mach-E is a separate electric SUV.",
+  "naming": "XL, XLT, Lariat and other grades describe particular versions, not every Ford family. EcoBoost is turbo-engine branding used on different engines. Raptor identifies particular performance/utility versions. F-150 Lightning and Mustang Mach-E need separate electric-vehicle specifications.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.ford.ca/",
+  "deep": true,
+  "models": [
+    {
+      "id": "f150",
+      "name": "F-150",
+      "body": "Full-size pickup",
+      "role": "Ford full-size pickup",
+      "explanation": "F-150 is a pickup family: the open bed behind the cabin is the major body clue. Cab, bed, engine, axle and equipment choices can change what a particular truck can carry or tow.",
+      "tradeoff": "The F-150 belongs in a comparison for ford full-size pickup. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare exact payload/towing specifications for the configuration, not a headline maximum from an advertisement. F-150 Lightning is an electric truck family with different energy needs.",
+      "memory": "F-150 = pickup; configuration matters",
+      "scenario": "A buyer wants more passenger space without losing a particular bed length, but parks in a short stall. Measure the complete cab/bed configuration before choosing a trim or engine.",
+      "power": "F-150 configurations differ by cab, bed, engine, axle and equipment. A towing headline can be the maximum for one configuration, not the rating of a truck in a listing. F-150 Lightning is a separately specified electric truck.",
+      "source": "https://www.ford.ca/",
+      "knowledgeCheck": {
+        "prompt": "Where should a particular F-150’s load limit come from?",
+        "correct": "Its exact configuration and vehicle labels/manual",
+        "wrong": [
+          "The biggest number in any Ford advert",
+          "The XLT badge alone",
+          "The colour of the grille"
+        ],
+        "why": "Truck ratings depend on the actual configuration, options and load."
+      },
+      "image": "ford-f150",
+      "practicalDetails": [
+        "Write down the passenger and bed job separately. A long cab and a chosen bed length also determine total vehicle length, so the truck must fit both the load and where it parks.",
+        "Next read the actual vehicle’s payload and towing documentation. Cab, bed, engine, axle, options and what you carry all matter. Do not use a headline maximum for a different configuration as the rating of the truck you are considering."
+      ],
+      "photos": ["ford-f150"]
+    },
+    {
+      "id": "mustang",
+      "name": "Mustang",
+      "body": "Sports coupe / convertible",
+      "role": "Ford sports-car family",
+      "explanation": "Mustang is a sports coupe/convertible family. Mustang Mach-E is a separately named electric SUV family; sharing Mustang in the name does not mean it has the same body or engine.",
+      "tradeoff": "The Mustang belongs in a comparison for ford sports-car family. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare coupe versus convertible on roof and everyday practicality. Compare Mach-E separately if the needs involve SUV packaging and electric charging.",
+      "memory": "Mustang car and Mach-E SUV are different families",
+      "scenario": "A friend mentions a Mustang. Explain its role as ford sports-car family, then ask for the year, powertrain and equipment before comparing it with another Ford.",
+      "power": "Mustang coupe/convertible gas engines and versions differ. Mustang Mach-E is an electric SUV family with a distinct body and charging routine. A shared name does not make their engines interchangeable.",
+      "source": "https://www.ford.ca/",
+      "knowledgeCheck": {
+        "prompt": "Is Mustang Mach-E just the electric trim of the two-door Mustang body?",
+        "correct": "No — it is a separate SUV family",
+        "wrong": [
+          "Yes, every panel and seat layout is identical",
+          "Yes, it always has a V8",
+          "Only the roof colour changes"
+        ],
+        "why": "Mustang sports cars and Mustang Mach-E SUVs have different product roles."
+      },
+      "photos": ["ford-mustang"],
+      "image": "ford-mustang"
+    },
+    {
+      "id": "bronco",
+      "name": "Bronco & Bronco Sport",
+      "body": "Distinct SUV families",
+      "role": "Ford adventure-oriented SUV names",
+      "explanation": "Bronco and Bronco Sport are distinct SUV families. The extra word Sport does not merely mark a higher trim on an otherwise identical Bronco.",
+      "tradeoff": "The Bronco & Bronco Sport belongs in a comparison for ford adventure-oriented suv names. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare actual vehicle architecture, dimensions and capabilities rather than expecting similar names to guarantee similar hardware. Off-road use still requires reading the exact limits.",
+      "memory": "Bronco Sport is not just a Bronco trim",
+      "scenario": "A friend mentions a Bronco & Bronco Sport. Explain its role as ford adventure-oriented suv names, then ask for the year, powertrain and equipment before comparing it with another Ford.",
+      "power": "Bronco and Bronco Sport have different architecture and configurations. Check the specific family’s engine, drivetrain and capability rather than reading Sport as a cosmetic package on the larger Bronco.",
+      "source": "https://www.ford.ca/",
+      "knowledgeCheck": {
+        "prompt": "What is Bronco Sport?",
+        "correct": "A distinct SUV family",
+        "wrong": [
+          "Only a wheel package for every Bronco",
+          "A Mustang convertible",
+          "A diesel fuel grade"
+        ],
+        "why": "Bronco Sport is a separate product, not merely a trim added to every Bronco."
+      },
+      "photos": ["ford-bronco", "ford-bronco-sport"],
+      "image": "ford-bronco"
+    },
+    {
+      "id": "maverick",
+      "name": "Maverick",
+      "body": "Compact pickup",
+      "role": "Ford’s smaller everyday pickup",
+      "explanation": "Maverick is a compact pickup family. It offers an open bed in a smaller truck role than Ranger or F-150, so the first question is whether the actual load job fits.",
+      "tradeoff": "Bed size, payload, passenger needs and parking matter together. A compact truck can suit some occasional loads without doing every job of a larger pickup.",
+      "compare": "Compare Maverick with Ranger for a different pickup class and with an SUV if an open bed is rarely needed. Check the chosen hybrid/gas configuration.",
+      "memory": "Maverick = compact pickup",
+      "scenario": "A city driver occasionally carries gardening supplies. Measure those loads before deciding that a full-size pickup is necessary.",
+      "power": "Hybrid and turbo-gas configurations in relevant years have different specifications. Hybrid does not by itself state AWD or the tow rating.",
+      "source": "https://www.ford.ca/",
+      "photos": ["ford-maverick"],
+      "image": "ford-maverick"
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "body": "Midsize pickup",
+      "role": "Ford’s middle-size pickup",
+      "explanation": "Ranger occupies Ford’s midsize pickup role between smaller Maverick and larger F-150. The family name still does not settle cab, bed, engine or equipment.",
+      "tradeoff": "Check the usable bed, real load and passenger access. A mid-position in the range is a category, not a universal sweet spot for every owner.",
+      "compare": "Compare Ranger with Maverick and F-150 on actual dimensions and configuration-specific capabilities. Ranger Raptor is a specific version, not every Ranger.",
+      "memory": "Ranger = midsize pickup",
+      "scenario": "A friend says a midsize pickup must tow half as much as a full-size one. Look up actual ratings instead of inventing a size-ratio rule.",
+      "power": "Turbo engine and drivetrain specifications depend on year/version. Raptor-related hardware should be read from that exact model’s specification.",
+      "source": "https://www.ford.ca/",
+      "photos": ["ford-ranger"],
+      "image": "ford-ranger"
+    },
+    {
+      "id": "escape",
+      "name": "Escape — current/used recognition",
+      "body": "Compact SUV",
+      "role": "Ford compact crossover recognition",
+      "explanation": "Escape is Ford’s compact crossover family, familiar on Canadian roads. It is included for current/used recognition; current ordering and powertrain availability must be confirmed rather than assumed from an older model page.",
+      "tradeoff": "Check year, condition and powertrain. A gas, hybrid or plug-in used Escape may call for different servicing, charging and fuel questions.",
+      "compare": "Compare the particular Escape with Bronco Sport for a different compact-SUV family and with Explorer for a three-row role. Similar size does not make them identical products.",
+      "memory": "Escape = compact crossover; ask the year",
+      "scenario": "A friend is considering a used Escape Plug-in Hybrid. Check charging access and condition rather than using a gas-only review as a complete description.",
+      "power": "Escape generations include different gas, hybrid and plug-in systems. A plug-in hybrid combines an engine with an externally rechargeable battery; it is not a battery-only EV.",
+      "source": "https://www.ford.ca/",
+      "photos": ["ford-escape"],
+      "image": "ford-escape"
+    },
+    {
+      "id": "explorer",
+      "name": "Explorer",
+      "body": "Three-row SUV",
+      "role": "Ford three-row family SUV",
+      "explanation": "Explorer is Ford’s three-row SUV family. It has a different passenger role from a smaller two-row crossover and a different footprint from larger Expedition.",
+      "tradeoff": "Test third-row access, seat configuration and bags. A performance trim can change the driving specification without making a small back-row space larger.",
+      "compare": "Compare Explorer with Expedition for a larger SUV requirement and with a minivan for people access. ST is a version name, not the name of every Explorer.",
+      "memory": "Explorer = three-row family SUV",
+      "scenario": "A group regularly travels together. Start with people and luggage before choosing the most powerful version.",
+      "power": "Engine and drivetrain vary by year/version. Do not infer hybrid availability from an older Explorer listing or a review in another market.",
+      "source": "https://www.ford.ca/",
+      "photos": ["ford-explorer"],
+      "image": "ford-explorer"
+    },
+    {
+      "id": "expedition",
+      "name": "Expedition",
+      "body": "Large SUV",
+      "role": "Ford’s larger SUV family",
+      "explanation": "Expedition is Ford’s large SUV family, with a larger-body passenger/cargo role than Explorer. Extended-body versions need their own measurements.",
+      "tradeoff": "Overall length, third-row use and luggage capacity must be compared with garage access and daily manoeuvring. Extra size helps a real need only if it fits your life.",
+      "compare": "Compare exact Expedition and Explorer configurations for seating and luggage. Max/extended-body naming changes dimensions; it is not simply a sound-system package.",
+      "memory": "Expedition = large SUV; check extended body",
+      "scenario": "A driver carries a full group and luggage. Compare the space behind the third row rather than counting seats with the rear row folded.",
+      "power": "Engine, driven wheels and tow equipment determine a specific version’s capability. A large SUV badge is not permission to use the range’s maximum advertised tow rating.",
+      "source": "https://www.ford.ca/",
+      "photos": ["ford-expedition"],
+      "image": "ford-expedition"
+    },
+    {
+      "id": "mach-e",
+      "name": "Mustang Mach-E",
+      "body": "Electric SUV",
+      "role": "Ford electric crossover",
+      "explanation": "Mustang Mach-E is a battery-electric SUV family. Its name borrows Mustang identity, but its shape and energy system differ from the two-door Mustang sports car.",
+      "tradeoff": "Check rear access, load space, charging and regular trips. A performance EV version may not be the most practical use of a particular budget or range requirement.",
+      "compare": "Compare Mach-E with Model Y, IONIQ 5 and other exact EV configurations on space, charging and total price. Compare the gas Mustang separately by its sports-car role.",
+      "memory": "Mach-E = electric SUV, not Mustang coupe",
+      "scenario": "A friend expects a V8 sound from every Mustang-badged vehicle. Explain the Mach-E’s electric-SUV family role.",
+      "power": "Battery-electric. Motor/drive and battery/range configurations vary. Check model-year charging connector and compatible charging access instead of assuming every charging site works identically.",
+      "source": "https://www.ford.ca/",
+      "photos": ["ford-mach-e"],
+      "image": "ford-mach-e"
+    },
+    {
+      "id": "lightning",
+      "name": "F-150 Lightning",
+      "body": "Electric pickup",
+      "role": "Ford battery-electric pickup",
+      "explanation": "F-150 Lightning is Ford’s electric pickup family within the wider F-150 naming world. It needs its own battery, motor, load and charging specifications rather than a gas-truck engine description.",
+      "tradeoff": "Plan the actual work and charging routine. A long towing trip involves different energy needs from an unloaded commute; bed and cabin usefulness still matter.",
+      "compare": "Compare Lightning with an exact gas F-150 or electric pickup configuration using loaded use, route and total costs. Current ordering availability must be confirmed.",
+      "memory": "Lightning = electric F-150 product",
+      "scenario": "An owner can charge at work but not at home. Test whether that dependable routine fits both commuting and the heavier jobs the truck must do.",
+      "power": "Battery-electric. Battery/drive and capability depend on configuration. Do not treat maximum range and maximum towing advertisements as one guaranteed loaded-trip result.",
+      "source": "https://www.ford.ca/",
+      "photos": ["ford-lightning"],
+      "image": "ford-lightning"
+    }
+  ],
+  "comparisonAnchor": "bronco",
+  "popular": true,
+  "workshops": [
+    {
+      "id": "trucks-names",
+      "title": "Ford: understand trucks and confusing names",
+      "subtitle": "Pickup classes, configurations and shared names.",
+      "pages": [
+        {
+          "title": "Maverick, Ranger and F-150",
+          "text": "Maverick is the compact-pickup role, Ranger the midsize role, and F-150 the full-size role. These are product families, not trim grades of one body.",
+          "example": "Begin with the actual load and parking requirements, then compare cab/bed and ratings.",
+          "paragraphs": [
+            "Maverick is a smaller pickup family; the choice still depends on the configured vehicle’s fit and ratings."
+          ]
+        },
+        {
+          "title": "Configuration before a headline maximum",
+          "text": "A particular truck’s cab, bed, engine, axle, options and load affect its useful ratings. An advertised maximum for a different configuration is not a promise for a dealer’s stock truck.",
+          "example": "Ask for the exact vehicle labels and configuration-specific documentation, not just the range’s largest tow number.",
+          "paragraphs": [
+            "Payload/towing are specific to the actual configuration and conditions, not merely the product family."
+          ]
+        },
+        {
+          "title": "Bronco and Bronco Sport",
+          "text": "These are separate SUV families. Sport is part of the Bronco Sport family name, not simply a premium-equipment package installed on every Bronco.",
+          "example": "Ask which family before quoting a review’s mechanical capability.",
+          "paragraphs": [
+            "Shared names can describe related identity without identical vehicle architecture."
+          ]
+        },
+        {
+          "title": "Mustang and Mach-E",
+          "text": "Mustang coupe/convertible and Mustang Mach-E SUV have different bodies and energy systems. Electric names need their own battery/drive/charging information.",
+          "example": "A friend wants rear access and an electric routine. Do not assume the two-door Mustang’s engine review describes Mach-E.",
+          "paragraphs": ["Mach-E is a separately specified electric SUV family."]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Which Ford family fills the compact-pickup role?",
+          "options": ["Maverick", "F-150", "Expedition", "Mustang"],
+          "answer": 0,
+          "why": "Maverick is a smaller pickup family; the choice still depends on the configured vehicle’s fit and ratings."
+        },
+        {
+          "prompt": "Where should a particular truck’s load limit come from?",
+          "options": [
+            "Its actual configuration and vehicle documentation",
+            "Any advert for a different version",
+            "The size of the chrome badge",
+            "The number of cupholders"
+          ],
+          "answer": 0,
+          "why": "Payload/towing are specific to the actual configuration and conditions, not merely the product family."
+        },
+        {
+          "prompt": "Is Bronco Sport only a trim of the same Bronco body?",
+          "options": [
+            "No — it is a different family",
+            "Yes, all panels and mechanics match",
+            "It is a Mustang trim",
+            "It is a petrol grade"
+          ],
+          "answer": 0,
+          "why": "Shared names can describe related identity without identical vehicle architecture."
+        },
+        {
+          "prompt": "Which named Ford product is the electric SUV family?",
+          "options": [
+            "Mustang Mach-E",
+            "Mustang coupe as a blanket name",
+            "Every Mustang GT",
+            "Every Ranger"
+          ],
+          "answer": 0,
+          "why": "Mach-E is a separately specified electric SUV family."
+        }
+      ],
+      "source": "https://www.ford.ca/"
+    }
+  ],
+  "streetOrder": 5
+}

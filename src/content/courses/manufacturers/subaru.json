@@ -1,0 +1,154 @@
+{
+  "id": "subaru",
+  "name": "Subaru",
+  "country": "Japan",
+  "intro": "Subaru is a Japanese brand with crossovers, SUVs, lower cars and sports cars. Crosstrek, Forester and Outback are useful street-recognition anchors, but Impreza, WRX, BRZ, Ascent and Solterra have different roles. Not every Subaru has the same body or driven-wheel system.",
+  "naming": "Crosstrek, Forester and Outback are families; Wilderness is a specific version/equipment context on particular models. Boxer describes horizontally opposed cylinders. AWD describes driven wheels, and should not be inferred for every Subaru: BRZ is a key rear-wheel-drive distinction.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.subaru.ca/",
+  "deep": true,
+  "models": [
+    {
+      "id": "crosstrek",
+      "name": "Crosstrek",
+      "body": "Small crossover",
+      "role": "Smaller Subaru crossover",
+      "explanation": "Crosstrek is a smaller Subaru crossover family. Crossover describes the SUV-like body role; it does not mean it has a pickup’s cargo bed or a separate sedan trunk.",
+      "tradeoff": "The Crosstrek belongs in a comparison for smaller subaru crossover. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Crosstrek with Forester for different packaging and with Impreza if a lower hatchback body suits the job. Verify the exact powertrain and generation.",
+      "memory": "Crosstrek = smaller crossover",
+      "scenario": "A friend mentions a Crosstrek. Explain its role as smaller subaru crossover, then ask for the year, powertrain and equipment before comparing it with another Subaru.",
+      "power": "Crosstrek powertrain and equipment vary by year. Subaru’s boxer terminology describes the engine’s cylinder arrangement, not the number of cylinders or a guarantee about fuel use.",
+      "source": "https://www.subaru.ca/",
+      "knowledgeCheck": {
+        "prompt": "What does boxer describe?",
+        "correct": "A horizontally opposed cylinder layout",
+        "wrong": [
+          "Exactly six cylinders",
+          "A special brand of petrol",
+          "The number of driven wheels"
+        ],
+        "why": "Layout, cylinder count and drivetrain are different pieces of a specification."
+      },
+      "photos": ["subaru-crosstrek"],
+      "image": "subaru-crosstrek"
+    },
+    {
+      "id": "forester",
+      "name": "Forester",
+      "body": "SUV family",
+      "role": "Upright Subaru family SUV",
+      "explanation": "Forester occupies an upright family-SUV role. A tall cabin outline is a visual clue, but passenger room and visibility still need testing in the actual vehicle.",
+      "tradeoff": "The Forester belongs in a comparison for upright subaru family suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Forester with Crosstrek for size/packaging and Outback for a different long-roof body role. AWD does not make all-weather tire choice irrelevant.",
+      "memory": "Forester = upright family SUV",
+      "scenario": "A friend wants to replace a Crosstrek because of one bulky regular load. Test that load in Forester and Outback with the necessary passengers aboard rather than choose from the largest badge.",
+      "power": "Forester uses year/version-specific boxer-engine and, in relevant years, hybrid configurations. AWD is a drivetrain system, not a replacement for appropriate tires or a reason to ignore winter conditions.",
+      "source": "https://www.subaru.ca/",
+      "knowledgeCheck": {
+        "prompt": "Does AWD remove the need to assess tires and road conditions?",
+        "correct": "No — traction and braking still depend on conditions and tires",
+        "wrong": [
+          "Yes, AWD guarantees identical stopping distances",
+          "Only if the vehicle is tall",
+          "Every Forester has the same tires"
+        ],
+        "why": "Driven wheels do not guarantee braking grip or remove the need for suitable tires."
+      },
+      "image": "subaru-forester",
+      "practicalDetails": [
+        "Use Forester’s upright SUV role as a memory anchor, then compare it with the smaller Crosstrek and the generation-specific Outback body. Their shared Subaru identity does not establish identical cabin space.",
+        "A Wilderness or other grade can change particular equipment; it does not let you skip tire, drivetrain, dimensions or actual-use checks. A brand reputation is not the complete specification of one listing."
+      ],
+      "photos": ["subaru-forester"]
+    },
+    {
+      "id": "outback",
+      "name": "Outback",
+      "body": "Long-roof crossover family",
+      "role": "Long-roof Subaru for passengers and cargo",
+      "explanation": "Outback is a long-roof Subaru family with a body and positioning that have evolved across generations. A photograph of one generation is not proof of a newer generation’s silhouette.",
+      "tradeoff": "The Outback belongs in a comparison for long-roof subaru for passengers and cargo. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Outback with Forester on the particular year’s cargo shape, dimensions and passenger fit. Distinguish the family from Ascent, Subaru’s larger three-row SUV.",
+      "memory": "Outback = long-roof family; ask the generation",
+      "scenario": "A friend mentions a Outback. Explain its role as long-roof subaru for passengers and cargo, then ask for the year, powertrain and equipment before comparing it with another Subaru.",
+      "power": "Outback engines, hybrid availability and body design depend on generation and market. Wilderness describes a particular version; it is not the manufacturer or an engine size.",
+      "source": "https://www.subaru.ca/",
+      "knowledgeCheck": {
+        "prompt": "What does Outback Wilderness identify?",
+        "correct": "A version of the Outback family",
+        "wrong": [
+          "A different country of assembly for every Subaru",
+          "A universal engine displacement",
+          "The name of every Subaru SUV"
+        ],
+        "why": "Family and equipment/version names occupy separate layers."
+      },
+      "photos": ["subaru-outback"],
+      "image": "subaru-outback"
+    },
+    {
+      "id": "impreza",
+      "name": "Impreza",
+      "body": "Compact hatchback / older sedan family",
+      "role": "Subaru’s lower everyday compact car",
+      "explanation": "Impreza is Subaru’s lower compact-car family. Current hatchback and older sedan bodies are useful to distinguish from the taller Crosstrek crossover.",
+      "tradeoff": "A lower seating position, hatch opening and exact cabin fit may suit an everyday commute. Check whether a taller crossover would solve a real need before assuming it is an upgrade.",
+      "compare": "Compare Impreza with Crosstrek by body/height and actual fit. WRX is now a separate performance-family name, even though older names/history can connect them.",
+      "memory": "Impreza = lower compact car",
+      "scenario": "A friend says every Subaru is an SUV. Use Impreza as an everyday lower-car counterexample and ask which body/year they mean.",
+      "power": "Boxer-engine and AWD specifications are version/year-specific. Do not treat a historic Impreza WRX review as the specification of every ordinary Impreza.",
+      "source": "https://www.subaru.ca/",
+      "photos": ["subaru-impreza"],
+      "image": "subaru-impreza"
+    },
+    {
+      "id": "wrx",
+      "name": "WRX",
+      "body": "Performance sedan",
+      "role": "Subaru performance sedan",
+      "explanation": "WRX is Subaru’s performance-sedan family. It is a different product role from the ordinary compact Impreza and the small two-door BRZ sports car.",
+      "tradeoff": "A performance emphasis can affect ride preference, transmission choices, tires and costs. A more powerful car is not automatically the most comfortable daily choice for a particular person.",
+      "compare": "Compare WRX with actual performance-sedan alternatives and with BRZ only after distinguishing sedan/AWD versus two-door/rear-drive roles.",
+      "memory": "WRX = performance sedan; BRZ = small coupe",
+      "scenario": "A friend wants a fun car but regularly carries adults in the back. Doors and passenger access belong in the comparison alongside engine power.",
+      "power": "WRX uses a turbo boxer-engine performance specification in recent generations. STI is a distinct historical performance name, not an available trim assumption for every new WRX.",
+      "source": "https://www.subaru.ca/",
+      "photos": ["subaru-wrx"],
+      "image": "subaru-wrx"
+    },
+    {
+      "id": "brz",
+      "name": "BRZ",
+      "body": "Two-door sports coupe",
+      "role": "Subaru’s rear-wheel-drive sports car",
+      "explanation": "BRZ is Subaru’s small two-door sports-coupe family. It is an important exception to the shortcut that every Subaru uses AWD.",
+      "tradeoff": "Check actual rear-seat usefulness, luggage and access. A small sports coupe can be appealing for driving enjoyment while failing a regular passenger requirement.",
+      "compare": "Compare BRZ with Toyota GR86 and other exact sports-car choices, not with Forester on a single bigger-is-better scale.",
+      "memory": "BRZ = small coupe, rear-wheel drive",
+      "scenario": "A friend assumes Subaru branding guarantees AWD. BRZ gives you a specific example showing why the exact model matters.",
+      "power": "Recent BRZ uses a naturally aspirated boxer engine and rear-wheel drive. Naturally aspirated means it does not use a turbocharger to force extra intake air in.",
+      "source": "https://www.subaru.ca/",
+      "photos": ["subaru-brz"],
+      "image": "subaru-brz"
+    },
+    {
+      "id": "ascent-solterra",
+      "name": "Ascent & Solterra",
+      "body": "Three-row gas SUV / electric SUV",
+      "role": "Two Subaru SUV roles to keep separate",
+      "explanation": "Ascent is Subaru’s larger three-row SUV family; Solterra is a battery-electric SUV family. Their different passenger and energy roles cannot be learned from the Subaru badge alone.",
+      "tradeoff": "Check seat configuration for Ascent and charging/trip needs for Solterra. Do not assume the presence of AWD settles either the number of rows or the energy source.",
+      "compare": "Compare Ascent with Forester for passenger capacity, and Solterra with other EVs for charging and actual space. Verify current year/availability for both.",
+      "memory": "Ascent = three-row; Solterra = electric",
+      "scenario": "A friend asks which Subaru to consider for more than five passengers. First identify the seat configuration; an electric badge does not answer that problem.",
+      "power": "Ascent and Solterra use different propulsion systems. Solterra is battery-electric, while Ascent’s gas configuration needs the exact year’s engine and fuel specifications.",
+      "source": "https://www.subaru.ca/",
+      "photos": ["subaru-ascent", "subaru-solterra"],
+      "image": "subaru-ascent"
+    }
+  ],
+  "comparisonAnchor": "outback",
+  "popular": true,
+  "streetOrder": 4
+}

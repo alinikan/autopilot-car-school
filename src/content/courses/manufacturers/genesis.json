@@ -1,0 +1,58 @@
+{
+  "id": "genesis",
+  "name": "Genesis",
+  "country": "South Korea",
+  "intro": "Genesis originated in South Korea. This course teaches selected recognizable model families, organized by the jobs they do. It is a guided starting map, not a claim that these are every current or historical model.",
+  "naming": "Genesis is a South Korean luxury brand. G names identify sedan families and GV names identify SUV families. Electrified is a powertrain label on particular products; GV60 is a separate electric family.",
+  "warning": "The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.genesis.com/ca/en/shopping/new-vehicles/the-genesis-lineup.html",
+  "deep": false,
+  "models": [
+    {
+      "id": "g70",
+      "name": "G70",
+      "body": "Sports sedan family",
+      "role": "Smaller Genesis sedan",
+      "explanation": "G70 is Genesis’ smaller sports-sedan family. It is a separate product from G80 and from GV70, despite sharing the number 70 with the latter.",
+      "tradeoff": "The G70 belongs in a comparison for smaller genesis sedan. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare G70 with G80 for different sedan roles, and with GV70 for a different body shape and seating position.",
+      "memory": "G70 = sedan; GV70 = SUV",
+      "scenario": "A friend mentions a G70. Explain its role as smaller genesis sedan, then ask for the year, powertrain and equipment before comparing it with another Genesis.",
+      "power": "Check the exact Canadian model year and version for the available engine, hybrid or electric system. Do not infer the powertrain from the family name alone.",
+      "source": "https://www.genesis.com/ca/en/shopping/new-vehicles/the-genesis-lineup.html",
+      "photos": ["genesis-g70"],
+      "image": "genesis-g70"
+    },
+    {
+      "id": "gv70",
+      "name": "GV70",
+      "body": "Luxury SUV family",
+      "role": "Core Genesis SUV",
+      "explanation": "GV70 is a Genesis SUV family. An Electrified GV70 is an electric product, not merely a nicer seat-trim package on a gas version.",
+      "tradeoff": "The GV70 belongs in a comparison for core genesis suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare gas and Electrified versions on charging needs and exact specifications. Compare GV70 with GV80 for a larger SUV role.",
+      "memory": "GV70 = core SUV; read Electrified separately",
+      "scenario": "A friend mentions a GV70. Explain its role as core genesis suv, then ask for the year, powertrain and equipment before comparing it with another Genesis.",
+      "power": "Check the exact Canadian model year and version for the available engine, hybrid or electric system. Do not infer the powertrain from the family name alone.",
+      "source": "https://www.genesis.com/ca/en/shopping/new-vehicles/the-genesis-lineup.html",
+      "photos": ["genesis-gv70"],
+      "image": "genesis-gv70"
+    },
+    {
+      "id": "gv80",
+      "name": "GV80",
+      "body": "Larger luxury SUV family",
+      "role": "Larger Genesis SUV",
+      "explanation": "GV80 occupies a larger SUV role than GV70. Coupe body naming identifies a different roof/shape version, not a guarantee of two doors.",
+      "tradeoff": "The GV80 belongs in a comparison for larger genesis suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare actual seating configurations and cargo room, especially if a third row is important. Test the Coupe roof’s effect on your own rear passengers.",
+      "memory": "GV80 = larger SUV",
+      "scenario": "A friend mentions a GV80. Explain its role as larger genesis suv, then ask for the year, powertrain and equipment before comparing it with another Genesis.",
+      "power": "Check the exact Canadian model year and version for the available engine, hybrid or electric system. Do not infer the powertrain from the family name alone.",
+      "source": "https://www.genesis.com/ca/en/shopping/new-vehicles/the-genesis-lineup.html",
+      "photos": ["genesis-gv80"],
+      "image": "genesis-gv80"
+    }
+  ],
+  "comparisonAnchor": "gv80"
+}

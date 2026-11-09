@@ -1,0 +1,340 @@
+{
+  "id": "tesla",
+  "name": "Tesla",
+  "country": "United States",
+  "intro": "Tesla is an American electric-car brand. Start with two names you may often hear together: Model 3 is a lower sedan and Model Y is a taller crossover. Then learn Model S, Model X and Cybertruck as different product families. This track adds charging, version names and practical comparisons, rather than treating every Tesla as the same car.",
+  "naming": "Model 3 and Model Y are family names, not the number of electric motors. Rear-Wheel Drive describes driven wheels. Dual Motor means two motors on that specified version; it does not mean two petrol engines. Long Range and Performance are version names whose specification and availability change. Software features and physical vehicle hardware are separate parts of a purchase.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.tesla.com/en_ca",
+  "deep": true,
+  "models": [
+    {
+      "id": "model3",
+      "name": "Model 3",
+      "body": "Electric sedan",
+      "role": "Tesla everyday electric sedan",
+      "explanation": "Model 3 is Tesla’s electric sedan family. It has a lower car body and separate trunk opening, distinct from the taller Model Y crossover.",
+      "tradeoff": "The Model 3 belongs in a comparison for tesla everyday electric sedan. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Model 3 with Model Y on passenger access and cargo shape, then compare the exact battery/drive versions, price and charging needs.",
+      "memory": "Model 3 = lower sedan",
+      "scenario": "Mina commutes alone, carries ordinary bags and likes a lower seating position. A Model 3 belongs on her comparison list. If she starts carrying a tall, rigid box, she should test the trunk opening rather than assume a more powerful version solves that loading problem.",
+      "power": "Model 3 is battery-electric: there is no petrol engine, engine displacement or combustion-cylinder count. Rear-wheel-drive and all-wheel-drive versions are distinct configurations in relevant years. Compare the actual battery/range, wheels and equipment rather than assigning one specification to every Model 3.",
+      "source": "https://www.tesla.com/en_ca/model3",
+      "knowledgeCheck": {
+        "prompt": "A Model 3 listing says Dual Motor. What does that describe?",
+        "correct": "Two electric drive motors",
+        "wrong": ["A two-cylinder petrol engine", "Two fuel tanks", "Two passenger seats"],
+        "why": "Motor count describes electric propulsion. It is separate from the model-family name and seating capacity."
+      },
+      "image": "tesla-3",
+      "practicalDetails": [
+        "The separate trunk opening is the first practical distinction to learn against Model Y. A car can have useful luggage volume but an opening that will not admit a tall box. Opening shape and total volume answer different questions; try the actual object rather than comparing only a litre figure.",
+        "A lower seating position may appeal to one driver and make entry/exit less comfortable for another. That is a fit preference, not a universal quality score. Compare the view, getting in and out, rear-passenger access and your parking space before choosing a battery or performance version.",
+        "Once the body suits you, compare similar model years and equipment. A faster Model 3 version can change the power/drive specification without changing a sedan into an SUV. The charging routine and exact range/efficiency information need the actual version, not just “a Tesla.”"
+      ],
+      "photos": ["tesla-3"]
+    },
+    {
+      "id": "modely",
+      "name": "Model Y",
+      "body": "Electric crossover",
+      "role": "Tesla family crossover",
+      "explanation": "Model Y is Tesla’s electric crossover family. The taller body and lifting rear hatch create a different practical role from Model 3.",
+      "tradeoff": "The Model Y belongs in a comparison for tesla family crossover. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Check actual seating configuration and cargo space; do not assume every year and version has identical capacity. Compare charging and trip needs for the exact version.",
+      "memory": "Model Y = taller crossover",
+      "scenario": "Arun and his partner regularly carry passengers and a bulky stroller. Their Model Y-versus-Model 3 comparison starts with rear access, the actual loading opening and space while passengers are seated. They can compare battery/drive versions after those must-haves are met.",
+      "power": "Model Y is battery-electric. A version can differ in driven wheels, battery/range, wheels and seating configuration. A facelift means a visual/equipment update; it does not turn every older Model Y into the updated car. Use Canadian specifications for the exact version.",
+      "source": "https://www.tesla.com/en_ca/modely",
+      "knowledgeCheck": {
+        "prompt": "A Model Y listing says Dual Motor. What should you understand?",
+        "correct": "It has two electric drive motors; check the full version",
+        "wrong": [
+          "It must use a petrol range-extender",
+          "Its battery capacity must be exactly double a RWD version",
+          "Its range is fixed in every weather condition"
+        ],
+        "why": "Dual Motor describes motor count. It does not by itself settle battery capacity, exact range or the full model-year configuration."
+      },
+      "image": "tesla-y",
+      "practicalDetails": [
+        "Model Y’s rear hatch lifts with the rear window. That gives it a different loading opening from Model 3’s separate trunk lid. To compare usefulness, test the object you carry with the rear seats in the position you need; cargo space measured with seats folded does not describe a trip with people sitting there.",
+        "The taller crossover layout can change the feeling of getting in, sitting and seeing out. Try it with the people who actually travel in the car. A high seat is not proof of a universal safety advantage, and an SUV name does not settle adult rear-seat comfort.",
+        "Do not assume every Model Y has the same seat count, drive system or battery. A listing needs its year and configuration. A performance version does not create a missing seating row or a different rear-door opening, and a software update cannot add those physical features."
+      ],
+      "photos": ["tesla-y"]
+    },
+    {
+      "id": "models",
+      "name": "Model S & Model X",
+      "body": "Larger electric car / SUV families",
+      "role": "Tesla’s larger electric families",
+      "explanation": "Model S is a larger electric car family; Model X is an SUV family. These names remain useful for road and used-car recognition even if new-car availability changes.",
+      "tradeoff": "The Model S & Model X belongs in a comparison for tesla’s larger electric families. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Model X’s distinctive rear doors are a clue, not evidence of one particular battery or software configuration. Verify current availability and exact year/version before using a price.",
+      "memory": "S = larger car; X = SUV",
+      "scenario": "A friend mentions a Model S & Model X. Explain its role as tesla’s larger electric families, then ask for the year, powertrain and equipment before comparing it with another Tesla.",
+      "power": "Model S and Model X are different battery-electric families. Both can have version names such as Plaid, but a shared performance label does not make the sedan/liftback and SUV the same body. Earlier versions and current ordering availability need separate checks.",
+      "source": "https://www.tesla.com/en_ca",
+      "knowledgeCheck": {
+        "prompt": "What does Model S versus Model X primarily distinguish?",
+        "correct": "Different vehicle families and bodies",
+        "wrong": [
+          "Only the paint colour",
+          "The number of petrol cylinders",
+          "A free software update"
+        ],
+        "why": "Model S is the larger low car family; Model X is the SUV family. Version names add another layer."
+      },
+      "photos": ["tesla-s", "tesla-x"],
+      "image": "tesla-s"
+    },
+    {
+      "id": "model-s",
+      "name": "Model S",
+      "body": "Large electric liftback",
+      "role": "Tesla’s larger low electric car",
+      "explanation": "Model S is Tesla’s larger low passenger-car family. Its liftback rear opening rises with the rear window, a useful distinction from the Model 3’s separate trunk opening. Larger and more expensive does not mean it is the right everyday car for every driver.",
+      "tradeoff": "The liftback opening and larger-car role can matter for luggage and passengers, while its size, tires and running costs still need checking. An older used Model S can have very different hardware and charging capabilities from another year.",
+      "compare": "Compare Model S with Model 3 for a different-size lower-car role and with Model X for SUV packaging. A used Model S at a similar asking price to a newer Model 3 still needs a condition, battery/warranty and total-cost comparison.",
+      "memory": "S = larger low car with a liftback",
+      "scenario": "A friend needs to load a wide box. Comparing the actual rear openings of Model 3 and Model S is more useful than comparing their acceleration figures.",
+      "power": "Battery-electric propulsion. Plaid is a performance version name, not the definition of every Model S. Do not infer a version’s motor count or charging specification from an old review.",
+      "source": "https://www.tesla.com/en_ca/models",
+      "knowledgeCheck": {
+        "prompt": "Which opening helps distinguish Model S from Model 3?",
+        "correct": "Model S has a liftback that includes the rear window",
+        "wrong": [
+          "Model S always has a pickup bed",
+          "Model 3 has no rear luggage space",
+          "Both names mean identical body panels"
+        ],
+        "why": "Model S uses a liftback; Model 3 uses a separate rear trunk opening."
+      },
+      "photos": ["tesla-s"],
+      "image": "tesla-s"
+    },
+    {
+      "id": "model-x",
+      "name": "Model X",
+      "body": "Electric SUV",
+      "role": "Tesla SUV known for its distinctive rear doors",
+      "explanation": "Model X is Tesla’s larger SUV family, known for upward-opening Falcon Wing rear doors. These doors are a strong recognition clue, but they do not identify the year, battery, number of seats or exact version.",
+      "tradeoff": "Try the actual seating arrangement and access with the passengers you carry. Distinctive door operation is something to test in the places you park, rather than assuming it works the same as an ordinary hinged rear door.",
+      "compare": "Compare Model X with Model Y on exact seating, loading, dimensions and costs. Do not call Model X merely an expensive trim of Model Y: it is a separate family.",
+      "memory": "X = SUV with Falcon Wing rear doors",
+      "scenario": "Someone shows you a Tesla SUV with unusual upward-opening rear doors. You can identify the Model X family while still asking for the year and configuration.",
+      "power": "Battery-electric. Seat counts and hardware vary across versions and years. A Plaid name describes a particular performance configuration, not all examples.",
+      "source": "https://www.tesla.com/en_ca/modelx",
+      "knowledgeCheck": {
+        "prompt": "What can the distinctive rear doors help you identify?",
+        "correct": "The Model X family, not its exact specification",
+        "wrong": [
+          "The precise battery capacity on every year",
+          "A petrol engine under the bonnet",
+          "The owner’s software purchases"
+        ],
+        "why": "A visual feature can identify the family while leaving version, year and equipment unresolved."
+      },
+      "photos": ["tesla-x"],
+      "image": "tesla-x"
+    },
+    {
+      "id": "cybertruck",
+      "name": "Cybertruck",
+      "body": "Electric pickup",
+      "role": "Tesla’s angular electric pickup",
+      "explanation": "Cybertruck is Tesla’s electric pickup family, with a very angular body and an open load-bed role. It is separate from the brand’s sedans and SUVs. This is also a recognition lesson: current ordering and production availability must be checked directly.",
+      "tradeoff": "A pickup’s usefulness depends on the bed, load limits, exact configuration and intended job. A distinctive exterior is not a specification of towing ability or real-trip range. Size and access deserve a parking test.",
+      "compare": "Compare Cybertruck with an exact electric or combustion pickup configuration on payload, towing needs, charging/fuelling, bed access and costs. A maximum tow figure and a maximum range figure may not describe the same loaded trip.",
+      "memory": "Cybertruck = angular electric pickup",
+      "scenario": "A friend wants to tow on a long trip. Ask for the trailer’s actual loaded requirements and the vehicle configuration, then plan the energy stops; do not choose from an unloaded range headline.",
+      "power": "Battery-electric. Motors, rated capability and range depend on configuration. Towing and load change energy use; the route and charging access matter.",
+      "source": "https://www.tesla.com/en_ca/cybertruck",
+      "knowledgeCheck": {
+        "prompt": "Does an unloaded range figure guarantee the same towing range?",
+        "correct": "No — load, route and conditions change energy use",
+        "wrong": [
+          "Yes, every trip uses identical energy",
+          "Only if the paint is uncoated",
+          "Yes, pickup beds remove drag"
+        ],
+        "why": "Rated range is not a guarantee for a loaded towing trip."
+      },
+      "photos": ["tesla-cybertruck"],
+      "image": "tesla-cybertruck"
+    }
+  ],
+  "comparisonAnchor": "models",
+  "popular": true,
+  "workshops": [
+    {
+      "id": "charging",
+      "title": "Tesla: charging without the jargon",
+      "subtitle": "kW, kWh, home charging, Superchargers and realistic trips.",
+      "pages": [
+        {
+          "title": "Energy and charging speed are different",
+          "text": "kWh (kilowatt-hours) is an amount of electrical energy. kW (kilowatts) is a rate: how quickly energy is being delivered or used. Think of kWh as the amount in a bucket and kW as how fast you fill it.",
+          "example": "Illustrative arithmetic: adding 20 kWh at a steady 10 kW would take two hours before allowing for losses or changes in charging speed. These are practice inputs, not a Tesla specification.",
+          "paragraphs": [
+            "Energy amount and charging rate are different units. A large peak kW number is not a battery capacity."
+          ]
+        },
+        {
+          "title": "Make a charging routine, not just a range wish",
+          "text": "Home/work AC charging and road-trip DC fast charging solve different routines. A dependable place to recharge while parked can matter more than a headline peak speed. Building access and installation details need checking for your own situation.",
+          "example": "A condo resident has no assigned charger but can reliably charge at work. Assess that routine instead of assuming every owner can simply install a charger at home.",
+          "paragraphs": [
+            "An EV ownership plan depends on practical charging access, not merely the existence of a charging port."
+          ]
+        },
+        {
+          "title": "A peak is not the whole session",
+          "text": "DC charging speed changes during a session with factors such as battery condition/state, temperature and charger capability. A peak rate cannot be multiplied across the entire charge and assumed constant. Range also changes with conditions and use.",
+          "example": "If a review quotes a peak, ask how long the relevant charge window took on that vehicle and under those conditions.",
+          "paragraphs": [
+            "A charging curve varies; the highest point is not a promise of the average rate for an entire session."
+          ]
+        },
+        {
+          "title": "Plan the actual trip",
+          "text": "Identify the exact car/year, compatible connector, charging network and route. Use the vehicle’s route/charging guidance and verify site access. Loaded trips and cold conditions can change energy needs. You do not need to memorize one range number as a guarantee.",
+          "example": "A 300-km trip with a loaded car is a planning task: charging locations, access and conditions matter alongside the version’s rating.",
+          "paragraphs": [
+            "Rated figures are comparison references, not a guarantee for every route, load and weather condition."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Which unit describes an amount of stored electrical energy?",
+          "options": ["kWh", "kW alone", "Litres of engine displacement", "Number of cylinders"],
+          "answer": 0,
+          "why": "Energy amount and charging rate are different units. A large peak kW number is not a battery capacity."
+        },
+        {
+          "prompt": "What should come before relying on regular overnight charging?",
+          "options": [
+            "Confirming dependable access where the car is parked",
+            "Assuming every condo has a charger",
+            "Using the model number as the socket type",
+            "Expecting a petrol engine as backup"
+          ],
+          "answer": 0,
+          "why": "An EV ownership plan depends on practical charging access, not merely the existence of a charging port."
+        },
+        {
+          "prompt": "Why can a peak fast-charge rate mislead as a whole-session estimate?",
+          "options": [
+            "The charging rate changes during the session",
+            "The car always holds the peak until full",
+            "kWh and kW are identical",
+            "The vehicle has a petrol tank instead"
+          ],
+          "answer": 0,
+          "why": "A charging curve varies; the highest point is not a promise of the average rate for an entire session."
+        },
+        {
+          "prompt": "Does one advertised range number guarantee every trip distance?",
+          "options": [
+            "No — version, use and conditions matter",
+            "Yes, ratings are promises in all weather",
+            "Only the badge colour matters",
+            "Yes, adding passengers never changes energy use"
+          ],
+          "answer": 0,
+          "why": "Rated figures are comparison references, not a guarantee for every route, load and weather condition."
+        }
+      ],
+      "source": "https://www.tesla.com/en_ca/support/charging"
+    },
+    {
+      "id": "versions",
+      "title": "Tesla: versions, updates & used-car listings",
+      "subtitle": "Separate the body, driven wheels, hardware and software.",
+      "pages": [
+        {
+          "title": "Model 3 versus Model Y",
+          "text": "Model 3 is the lower sedan family; Model Y is the taller crossover with a lifting rear hatch. Pick the body for passenger access and loading, then compare the particular battery/drive version.",
+          "example": "Try a bulky item through both actual rear openings instead of assuming the faster version has more luggage room.",
+          "paragraphs": [
+            "Sedan and crossover packaging are a different decision from motor power or battery configuration."
+          ]
+        },
+        {
+          "title": "Version names need a year",
+          "text": "RWD describes driven wheels; Dual Motor identifies two electric motors on that specified product. Performance and Long Range are version names, not one permanent set of numbers across every generation and market.",
+          "example": "Two used listings can both say Long Range while having different years and hardware. Match the exact specification before using one review for both.",
+          "paragraphs": [
+            "A version name is a starting label, not a timeless hardware specification."
+          ]
+        },
+        {
+          "title": "An update is not a new physical car",
+          "text": "A software update can change supported features. It does not physically add a different body opening, a missing seating row or a larger battery. Hardware and feature support need checking in the actual listing.",
+          "example": "A seller promises that a software update turns an older body into the redesigned generation. Ask exactly which software feature changes and which physical hardware remains.",
+          "paragraphs": [
+            "Software changes do not create missing physical body, seat or battery hardware."
+          ]
+        },
+        {
+          "title": "Read assistance-feature names carefully",
+          "text": "FSD (Supervised) is a driver-assistance product requiring active supervision. The name does not turn the car into an autonomous vehicle. For a used listing, verify current feature eligibility and subscription/purchase terms directly.",
+          "example": "A friend assumes the feature name means they can stop supervising. Read Tesla’s current description and requirements rather than taking the name literally.",
+          "paragraphs": [
+            "Tesla identifies the supervised product as requiring active driver supervision; the feature name is not autonomous-driving authorization."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Which first comparison helps choose Model 3 versus Model Y?",
+          "options": [
+            "Body, access and loading needs",
+            "Only the highest acceleration figure",
+            "Which number is bigger",
+            "Assuming both have identical rear openings"
+          ],
+          "answer": 0,
+          "why": "Sedan and crossover packaging are a different decision from motor power or battery configuration."
+        },
+        {
+          "prompt": "Does a Long Range name guarantee identical hardware across all years?",
+          "options": [
+            "No — compare the actual year and configuration",
+            "Yes, names never change hardware",
+            "Only the paint can change",
+            "It always means a petrol range extender"
+          ],
+          "answer": 0,
+          "why": "A version name is a starting label, not a timeless hardware specification."
+        },
+        {
+          "prompt": "Which change cannot happen purely through a software download?",
+          "options": [
+            "Adding a physical extra seating row",
+            "Changing supported screen behaviour",
+            "Updating supported navigation software",
+            "Changing an available software setting"
+          ],
+          "answer": 0,
+          "why": "Software changes do not create missing physical body, seat or battery hardware."
+        },
+        {
+          "prompt": "What does FSD (Supervised) still require?",
+          "options": [
+            "Active driver supervision",
+            "No driver attention",
+            "A change to a petrol engine",
+            "A larger luggage compartment"
+          ],
+          "answer": 0,
+          "why": "Tesla identifies the supervised product as requiring active driver supervision; the feature name is not autonomous-driving authorization."
+        }
+      ],
+      "source": "https://www.tesla.com/en_ca/support/fsd"
+    }
+  ],
+  "streetOrder": 0
+}

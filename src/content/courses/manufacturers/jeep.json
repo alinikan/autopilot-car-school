@@ -1,0 +1,131 @@
+{
+  "id": "jeep",
+  "name": "Jeep",
+  "country": "United States",
+  "intro": "Jeep is an American brand, not a generic word for every SUV. Learn Wrangler, Grand Cherokee and Compass first, then separate Gladiator pickups and the Wagoneer names. Utility badges, body families and electrified systems describe different things.",
+  "naming": "4xe identifies plug-in-hybrid products in relevant years, not every Jeep with four-wheel drive. Grand Cherokee L identifies a different three-row body role. Rubicon, Trailhawk and other names describe particular versions; their meaning depends on the model and year.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.jeep.ca/en",
+  "deep": true,
+  "models": [
+    {
+      "id": "wrangler",
+      "name": "Wrangler",
+      "body": "Upright off-road SUV",
+      "role": "Jeep’s upright off-road family",
+      "explanation": "Wrangler is a distinctive upright SUV family with an off-road role. Different bodies and versions have different seating, doors, equipment and powertrains.",
+      "tradeoff": "The Wrangler belongs in a comparison for jeep’s upright off-road family. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare real daily comfort, access and use before deciding that an off-road-focused vehicle is the best commuter. A 4xe badge calls for understanding plug-in charging.",
+      "memory": "Wrangler = upright off-road family",
+      "scenario": "A friend mentions a Wrangler. Explain its role as jeep’s upright off-road family, then ask for the year, powertrain and equipment before comparing it with another Jeep.",
+      "power": "Wrangler gas and 4xe plug-in-hybrid versions are different powertrains in relevant years. Door/body choices and equipment also vary. A 4xe badge is not simply another word for ordinary four-wheel drive.",
+      "source": "https://www.jeep.ca/en",
+      "knowledgeCheck": {
+        "prompt": "What does 4xe identify on the relevant Wrangler version?",
+        "correct": "A plug-in-hybrid powertrain",
+        "wrong": [
+          "Every four-wheel-drive Jeep of any year",
+          "A four-litre engine on every Jeep",
+          "Exactly four seats"
+        ],
+        "why": "4xe is an electrified-product badge; drivetrain and seating still need separate checks."
+      },
+      "photos": ["jeep-wrangler"],
+      "image": "jeep-wrangler"
+    },
+    {
+      "id": "grandcherokee",
+      "name": "Grand Cherokee",
+      "body": "SUV family",
+      "role": "Jeep everyday larger SUV",
+      "explanation": "Grand Cherokee is a different family from Wrangler. Grand Cherokee L identifies a three-row body role in the relevant range, not a simple claim that every Grand Cherokee has three rows.",
+      "tradeoff": "The Grand Cherokee belongs in a comparison for jeep everyday larger suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare exact row counts and passenger fit. Do not confuse Grand Cherokee with every product that has Cherokee somewhere in its name.",
+      "memory": "Grand Cherokee L = check the extra row",
+      "scenario": "A friend mentions a Grand Cherokee. Explain its role as jeep everyday larger suv, then ask for the year, powertrain and equipment before comparing it with another Jeep.",
+      "power": "Grand Cherokee, Grand Cherokee L and relevant 4xe products need separate configuration checks. L denotes the three-row body role; 4xe denotes a plug-in-hybrid system rather than a row count.",
+      "source": "https://www.jeep.ca/en",
+      "knowledgeCheck": {
+        "prompt": "Which name points to the three-row body role?",
+        "correct": "Grand Cherokee L",
+        "wrong": ["4xe on its own", "Every Compass", "Rubicon on any Jeep"],
+        "why": "The L family/body name and electrified powertrain badge describe different things."
+      },
+      "photos": ["jeep-grandcherokee"],
+      "image": "jeep-grandcherokee"
+    },
+    {
+      "id": "compass",
+      "name": "Compass",
+      "body": "Smaller SUV family",
+      "role": "Smaller everyday Jeep SUV",
+      "explanation": "Compass occupies a smaller SUV role than Grand Cherokee. A Jeep badge alone does not prove identical mechanical hardware or capability across the range.",
+      "tradeoff": "The Compass belongs in a comparison for smaller everyday jeep suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare dimensions, exact drivetrain and the tasks it must do. Do not substitute off-road styling for a specification of actual equipment and limits.",
+      "memory": "Compass = smaller everyday SUV",
+      "scenario": "A friend mentions a Compass. Explain its role as smaller everyday jeep suv, then ask for the year, powertrain and equipment before comparing it with another Jeep.",
+      "power": "Compass engines, driven wheels and utility equipment vary by version/year. A Jeep badge is not proof that it shares Wrangler’s hardware or capability.",
+      "source": "https://www.jeep.ca/en",
+      "knowledgeCheck": {
+        "prompt": "Does a Jeep badge prove that Compass and Wrangler have identical hardware?",
+        "correct": "No — they are different families",
+        "wrong": [
+          "Yes, every Jeep has the same body",
+          "Only the grille colour changes",
+          "Yes, every Jeep is a pickup"
+        ],
+        "why": "A shared brand does not make different families mechanically identical."
+      },
+      "photos": ["jeep-compass"],
+      "image": "jeep-compass"
+    },
+    {
+      "id": "gladiator",
+      "name": "Gladiator",
+      "body": "Pickup",
+      "role": "Jeep pickup with an open bed",
+      "explanation": "Gladiator is Jeep’s pickup family, visually related to the Wrangler world but with an open cargo bed and its own configuration. It is not merely a Wrangler with the rear seats folded.",
+      "tradeoff": "Check bed dimensions, wheelbase/parking needs and load limits. Appearance and shared brand identity cannot establish a particular truck’s payload.",
+      "compare": "Compare Gladiator with actual midsize pickups for the job, and with Wrangler only after recognizing the different cargo body.",
+      "memory": "Gladiator = Jeep pickup",
+      "scenario": "A friend needs an open bed and points to a Wrangler SUV. Explain why a separate pickup family is relevant to the load task.",
+      "power": "Engine/drivetrain and tow equipment depend on year/version. Utility trim names do not replace the configured vehicle’s ratings.",
+      "source": "https://www.jeep.ca/en",
+      "photos": ["jeep-gladiator"],
+      "image": "jeep-gladiator"
+    },
+    {
+      "id": "wagoneer",
+      "name": "Wagoneer & Grand Wagoneer",
+      "body": "Large SUV families",
+      "role": "Jeep-associated large passenger SUVs",
+      "explanation": "Wagoneer and Grand Wagoneer are large SUV family names in the Jeep-associated range. Grand Wagoneer positioning and naming can change, so use the exact product/year rather than assuming it is a trim on every Grand Cherokee.",
+      "tradeoff": "Compare seating, cargo with all rows up, total exterior size and the equipment you value. More luxury equipment is not proof of more usable seats.",
+      "compare": "Compare these exact large SUV products with Grand Cherokee L and large competitors such as Tahoe/Suburban or Expedition.",
+      "memory": "Wagoneer is not simply Grand Cherokee with a package",
+      "scenario": "A friend uses Grand Cherokee and Grand Wagoneer interchangeably. Clarify the family before discussing dimensions or price.",
+      "power": "Engine and drivetrain choices are year-specific. Check current naming and Canadian ordering availability before using an older brochure as a new-car specification.",
+      "source": "https://www.jeep.ca/en",
+      "photos": ["jeep-wagoneer", "jeep-grand-wagoneer"],
+      "image": "jeep-wagoneer"
+    },
+    {
+      "id": "cherokee-recognition",
+      "name": "Cherokee & Renegade — road recognition",
+      "body": "Earlier / changing SUV families",
+      "role": "Jeep names to recognize across model years",
+      "explanation": "Cherokee and Renegade names appear on different Jeep SUV families across years. They remain useful for road and used-car recognition even while new-car lineups change.",
+      "tradeoff": "Ask the year, condition and actual configuration. A familiar name returning in a newer product does not freeze the previous generation’s dimensions or engine.",
+      "compare": "Compare each specific generation with Compass or Grand Cherokee by role. Do not drop the word Grand and assume it is the same family.",
+      "memory": "Cherokee and Grand Cherokee are not interchangeable names",
+      "scenario": "A friend shares a used Cherokee listing. Identify its own family and year instead of reading a current Grand Cherokee specification.",
+      "power": "Powertrain availability is generation-specific. This recognition lesson does not claim all these names are currently orderable in Canada.",
+      "source": "https://www.jeep.ca/en",
+      "photos": ["jeep-cherokee", "jeep-renegade"],
+      "image": "jeep-cherokee"
+    }
+  ],
+  "comparisonAnchor": "compass",
+  "popular": true,
+  "streetOrder": 13
+}

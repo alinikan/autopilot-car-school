@@ -22,13 +22,13 @@ Without Supabase variables the app runs in guest mode. To enable account flows, 
 
 Use the app directory as the project root with:
 
-| Setting | Value |
-| --- | --- |
-| Framework | Vite |
-| Node.js | 24.x |
-| Install | `npm ci` |
-| Build | `npm run build` |
-| Output | `dist` |
+| Setting   | Value           |
+| --------- | --------------- |
+| Framework | Vite            |
+| Node.js   | 24.x            |
+| Install   | `npm ci`        |
+| Build     | `npm run build` |
+| Output    | `dist`          |
 
 Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` for the environments where accounts should work. They are public client configuration, not administrative credentials. The Vercel function and security/SPA routing headers are configured in `vercel.json`.
 

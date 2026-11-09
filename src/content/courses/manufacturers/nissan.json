@@ -1,0 +1,169 @@
+{
+  "id": "nissan",
+  "name": "Nissan",
+  "country": "Japan",
+  "intro": "Nissan is a Japanese brand with small cars, several SUV sizes, electric vehicles, pickups and the Z sports car. Learn Sentra and Rogue first, then distinguish Kicks, Pathfinder, Murano, Armada, Frontier and the electric names. Similar roles do not mean identical cars.",
+  "naming": "S, SV, SL, Platinum and other grades describe particular model versions. Rock Creek and PRO-4X names refer to particular equipment/utility contexts. A Rogue Hybrid and Rogue Plug-in Hybrid need their full model year and powertrain names; LEAF body and technology change across generations.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.nissan.ca/vehicles.html",
+  "deep": true,
+  "models": [
+    {
+      "id": "sentra",
+      "name": "Sentra",
+      "body": "Compact sedan",
+      "role": "Compact everyday Nissan sedan",
+      "explanation": "Sentra is Nissan’s compact sedan family. It has a different role from the brand’s taller SUVs even if the same household might consider both.",
+      "tradeoff": "The Sentra belongs in a comparison for compact everyday nissan sedan. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Sentra with Kicks when choosing a lower sedan versus smaller crossover, then check exact dimensions and year-specific equipment.",
+      "memory": "Sentra = compact sedan",
+      "scenario": "A friend mentions a Sentra. Explain its role as compact everyday nissan sedan, then ask for the year, powertrain and equipment before comparing it with another Nissan.",
+      "power": "Sentra’s engine and transmission depend on generation, but the compact-sedan role is separate from its equipment grade. A larger screen or wheel package does not establish a different cylinder count.",
+      "source": "https://www.nissan.ca/vehicles.html",
+      "knowledgeCheck": {
+        "prompt": "Can an SV or SR equipment badge alone establish engine displacement?",
+        "correct": "No — read the model-year engine specification",
+        "wrong": [
+          "Yes, SR always means six litres",
+          "Yes, SV means a V engine",
+          "Only the wheel diameter matters"
+        ],
+        "why": "Equipment grade and engine specification are separate pieces of the name."
+      },
+      "photos": ["nissan-sentra"],
+      "image": "nissan-sentra"
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "body": "Compact SUV family",
+      "role": "Core Nissan family SUV",
+      "explanation": "Rogue is a compact SUV family. Kicks belongs to a smaller crossover role, while Pathfinder is a larger three-row family. Do not use one Rogue review as the specification for every generation.",
+      "tradeoff": "The Rogue belongs in a comparison for core nissan family suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Rogue with Kicks for size and packaging and with Pathfinder if carrying more people is the problem.",
+      "memory": "Rogue = core family SUV",
+      "scenario": "A friend sends a gas Rogue review while discussing a separate plug-in product. You can catch the mismatch by asking for the model year and full powertrain name.",
+      "power": "Rogue gas, hybrid and plug-in-hybrid naming now requires an exact model-year check. A 2026 gas Rogue specification should not be applied to a separate Rogue Plug-in Hybrid or a newly introduced Hybrid product.",
+      "source": "https://www.nissan.ca/vehicles.html",
+      "knowledgeCheck": {
+        "prompt": "What must you specify before comparing Rogue energy systems?",
+        "correct": "The exact year and gas/hybrid/plug-in product",
+        "wrong": [
+          "Only whether it says Platinum",
+          "Whether Rogue means two cylinders",
+          "The same engine for every year"
+        ],
+        "why": "Current naming includes different powertrain products; year and full name matter."
+      },
+      "practicalDetails": [
+        "Kicks, Rogue, Murano and Pathfinder are separate SUV families. A larger-looking or more expensive SUV does not automatically carry more people; actual row and seat configurations decide that question.",
+        "Rogue naming now needs particular care with gas, Hybrid and Plug-in Hybrid products across model years. Use the full product identity before borrowing an engine or charging statement from another review."
+      ],
+      "photos": ["nissan-rogue"],
+      "image": "nissan-rogue"
+    },
+    {
+      "id": "z",
+      "name": "Z",
+      "body": "Two-seat sports coupe",
+      "role": "Nissan sports car for two",
+      "explanation": "Z is Nissan’s sports-car family, distinct from its everyday sedan and SUV range. A two-seat sports coupe solves a different job from a family car.",
+      "tradeoff": "The Z belongs in a comparison for nissan sports car for two. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Z with an exact sports-car alternative on seats, transmission and intended use. GT-R is a different performance family, not another trim of every Z.",
+      "memory": "Z = the two-seat sports car",
+      "scenario": "A friend mentions a Z. Explain its role as nissan sports car for two, then ask for the year, powertrain and equipment before comparing it with another Nissan.",
+      "power": "Z is a sports-car family with year-specific turbo engine and transmission choices. NISMO identifies a particular performance product, not every Z or every Nissan with sporty trim.",
+      "source": "https://www.nissan.ca/vehicles.html",
+      "knowledgeCheck": {
+        "prompt": "Is NISMO just another name for all Nissan vehicles?",
+        "correct": "No — it marks specific performance products",
+        "wrong": [
+          "Yes, all Nissan SUVs are NISMO cars",
+          "Only cars with red paint",
+          "It is a fuel grade"
+        ],
+        "why": "Performance product names must be distinguished from the manufacturer and ordinary grades."
+      },
+      "photos": ["nissan-z"],
+      "image": "nissan-z"
+    },
+    {
+      "id": "kicks",
+      "name": "Kicks",
+      "body": "Small crossover",
+      "role": "Nissan’s smaller everyday crossover",
+      "explanation": "Kicks is Nissan’s small crossover family. Different generations can change body size and driven-wheel availability, so a remembered early review is not a timeless specification.",
+      "tradeoff": "Test rear-seat/cargo fit and sight lines, then compare parking dimensions. A small-SUV category does not settle whether a particular version offers AWD.",
+      "compare": "Compare Kicks with Sentra for a body-style choice and Rogue for a larger SUV role. Check the actual generation before making drivetrain claims.",
+      "memory": "Kicks = small crossover; ask the generation",
+      "scenario": "A friend says Kicks can never have a particular drivetrain because of an old review. Check the current Canadian specification instead of generalizing across generations.",
+      "power": "Gas engine and driven-wheel availability are model-year-specific. A redesigned generation can change the choices offered in Canada.",
+      "source": "https://www.nissan.ca/vehicles.html",
+      "photos": ["nissan-kicks"],
+      "image": "nissan-kicks"
+    },
+    {
+      "id": "pathfinder",
+      "name": "Pathfinder",
+      "body": "Three-row SUV",
+      "role": "Nissan three-row family SUV",
+      "explanation": "Pathfinder is Nissan’s three-row SUV family. It occupies a different passenger role from Rogue and a different larger-utility comparison from Armada.",
+      "tradeoff": "Check the particular seat layout, access and luggage with all required rows upright. The third row needs a real passenger test, not just a brochure seat count.",
+      "compare": "Compare Pathfinder with Rogue if five seats suffice and with Armada for a different large-SUV role. Rock Creek is a specific version, not the name of every Pathfinder.",
+      "memory": "Pathfinder = three-row family SUV",
+      "scenario": "A family occasionally carries a larger group. Determine whether the third row and remaining luggage area work for that actual trip.",
+      "power": "Recent Pathfinder generations use a gas V6 powertrain. Exact drivetrain and tow equipment depend on configuration; maximum advertised capacity is not universal.",
+      "source": "https://www.nissan.ca/vehicles.html",
+      "photos": ["nissan-pathfinder"],
+      "image": "nissan-pathfinder"
+    },
+    {
+      "id": "murano",
+      "name": "Murano",
+      "body": "Two-row SUV",
+      "role": "Nissan larger two-row crossover",
+      "explanation": "Murano is a two-row Nissan SUV/crossover family distinct from Rogue and three-row Pathfinder. It is a useful reminder that a larger SUV need not have a third seating row.",
+      "tradeoff": "Check whether the space and seating position suit your passengers, and compare the physical size with your garage. A higher price or larger exterior does not add seats automatically.",
+      "compare": "Compare Murano with Rogue for size/role and Pathfinder if you actually need another row. Confirm the generation before using older engine information.",
+      "memory": "Murano = larger two-row role",
+      "scenario": "Someone assumes Murano carries more people than Rogue because it is positioned higher. Check actual seating rather than ranking by price.",
+      "power": "The engine changed across Murano generations. A remembered older V6 specification is not proof of a redesigned version’s engine layout.",
+      "source": "https://www.nissan.ca/vehicles.html",
+      "photos": ["nissan-murano"],
+      "image": "nissan-murano"
+    },
+    {
+      "id": "frontier",
+      "name": "Frontier",
+      "body": "Midsize pickup",
+      "role": "Nissan open-bed pickup",
+      "explanation": "Frontier is Nissan’s midsize pickup family. Cab and bed configurations matter as much as the broad pickup category when comparing passenger and cargo needs.",
+      "tradeoff": "Measure the load, check cabin access and use the configured vehicle’s load limits. A rugged trim badge is not a payload figure.",
+      "compare": "Compare Frontier with Tacoma, Ranger and other exact midsize-pickup configurations. PRO-4X is a specific utility-oriented version, not every Frontier.",
+      "memory": "Frontier = midsize pickup",
+      "scenario": "A friend wants a truck to carry equipment. Ask whether the equipment fits the bed and whether the total load fits the ratings, before comparing styling.",
+      "power": "Recent Frontier configurations use a V6 gas powertrain. Year, driven wheels and equipment determine the exact specification and capability.",
+      "source": "https://www.nissan.ca/vehicles.html",
+      "photos": ["nissan-frontier"],
+      "image": "nissan-frontier"
+    },
+    {
+      "id": "electric-armada",
+      "name": "LEAF, ARIYA & Armada",
+      "body": "Electric families / large gas SUV",
+      "role": "Nissan names that need an energy-and-body check",
+      "explanation": "LEAF and ARIYA identify Nissan electric families in relevant years; Armada is a large utility-SUV family. LEAF itself has changed body and technology across generations, so an old hatchback image is not a description of every new version.",
+      "tradeoff": "For electric examples, check charging hardware and real trip needs. For the large SUV role, check passenger layout and physical size. These are separate comparisons.",
+      "compare": "Compare a specific LEAF or ARIYA with other EVs; compare Armada with large passenger/utility SUVs. Confirm current Canadian availability rather than assuming every family is orderable.",
+      "memory": "LEAF/ARIYA = electric; Armada = large SUV",
+      "scenario": "A friend has an older LEAF charging cable and assumes it fits every newer Nissan EV. Check the exact connector and vehicle specification.",
+      "power": "Electric charging hardware can change by product and generation. A manufacturer badge does not guarantee the same connector, charging capability or propulsion system.",
+      "source": "https://www.nissan.ca/vehicles.html",
+      "photos": ["nissan-leaf", "nissan-ariya", "nissan-armada"],
+      "image": "nissan-leaf"
+    }
+  ],
+  "comparisonAnchor": "z",
+  "popular": true,
+  "streetOrder": 8
+}

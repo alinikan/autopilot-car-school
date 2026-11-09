@@ -1,6 +1,6 @@
 name: Feature or lesson request
 description: Suggest a learning improvement, activity or model-family lesson.
-title: "[Idea]: "
+title: '[Idea]: '
 body:
   - type: textarea
     id: need

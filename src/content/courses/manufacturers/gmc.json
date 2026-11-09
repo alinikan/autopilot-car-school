@@ -1,0 +1,191 @@
+{
+  "id": "gmc",
+  "name": "GMC",
+  "country": "United States",
+  "intro": "GMC is an American General Motors brand focused on pickups, SUVs and related utility vehicles. Sierra, Canyon, Terrain, Acadia and Yukon are product families. Denali and AT4 are version identities, so a friend saying only “a Denali” has not yet told you which vehicle they drive.",
+  "naming": "Denali identifies a premium version context across several families; AT4 identifies a utility/off-road-oriented version context. Sierra 1500 and Sierra HD are different truck classes. Yukon XL is a longer body. GMC electric pickups/SUVs require distinct powertrain specifications.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. Selected Canadian model families and clearly labelled recognition examples. Model year, exact version and availability must be checked before using a specification or price.",
+  "source": "https://www.gmccanada.ca/en",
+  "deep": true,
+  "popular": true,
+  "models": [
+    {
+      "id": "sierra",
+      "name": "Sierra 1500",
+      "body": "Full-size pickup",
+      "role": "GMC’s full-size everyday pickup",
+      "explanation": "Sierra 1500 is GMC’s full-size pickup family. It is separate from the smaller Canyon and the heavier-duty Sierra truck classes. Denali can be a version within the family, not the manufacturer.",
+      "tradeoff": "Check cab, bed, passenger access and actual load ratings. A premium cabin specification does not establish payload or towing for a particular configuration.",
+      "compare": "Compare exact Sierra 1500 and Silverado/F-150/Ram configurations. Do not assume related GM branding makes every body, equipment list and price identical.",
+      "memory": "Sierra = pickup; Denali = version context",
+      "scenario": "A friend says “I bought a Denali.” Ask whether they mean a Sierra pickup, a Yukon SUV or another GMC family.",
+      "power": "Gas/diesel engine, drive and load configurations depend on year/version. Sierra EV is a distinct electric product, not an engine-size suffix.",
+      "source": "https://www.gmccanada.ca/en",
+      "photos": ["gmc-sierra"],
+      "image": "gmc-sierra"
+    },
+    {
+      "id": "canyon",
+      "name": "Canyon",
+      "body": "Midsize pickup",
+      "role": "GMC’s smaller pickup family",
+      "explanation": "Canyon is GMC’s midsize pickup family, smaller in role than Sierra 1500. It fills an open-bed transport job with its own configuration choices.",
+      "tradeoff": "Check bed size, load limits and total vehicle length. A smaller truck can suit one job and fail another; category alone does not decide.",
+      "compare": "Compare Canyon with exact Ranger, Tacoma, Frontier or Colorado configurations for the actual load and parking task.",
+      "memory": "Canyon = midsize; Sierra = full-size pickup",
+      "scenario": "A driver needs occasional open-bed transport but has limited parking. Measure both the load and the truck before moving up a size.",
+      "power": "Engine and drivetrain depend on model year; AT4/AT4X and other version names need their own equipment/capability check.",
+      "source": "https://www.gmccanada.ca/en",
+      "photos": ["gmc-canyon"],
+      "image": "gmc-canyon"
+    },
+    {
+      "id": "terrain",
+      "name": "Terrain",
+      "body": "Compact SUV",
+      "role": "GMC’s smaller everyday SUV",
+      "explanation": "Terrain is GMC’s compact SUV family. It is a different passenger/cargo role from a Sierra pickup and a smaller SUV role than Acadia or Yukon.",
+      "tradeoff": "Try rear-seat and hatch fit, check overall dimensions and identify the exact driven-wheel configuration. SUV styling is not a guarantee of one drivetrain.",
+      "compare": "Compare Terrain with Acadia if another seating row is a real requirement. Denali is an equipment/version context, not a different body family.",
+      "memory": "Terrain = compact GMC SUV",
+      "scenario": "A friend wants a GMC for ordinary commuting. Begin with body and space needs rather than assume every GMC is a large truck.",
+      "power": "Engine/drivetrain change by generation. Use the exact Canadian year/version rather than a family-wide engine assumption.",
+      "source": "https://www.gmccanada.ca/en",
+      "photos": ["gmc-terrain"],
+      "image": "gmc-terrain"
+    },
+    {
+      "id": "acadia",
+      "name": "Acadia",
+      "body": "Three-row SUV",
+      "role": "GMC’s three-row crossover",
+      "explanation": "Acadia is GMC’s three-row crossover/SUV family. Redesigned generations can change size and mechanical specification while keeping the name.",
+      "tradeoff": "Test third-row use, access and luggage together. An older Acadia’s dimensions should not be used as the measurements of a redesigned example.",
+      "compare": "Compare Acadia with Terrain for a smaller/two-row need and with Yukon for a different larger utility-SUV role.",
+      "memory": "Acadia = three-row crossover",
+      "scenario": "A household wants a third row without assuming they need GMC’s largest SUV. Include Acadia and test the actual people/luggage fit.",
+      "power": "Powertrain and drive equipment are generation-specific; do not transfer older V6 specifications to a newer version without checking.",
+      "source": "https://www.gmccanada.ca/en",
+      "photos": ["gmc-acadia"],
+      "image": "gmc-acadia"
+    },
+    {
+      "id": "yukon",
+      "name": "Yukon & Yukon XL",
+      "body": "Large SUV families",
+      "role": "GMC’s large passenger/utility SUV",
+      "explanation": "Yukon is GMC’s large SUV family; Yukon XL occupies the longer-body role. Denali versions add a premium equipment context rather than a universal extra row.",
+      "tradeoff": "Check garage length, third-row fit and luggage with seats upright. A longer body can help bags but complicate ordinary parking.",
+      "compare": "Compare Yukon and Yukon XL with exact Tahoe/Suburban and Expedition versions on body length, passenger use and configuration-specific capability.",
+      "memory": "Yukon XL = longer body; Denali = version context",
+      "scenario": "A friend needs luggage behind the third row. Compare real upright-seat load space rather than maximum space with the row folded.",
+      "power": "Engine, drivetrain and tow equipment determine exact capability. A Denali badge does not replace the configured vehicle’s load ratings.",
+      "source": "https://www.gmccanada.ca/en",
+      "photos": ["gmc-yukon", "gmc-yukon-xl"],
+      "image": "gmc-yukon"
+    },
+    {
+      "id": "electric",
+      "name": "Sierra EV & HUMMER EV",
+      "body": "Electric pickup / SUV families",
+      "role": "GMC electric utility vehicles",
+      "explanation": "Sierra EV and HUMMER EV identify GMC battery-electric products. HUMMER EV includes different pickup/SUV body contexts, so the full name matters.",
+      "tradeoff": "Consider actual size, load job and charging access. Distinctive design or large power figures do not settle whether a vehicle fits a parking space or trip routine.",
+      "compare": "Compare exact electric truck/SUV configurations. Sierra EV should not be described using the gas Sierra’s engine or fuel-consumption figure.",
+      "memory": "EV identifies energy; pickup/SUV identifies the body",
+      "scenario": "A friend expects every GMC pickup to use diesel. Use an exact Sierra EV as a counterexample and explain its charging routine.",
+      "power": "Battery-electric; drive/battery and capability depend on configuration. Towing and load alter trip energy needs.",
+      "source": "https://www.gmccanada.ca/en",
+      "photos": ["gmc-sierra-ev", "gmc-hummer"],
+      "image": "gmc-sierra-ev"
+    }
+  ],
+  "workshops": [
+    {
+      "id": "denali-and-families",
+      "title": "GMC: a Denali of what?",
+      "subtitle": "Separate premium grades, SUV bodies and truck classes.",
+      "pages": [
+        {
+          "title": "Denali does not identify the whole vehicle",
+          "text": "Denali is used in a premium version context across GMC families. A Sierra Denali pickup and a Yukon Denali SUV solve different jobs.",
+          "example": "Ask “Which family?” before you try to picture or compare the vehicle.",
+          "paragraphs": ["A shared grade name is not a complete product-family/body description."]
+        },
+        {
+          "title": "Terrain versus Acadia",
+          "text": "Terrain is the smaller compact-SUV role; Acadia has a three-row crossover role. An equipment upgrade does not turn one body family into the other.",
+          "example": "Test the required passenger arrangement rather than assuming a higher-grade Terrain gains a third row.",
+          "paragraphs": [
+            "Physical seat/body requirements must be met by the actual model configuration."
+          ]
+        },
+        {
+          "title": "Sierra 1500 versus HD",
+          "text": "Truck class and configuration are separate from Denali or AT4 grade names. Check the actual vehicle’s labels and documentation for load/tow requirements.",
+          "example": "Match cab/bed/engine/equipment before comparing headline maximum ratings.",
+          "paragraphs": [
+            "A utility-oriented grade does not replace the actual configured vehicle’s load ratings."
+          ]
+        },
+        {
+          "title": "EV is a propulsion distinction",
+          "text": "Sierra EV and HUMMER EV require electric powertrain and charging checks. Gas Sierra engine figures do not describe them.",
+          "example": "Compare work/route/charging needs alongside passenger and bed space.",
+          "paragraphs": [
+            "Distinct gas and electric products need their own mechanical specifications."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Is Denali enough to identify whether a GMC is a pickup or SUV?",
+          "options": [
+            "No — ask the family name",
+            "Yes, it always means a pickup",
+            "Yes, it always means a small SUV",
+            "It tells the cylinder count"
+          ],
+          "answer": 0,
+          "why": "A shared grade name is not a complete product-family/body description."
+        },
+        {
+          "prompt": "What needs a different body/family rather than just more equipment?",
+          "options": [
+            "A seating-row requirement the existing body does not offer",
+            "A different sound-system preference",
+            "A preferred paint colour",
+            "A different floor-mat style"
+          ],
+          "answer": 0,
+          "why": "Physical seat/body requirements must be met by the actual model configuration."
+        },
+        {
+          "prompt": "Can AT4 alone tell you a particular truck’s payload?",
+          "options": [
+            "No — read the configured vehicle’s ratings",
+            "Yes, it is a universal kilogram rating",
+            "Only if the wheels are black",
+            "AT4 is a fuel type"
+          ],
+          "answer": 0,
+          "why": "A utility-oriented grade does not replace the actual configured vehicle’s load ratings."
+        },
+        {
+          "prompt": "Which specification needs a different source for Sierra EV versus gas Sierra?",
+          "options": [
+            "The propulsion/battery/charging system",
+            "The manufacturer’s brand spelling",
+            "Whether a pickup can have an open bed",
+            "The owner’s preferred colour"
+          ],
+          "answer": 0,
+          "why": "Distinct gas and electric products need their own mechanical specifications."
+        }
+      ],
+      "source": "https://www.gmccanada.ca/en"
+    }
+  ],
+  "streetOrder": 10,
+  "comparisonAnchor": "electric"
+}

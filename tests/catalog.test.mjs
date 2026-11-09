@@ -1,4 +1,59 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {parseCSV,mapRows} from '../api/catalog.js';
-test('quoted commas, quotes and CRLF are preserved',()=>assert.deepEqual(parseCSV('a,"b,c","d""e"\r\n1,2,3'),[['a','b,c','d"e'],['1','2','3']]));
-test('electric and plug-in fields cannot be mistaken for gasoline columns',()=>{const b=mapRows([['2026','Brand','EV','SUV','150','A1','B','10','12','11','1','2','1.2','400']], 'bev',2025)[0];assert.equal(b.kwh,'11');assert.equal(b.range,'400');assert.equal(b.engine,null);const p=mapRows([['2026','Brand','PHEV','SUV','90','2.0','4','AV','B','2','60','3','X','6','7','6.5']],'phev',2025)[0];assert.equal(p.engine,'2.0');assert.equal(p.cylinders,'4');assert.equal(p.range,'60');assert.equal(p.gasCombined,'6.5');assert.equal(p.combined,null)});
-test('headers and old model years are skipped',()=>assert.equal(mapRows([['Model year','Make'],['2020','A','B']], 'gas',2025).length,0));
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { parseCSV, mapRows } from '../api/catalog.js';
+test('quoted commas, quotes and CRLF are preserved', () =>
+  assert.deepEqual(parseCSV('a,"b,c","d""e"\r\n1,2,3'), [
+    ['a', 'b,c', 'd"e'],
+    ['1', '2', '3'],
+  ]));
+test('electric and plug-in fields cannot be mistaken for gasoline columns', () => {
+  const b = mapRows(
+    [['2026', 'Brand', 'EV', 'SUV', '150', 'A1', 'B', '10', '12', '11', '1', '2', '1.2', '400']],
+    'bev',
+    2025,
+  )[0];
+  assert.equal(b.kwh, '11');
+  assert.equal(b.range, '400');
+  assert.equal(b.engine, null);
+  const p = mapRows(
+    [
+      [
+        '2026',
+        'Brand',
+        'PHEV',
+        'SUV',
+        '90',
+        '2.0',
+        '4',
+        'AV',
+        'B',
+        '2',
+        '60',
+        '3',
+        'X',
+        '6',
+        '7',
+        '6.5',
+      ],
+    ],
+    'phev',
+    2025,
+  )[0];
+  assert.equal(p.engine, '2.0');
+  assert.equal(p.cylinders, '4');
+  assert.equal(p.range, '60');
+  assert.equal(p.gasCombined, '6.5');
+  assert.equal(p.combined, null);
+});
+test('headers and old model years are skipped', () =>
+  assert.equal(
+    mapRows(
+      [
+        ['Model year', 'Make'],
+        ['2020', 'A', 'B'],
+      ],
+      'gas',
+      2025,
+    ).length,
+    0,
+  ));
