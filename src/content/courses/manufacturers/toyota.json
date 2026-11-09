@@ -1,0 +1,320 @@
+{
+  "id": "toyota",
+  "name": "Toyota",
+  "country": "Japan",
+  "intro": "Toyota is a Japanese brand with everyday cars, several SUV sizes, minivans, pickups and sports cars. Learn Corolla, Camry and RAV4 first, then place the neighbouring families around them. Hybrid describes how a car is powered; it does not describe its shape or passenger capacity.",
+  "naming": "Corolla, Camry and RAV4 are families. LE, XLE, SE, XSE and Limited are version/equipment labels used differently across models. GR identifies particular performance products. Hybrid and Plug-in Hybrid are different systems; Prime is an older plug-in badge you may hear in conversation.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.toyota.ca/en/",
+  "deep": true,
+  "models": [
+    {
+      "id": "corolla",
+      "name": "Corolla",
+      "body": "Compact car family",
+      "role": "Compact everyday Toyota car",
+      "explanation": "Corolla is Toyota’s compact passenger-car family, with sedan and hatchback forms depending on year and version. Corolla Cross is a separately named SUV family, not just the hatchback’s full name.",
+      "tradeoff": "The Corolla belongs in a comparison for compact everyday toyota car. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Corolla with Camry for different sedan roles; compare with Corolla Cross for an SUV body. GR Corolla is a distinct performance version, not an equipment package on every Corolla.",
+      "memory": "Corolla = compact car; Cross = check the SUV",
+      "scenario": "Sam wants a compact commuter and occasionally carries a large music case. Compare the actual sedan/hatch openings and rear-seat needs before moving to Corolla Cross or a higher equipment grade.",
+      "power": "Corolla sedans have offered conventional gas and hybrid versions in Canada; hatchback and GR Corolla versions have different specifications. A conventional hybrid does not use an external charging routine. Check whether AWD is actually offered on the chosen year/body/powertrain.",
+      "source": "https://www.toyota.ca/en/",
+      "knowledgeCheck": {
+        "prompt": "Does every Corolla body use the same hybrid drivetrain?",
+        "correct": "No — body, year and version need separate checks",
+        "wrong": [
+          "Yes, all Corollas are plug-in hybrids",
+          "Yes, hatchback means AWD",
+          "Only the badge colour changes"
+        ],
+        "why": "Sedan, hatchback, hybrid and GR products are different configurations."
+      },
+      "image": "toyota-corolla",
+      "practicalDetails": [
+        "Sedan and hatchback are different loading arrangements: the sedan has a separate trunk lid, while a hatch opens with the rear window. A bulky object can fit one opening and not another even when quoted luggage volumes seem close.",
+        "Keep the four names separate in conversation: Corolla, Corolla Hatchback, Corolla Cross and GR Corolla. Cross changes the family/body role; GR identifies a distinct performance product. A trim word such as SE does not settle all of those differences."
+      ],
+      "photos": ["toyota-corolla"]
+    },
+    {
+      "id": "camry",
+      "name": "Camry",
+      "body": "Midsize sedan",
+      "role": "Larger everyday Toyota sedan",
+      "explanation": "Camry occupies a larger sedan role than Corolla. It is still a lower passenger car with a separate trunk, rather than a taller SUV. The same family name has continued across many generations.",
+      "tradeoff": "The Camry belongs in a comparison for larger everyday toyota sedan. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Camry with Corolla on actual space, comfort, efficiency and costs. Compare with RAV4 if the key question is sedan versus SUV.",
+      "memory": "Camry = larger sedan",
+      "scenario": "Two friends both say they drive a Camry. One has an older gas example and one a newer hybrid. You can recognize the family while still needing each year and powertrain to compare their cars.",
+      "power": "The 2026 Canadian Camry range uses hybrid power. Older Camrys on the road include different gas engines, so the family name alone cannot identify the system. A conventional hybrid recharges through its own operation rather than a household plug.",
+      "source": "https://www.toyota.ca/en/",
+      "knowledgeCheck": {
+        "prompt": "A current Camry is a conventional hybrid. What charging routine should you expect?",
+        "correct": "No routine external plugging-in",
+        "wrong": [
+          "A required DC fast-charge stop after every trip",
+          "Petrol is never used",
+          "The same battery-only routine as a Model 3"
+        ],
+        "why": "A conventional hybrid combines a combustion engine with electric assistance without routine external charging."
+      },
+      "practicalDetails": [
+        "Camry and Corolla are different sedan families. Test adult rear-seat fit, the trunk opening and the exterior dimensions you must park; do not treat a higher Corolla equipment grade as the same thing as a different-size Camry body.",
+        "For an older used Camry, ask the year and exact engine before discussing fuel or cylinder count. A current hybrid-range description is not a specification for every Camry already on BC roads."
+      ],
+      "photos": ["toyota-camry"],
+      "image": "toyota-camry"
+    },
+    {
+      "id": "rav4",
+      "name": "RAV4",
+      "body": "Compact SUV family",
+      "role": "Core Toyota family SUV",
+      "explanation": "RAV4 is Toyota’s compact SUV family. Its job is different from the Corolla sedan even if both are everyday household vehicles. A new generation can change which hybrid systems are offered.",
+      "tradeoff": "The RAV4 belongs in a comparison for core toyota family suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare RAV4 with Corolla Cross for different SUV sizes and with Highlander/Grand Highlander for three-row needs. Do not confuse a regular hybrid with a plug-in version.",
+      "memory": "RAV4 = the family SUV shelf",
+      "scenario": "A family compares RAV4 and Highlander because grandparents sometimes join them. First check the actual passenger arrangement and bags; only then discuss which grade, engine/electric system and price fit.",
+      "power": "Toyota’s Canadian 2026 RAV4 range is hybrid and plug-in hybrid; older gas-only RAV4s remain common recognition examples. The plug-in version has an externally rechargeable battery. Do not transfer an older engine specification to the redesigned model year.",
+      "source": "https://www.toyota.ca/en/",
+      "knowledgeCheck": {
+        "prompt": "Which detail matters when discussing a 2026 Canadian RAV4?",
+        "correct": "Whether it is Hybrid or Plug-in Hybrid",
+        "wrong": [
+          "Whether RAV4 means four electric motors",
+          "Whether every old RAV4 has the new drivetrain",
+          "Whether an XLE badge guarantees a charging port"
+        ],
+        "why": "The new Canadian range distinguishes hybrid and plug-in systems; the model year matters."
+      },
+      "image": "toyota-rav4",
+      "practicalDetails": [
+        "Start with whether a two-row family SUV meets the passenger and loading task. If more than five usable places are a real requirement, a higher equipment grade on a five-seat RAV4 cannot create a third row.",
+        "Then compare the exact energy system. A conventional hybrid and plug-in hybrid require different charging discussions. A household with reliable charging and one without it should not automatically make the same powertrain choice."
+      ],
+      "photos": ["toyota-rav4"]
+    },
+    {
+      "id": "corolla-cross",
+      "name": "Corolla Cross",
+      "body": "Smaller SUV",
+      "role": "Toyota’s smaller everyday SUV",
+      "explanation": "Corolla Cross is an SUV family, separate from Corolla sedan and hatchback. The shared Corolla name is a clue to its place in the everyday range, not proof of an identical body or powertrain.",
+      "tradeoff": "Test its rear-seat and luggage fit against your needs. Smaller SUVs can be useful for access and parking, but an SUV label alone cannot establish that a large box fits better than in a hatchback.",
+      "compare": "Compare Corolla Cross with RAV4 for different SUV sizes and with Corolla for a lower body. Ask whether the specific Cross is gas or hybrid.",
+      "memory": "Cross = the SUV, not the Corolla hatchback",
+      "scenario": "A friend says “Corolla,” but the photo shows a taller crossover. Ask whether they mean Corolla Cross before comparing it with a Civic.",
+      "power": "Gas and hybrid configurations depend on year. A hybrid’s drive layout and equipment must be checked for that exact Canadian version.",
+      "source": "https://www.toyota.ca/en/",
+      "photos": ["toyota-corolla-cross"],
+      "image": "toyota-corolla-cross"
+    },
+    {
+      "id": "prius",
+      "name": "Prius & Prius Plug-in Hybrid",
+      "body": "Hybrid liftback families",
+      "role": "Toyota’s dedicated hybrid-car names",
+      "explanation": "Prius is a low liftback family associated with hybrid power. Prius Plug-in Hybrid, previously called Prius Prime in relevant years, adds an externally rechargeable battery. The similar body does not erase the difference.",
+      "tradeoff": "A plug-in version can use charging for part of the routine, but only if charging fits the owner’s life. Check the exact cabin and luggage arrangement as well as energy use.",
+      "compare": "Compare Prius with Corolla Hybrid for different passenger-car packaging, and compare Prius hybrid versus plug-in using charging access and actual price.",
+      "memory": "Prius = liftback; Plug-in/Prime adds a charging question",
+      "scenario": "Two neighbours have similar-looking Priuses, but only one plugs in. Identify the exact version instead of assuming one owner is using the car incorrectly.",
+      "power": "Conventional hybrid and plug-in hybrid combine an engine and electric assistance in different ways. Neither is the same system as a battery-only Tesla.",
+      "source": "https://www.toyota.ca/en/",
+      "photos": ["toyota-prius", "toyota-prius-plugin"],
+      "image": "toyota-prius"
+    },
+    {
+      "id": "highlander",
+      "name": "Highlander",
+      "body": "Three-row crossover",
+      "role": "Toyota three-row family crossover",
+      "explanation": "Highlander is a Toyota crossover family with a three-row role. It is distinct from RAV4 and from the separately named Grand Highlander. A third row must be judged with the required passengers and luggage in place.",
+      "tradeoff": "Try access to the back row and see what space remains behind it. A nominal seat count does not tell you whether adults, child seats and bags work together for your trip.",
+      "compare": "Compare Highlander with RAV4 when deciding whether a third row is needed, and with Grand Highlander or Sienna when rear-row use is frequent.",
+      "memory": "Highlander = three-row crossover",
+      "scenario": "A driver occasionally carries grandparents and children together. Their checklist starts with access, fit and luggage, not a bigger engine badge.",
+      "power": "Gas/hybrid availability depends on model year. A hybrid badge does not guarantee plug-in charging or a particular tow rating.",
+      "source": "https://www.toyota.ca/en/",
+      "photos": ["toyota-highlander"],
+      "image": "toyota-highlander"
+    },
+    {
+      "id": "grand-highlander",
+      "name": "Grand Highlander",
+      "body": "Larger three-row crossover",
+      "role": "Toyota’s room-focused larger crossover",
+      "explanation": "Grand Highlander is a separate Toyota family with a larger three-row role than Highlander. Grand is part of the model name, not a trim you can add to any Highlander.",
+      "tradeoff": "Check the actual third-row fit and load space, then compare the larger exterior with the places you park. More room has a physical-size trade-off.",
+      "compare": "Compare Grand Highlander with Highlander for passenger/cargo needs and with Sienna for minivan access and layout. Hybrid and Hybrid MAX versions are separate mechanical choices.",
+      "memory": "Grand Highlander = separate larger family",
+      "scenario": "Your friend says their Highlander became a Grand Highlander by choosing a premium package. Explain that these are separate families.",
+      "power": "Gas, conventional hybrid and Hybrid MAX configurations in relevant years have different performance and efficiency. Hybrid MAX is not simply the standard hybrid’s leather-seat package.",
+      "source": "https://www.toyota.ca/en/",
+      "photos": ["toyota-grand-highlander"],
+      "image": "toyota-grand-highlander"
+    },
+    {
+      "id": "sienna",
+      "name": "Sienna",
+      "body": "Minivan",
+      "role": "Toyota people carrier with sliding rear doors",
+      "explanation": "Sienna is Toyota’s minivan family. Sliding rear doors and a long passenger-focused cabin create a different use case from an SUV. A minivan is a body type, not a judgement about the driver.",
+      "tradeoff": "Test child-seat access, third-row access and bags with all required seats in place. Sliding doors can be relevant in a tight parking space, but the overall van still needs to fit the garage.",
+      "compare": "Compare Sienna with Highlander and Grand Highlander when passenger access matters. More SUV-like styling does not automatically provide a better people-carrying solution.",
+      "memory": "Sienna = sliding-door people carrier",
+      "scenario": "A family loads children several times a day in narrow parking spots. Include door access in the comparison rather than considering only seat count.",
+      "power": "Recent Canadian Sienna generations use hybrid power. Older Siennas can have different engines, so ask for the year. AWD availability is a separate version detail.",
+      "source": "https://www.toyota.ca/en/",
+      "photos": ["toyota-sienna"],
+      "image": "toyota-sienna"
+    },
+    {
+      "id": "tacoma",
+      "name": "Tacoma",
+      "body": "Midsize pickup",
+      "role": "Toyota’s smaller pickup family",
+      "explanation": "Tacoma is Toyota’s midsize pickup family. Tundra is the larger pickup family; TRD is not the name of every Toyota truck. Cab, bed and mechanical configuration define the particular truck.",
+      "tradeoff": "A pickup must meet the load job, not just look capable. Verify payload and towing for the exact configuration and keep the physical bed dimensions separate from the cabin size.",
+      "compare": "Compare Tacoma with Tundra on actual load, bed and parking requirements. Do not assume the highest advertised capacity applies to the truck in a particular listing.",
+      "memory": "Tacoma = midsize pickup; Tundra = larger pickup",
+      "scenario": "A driver carries long equipment but parks in a small stall. Bed length and total vehicle length need checking together.",
+      "power": "Current-generation engine/hybrid choices differ from older Tacomas. An i-FORCE MAX hybrid badge describes a powertrain; it is not the truck’s payload rating.",
+      "source": "https://www.toyota.ca/en/",
+      "photos": ["toyota-tacoma"],
+      "image": "toyota-tacoma"
+    },
+    {
+      "id": "tundra",
+      "name": "Tundra",
+      "body": "Full-size pickup",
+      "role": "Toyota’s full-size pickup",
+      "explanation": "Tundra is Toyota’s full-size pickup family. A full-size class offers a different starting role from Tacoma, but the exact cab, bed and engine still determine the configuration.",
+      "tradeoff": "Larger trucks require a realistic parking and load assessment. Optional equipment and passengers can affect how much payload remains; the badge does not replace the vehicle’s actual labels.",
+      "compare": "Compare Tundra with Tacoma and exact F-150/Silverado/Sierra/Ram configurations, matching the job and year rather than comparing only base prices.",
+      "memory": "Tundra = full-size Toyota pickup",
+      "scenario": "Two Tundras have different bed and cab layouts. Treat them as different configurations before claiming the same load capacity.",
+      "power": "Gas and hybrid versions have different mechanical specifications. A hybrid pickup is not automatically designed around the same efficiency priorities as a small hybrid commuter.",
+      "source": "https://www.toyota.ca/en/",
+      "photos": ["toyota-tundra"],
+      "image": "toyota-tundra"
+    },
+    {
+      "id": "4runner",
+      "name": "4Runner & Land Cruiser",
+      "body": "Utility SUV families",
+      "role": "Toyota utility-focused SUV names",
+      "explanation": "4Runner and Land Cruiser are distinct Toyota SUV families with utility/off-road roles. They are separate from the brand’s everyday crossover names, even when shoppers compare them for family use.",
+      "tradeoff": "Capability-oriented hardware may be useful for a specific job, but test daily access, comfort, size and luggage needs. Marketing about adventure does not specify the limits of every version.",
+      "compare": "Compare these exact families with Highlander for a different road/utility balance. Verify seat configuration and tow limits; do not infer them from a rugged silhouette.",
+      "memory": "4Runner/Land Cruiser = utility families, not RAV4 trims",
+      "scenario": "A friend never leaves paved roads but likes the look. Help them separate the styling preference from a need for particular off-road hardware.",
+      "power": "Powertrains and architectures change across generations. A current hybrid specification should not be applied to an older V6/V8 example you see on the road.",
+      "source": "https://www.toyota.ca/en/",
+      "photos": ["toyota-4runner", "toyota-landcruiser"],
+      "image": "toyota-4runner"
+    },
+    {
+      "id": "electric",
+      "name": "bZ / bZ4X & Toyota electric names",
+      "body": "Electric SUV families",
+      "role": "Toyota battery-electric SUV recognition",
+      "explanation": "Toyota’s bZ/bZ4X names identify battery-electric SUV products in relevant years. Naming changes are a reason to ask the year, not assume that every Toyota with a battery is the same sort of hybrid.",
+      "tradeoff": "A battery-electric vehicle needs a charging plan. Compare the exact battery/range and charging specification, cabin and trips, rather than assuming Toyota’s conventional-hybrid routine applies.",
+      "compare": "Compare a battery-electric Toyota with RAV4 Hybrid or Plug-in Hybrid by energy system first. bZ/bZ4X is not simply the electric trim name on a Corolla.",
+      "memory": "bZ/bZ4X = battery-electric, not a conventional hybrid",
+      "scenario": "A friend wants to put petrol in an all-electric Toyota as a backup. Explain why battery-electric and plug-in hybrid are different systems.",
+      "power": "Battery-electric vehicles use motors and an externally charged battery, without a petrol engine for backup. Exact names and availability must be confirmed for the Canadian model year.",
+      "source": "https://www.toyota.ca/en/",
+      "photos": ["toyota-bz4x"],
+      "image": "toyota-bz4x"
+    }
+  ],
+  "comparisonAnchor": "rav4",
+  "popular": true,
+  "workshops": [
+    {
+      "id": "families-hybrids",
+      "title": "Toyota: decode the everyday conversation",
+      "subtitle": "Hybrid names, seating rows and pickup sizes.",
+      "pages": [
+        {
+          "title": "Corolla versus Corolla Cross",
+          "text": "Corolla names the lower-car family; Corolla Cross names a different SUV family. Similar names are a useful memory connection, but not proof of identical dimensions, seats or engines.",
+          "example": "A friend says they prefer the Cross for a higher seat. Understand that body preference before comparing the exact version’s price.",
+          "paragraphs": [
+            "Cross identifies the separate SUV family, not a trim that turns every Corolla into an SUV."
+          ]
+        },
+        {
+          "title": "Hybrid versus Plug-in Hybrid",
+          "text": "Conventional hybrids combine an engine and electric assistance without a routine external plug. A plug-in hybrid adds an externally rechargeable battery. Older Prime naming is worth recognizing in used listings.",
+          "example": "A buyer has no reliable charger. Their comparison between a conventional hybrid and a plug-in should include the actual energy routine and price difference.",
+          "paragraphs": [
+            "Plug-in refers to an externally rechargeable battery; it does not mean the vehicle has no petrol engine."
+          ]
+        },
+        {
+          "title": "Count rows before comparing luxury",
+          "text": "RAV4, Highlander, Grand Highlander and Sienna do different passenger jobs. An extra row and sliding doors are physical packaging distinctions. A premium trim is an equipment distinction.",
+          "example": "A family needs more than five places. A higher-grade RAV4 does not solve that requirement just because it costs more.",
+          "paragraphs": [
+            "Passenger requirements must be met by the actual body/seat layout before optional luxury equipment matters."
+          ]
+        },
+        {
+          "title": "Tacoma versus Tundra",
+          "text": "Tacoma and Tundra are different pickup-size families. Payload and towing are configuration-specific ratings, not a simple ratio based on model size.",
+          "example": "Measure the bed/load and parking space; then read ratings for the actual cab/bed/engine configuration.",
+          "paragraphs": [
+            "Truck class, configuration and actual load labels matter more than a family-wide maximum."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Which Toyota family is the SUV?",
+          "options": ["Corolla Cross", "Corolla Sedan", "Prius liftback", "Camry sedan"],
+          "answer": 0,
+          "why": "Cross identifies the separate SUV family, not a trim that turns every Corolla into an SUV."
+        },
+        {
+          "prompt": "Which system is designed for routine external charging?",
+          "options": [
+            "Plug-in Hybrid",
+            "Conventional Hybrid alone",
+            "Every gas Toyota",
+            "A larger wheel package"
+          ],
+          "answer": 0,
+          "why": "Plug-in refers to an externally rechargeable battery; it does not mean the vehicle has no petrol engine."
+        },
+        {
+          "prompt": "Which question comes first for a larger passenger group?",
+          "options": [
+            "The actual seating configuration and access",
+            "Which badge looks most expensive",
+            "Whether the wheels are larger",
+            "Whether every SUV has the same rows"
+          ],
+          "answer": 0,
+          "why": "Passenger requirements must be met by the actual body/seat layout before optional luxury equipment matters."
+        },
+        {
+          "prompt": "Can a larger-family badge alone prove a truck’s load rating?",
+          "options": [
+            "No — check the configured vehicle’s ratings",
+            "Yes, every larger truck has identical limits",
+            "Only the grille determines it",
+            "The model name directly states kilograms"
+          ],
+          "answer": 0,
+          "why": "Truck class, configuration and actual load labels matter more than a family-wide maximum."
+        }
+      ],
+      "source": "https://www.toyota.ca/en/"
+    }
+  ],
+  "streetOrder": 1
+}

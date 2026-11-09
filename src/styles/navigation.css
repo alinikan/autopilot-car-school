@@ -1,0 +1,22 @@
+/* Keep every navigation/account control reachable in short windows. */
+.sidebar {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.sidebar-bottom {
+  flex-shrink: 0;
+}
+@media (max-height: 800px) {
+  .sidebar-bottom {
+    padding-top: 16px;
+  }
+  .sidebar-course {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+  }
+  .profile {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+}

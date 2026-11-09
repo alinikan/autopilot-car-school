@@ -1,14 +1,135 @@
-const META='https://open.canada.ca/data/api/action/package_show?id=98f1a129-f628-4ce4-b24d-6f16bf24dd64';
-const SOURCE='https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64';
+const META =
+  'https://open.canada.ca/data/api/action/package_show?id=98f1a129-f628-4ce4-b24d-6f16bf24dd64';
+const SOURCE = 'https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64';
 // RFC 4180 quoted fields, including embedded commas, quotes and newlines.
-export function parseCSV(text){const rows=[];let row=[],cell='',quoted=false;for(let i=0;i<text.length;i++){const c=text[i];if(c==='"'){if(quoted&&text[i+1]==='"'){cell+='"';i++}else quoted=!quoted}else if(c===','&&!quoted){row.push(cell);cell=''}else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cell);if(row.some(x=>x))rows.push(row);row=[];cell=''}else cell+=c}if(cell||row.length){row.push(cell);rows.push(row)}return rows}
-export function mapRows(rows,kind,minYear=1995){return rows.filter(r=>/^\d{4}$/.test(r[0]?.trim())&&+r[0]>=minYear).map(r=>{const bev=kind==='bev',phev=kind==='phev';return {year:+r[0],make:r[1]?.trim(),model:r[2]?.trim(),body:r[3]?.trim(),engine:bev?null:phev?r[5]:r[4],cylinders:bev?null:phev?r[6]:r[5],transmission:bev?r[5]:phev?r[7]:r[6],fuel:bev?'Electric':phev?'Plug-in hybrid':({X:'Regular gasoline',Z:'Premium gasoline',D:'Diesel',E:'Ethanol E85',N:'Natural gas'}[r[7]]||r[7]),city:bev||phev?null:r[8],highway:bev||phev?null:r[9],combined:bev||phev?null:r[10],kwh:bev?r[9]:null,range:bev?r[13]:phev?r[10]:null,motor:bev||phev?r[4]:null,gasCombined:phev?r[15]:null}}).filter(v=>v.make&&v.model)}
-export default async function handler(req,res){if(req.method!=='GET')return res.status(405).json({error:'Method not allowed'});try{
- const response=await fetch(META,{signal:AbortSignal.timeout(12000)});if(!response.ok)throw Error('Metadata unavailable');const meta=(await response.json()).result;
- const english=meta.resources.filter(r=>r.format==='CSV'&&r.language?.includes('en'));
- const yearResources=english.filter(r=>/^\d{4} Fuel Consumption Ratings/.test(r.name)).sort((a,b)=>+b.name.slice(0,4)-+a.name.slice(0,4));
- const newest=+yearResources[0].name.slice(0,4);const url=new URL(req.url,'https://autopilot.example');const history=url.searchParams.get('history')==='1';
- const chosen=history?english.filter(r=>/^\d{4} Fuel Consumption Ratings/.test(r.name)||/^\d{4}-\d{4} Fuel Consumption Ratings/.test(r.name)||/^(Battery-electric|Plug-in hybrid)/.test(r.name)):[...yearResources.slice(0,2),...english.filter(r=>/^(Battery-electric|Plug-in hybrid)/.test(r.name))];
- const groups=await Promise.all(chosen.map(async r=>{const address=new URL(r.url);if(address.protocol!=='https:'||!(address.hostname==='open.canada.ca'||address.hostname.endsWith('.gc.ca')))throw Error('Unexpected source');const result=await fetch(address,{signal:AbortSignal.timeout(18000)});if(!result.ok)throw Error('Source unavailable');const bytes=await result.arrayBuffer();let text;try{text=new TextDecoder('utf-8',{fatal:true}).decode(bytes)}catch{text=new TextDecoder('windows-1252').decode(bytes)}return mapRows(parseCSV(text),r.name.startsWith('Battery')?'bev':r.name.startsWith('Plug-in')?'phev':'gas',history?1995:newest-1)}));
- const vehicles=groups.flat().map((v,i)=>({...v,id:String(i)}));res.setHeader('Cache-Control','public, s-maxage=86400, stale-while-revalidate=604800');return res.status(200).json({source:SOURCE,checked:new Date().toISOString(),resources:chosen.map(r=>({name:r.name,url:r.url,updated:r.last_modified})),vehicles,coverage:history?`Canadian government fuel-consumption records from 1995–${newest}, plus available battery-electric and plug-in hybrid records. Trims are separate records. Not every car, market or historical model is covered.`:`Canadian ${newest-1}–${newest} fuel-consumption records plus battery-electric and plug-in hybrid records. Trims are separate records. Excludes unlisted, historical, and non-Canadian models.`})
- }catch(error){console.error('Catalogue refresh failed:',error.message);return res.status(502).json({error:'Official data is temporarily unavailable. Use the included snapshot.'})}}
+export function parseCSV(text) {
+  const rows = [];
+  let row = [],
+    cell = '',
+    quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (c === '"') {
+      if (quoted && text[i + 1] === '"') {
+        cell += '"';
+        i++;
+      } else quoted = !quoted;
+    } else if (c === ',' && !quoted) {
+      row.push(cell);
+      cell = '';
+    } else if ((c === '\n' || c === '\r') && !quoted) {
+      if (c === '\r' && text[i + 1] === '\n') i++;
+      row.push(cell);
+      if (row.some((x) => x)) rows.push(row);
+      row = [];
+      cell = '';
+    } else cell += c;
+  }
+  if (cell || row.length) {
+    row.push(cell);
+    rows.push(row);
+  }
+  return rows;
+}
+export function mapRows(rows, kind, minYear = 1995) {
+  return rows
+    .filter((r) => /^\d{4}$/.test(r[0]?.trim()) && +r[0] >= minYear)
+    .map((r) => {
+      const bev = kind === 'bev',
+        phev = kind === 'phev';
+      return {
+        year: +r[0],
+        make: r[1]?.trim(),
+        model: r[2]?.trim(),
+        body: r[3]?.trim(),
+        engine: bev ? null : phev ? r[5] : r[4],
+        cylinders: bev ? null : phev ? r[6] : r[5],
+        transmission: bev ? r[5] : phev ? r[7] : r[6],
+        fuel: bev
+          ? 'Electric'
+          : phev
+            ? 'Plug-in hybrid'
+            : {
+                X: 'Regular gasoline',
+                Z: 'Premium gasoline',
+                D: 'Diesel',
+                E: 'Ethanol E85',
+                N: 'Natural gas',
+              }[r[7]] || r[7],
+        city: bev || phev ? null : r[8],
+        highway: bev || phev ? null : r[9],
+        combined: bev || phev ? null : r[10],
+        kwh: bev ? r[9] : null,
+        range: bev ? r[13] : phev ? r[10] : null,
+        motor: bev || phev ? r[4] : null,
+        gasCombined: phev ? r[15] : null,
+      };
+    })
+    .filter((v) => v.make && v.model);
+}
+export default async function handler(req, res) {
+  if (req.method !== 'GET') return res.status(405).json({ error: 'Method not allowed' });
+  try {
+    const response = await fetch(META, { signal: AbortSignal.timeout(12000) });
+    if (!response.ok) throw Error('Metadata unavailable');
+    const meta = (await response.json()).result;
+    const english = meta.resources.filter((r) => r.format === 'CSV' && r.language?.includes('en'));
+    const yearResources = english
+      .filter((r) => /^\d{4} Fuel Consumption Ratings/.test(r.name))
+      .sort((a, b) => +b.name.slice(0, 4) - +a.name.slice(0, 4));
+    const newest = +yearResources[0].name.slice(0, 4);
+    const url = new URL(req.url, 'https://autopilot.example');
+    const history = url.searchParams.get('history') === '1';
+    const chosen = history
+      ? english.filter(
+          (r) =>
+            /^\d{4} Fuel Consumption Ratings/.test(r.name) ||
+            /^\d{4}-\d{4} Fuel Consumption Ratings/.test(r.name) ||
+            /^(Battery-electric|Plug-in hybrid)/.test(r.name),
+        )
+      : [
+          ...yearResources.slice(0, 2),
+          ...english.filter((r) => /^(Battery-electric|Plug-in hybrid)/.test(r.name)),
+        ];
+    const groups = await Promise.all(
+      chosen.map(async (r) => {
+        const address = new URL(r.url);
+        if (
+          address.protocol !== 'https:' ||
+          !(address.hostname === 'open.canada.ca' || address.hostname.endsWith('.gc.ca'))
+        )
+          throw Error('Unexpected source');
+        const result = await fetch(address, { signal: AbortSignal.timeout(18000) });
+        if (!result.ok) throw Error('Source unavailable');
+        const bytes = await result.arrayBuffer();
+        let text;
+        try {
+          text = new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+        } catch {
+          text = new TextDecoder('windows-1252').decode(bytes);
+        }
+        return mapRows(
+          parseCSV(text),
+          r.name.startsWith('Battery') ? 'bev' : r.name.startsWith('Plug-in') ? 'phev' : 'gas',
+          history ? 1995 : newest - 1,
+        );
+      }),
+    );
+    const vehicles = groups.flat().map((v, i) => ({ ...v, id: String(i) }));
+    res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=604800');
+    return res.status(200).json({
+      source: SOURCE,
+      checked: new Date().toISOString(),
+      resources: chosen.map((r) => ({ name: r.name, url: r.url, updated: r.last_modified })),
+      vehicles,
+      coverage: history
+        ? `Canadian government fuel-consumption records from 1995–${newest}, plus available battery-electric and plug-in hybrid records. Trims are separate records. Not every car, market or historical model is covered.`
+        : `Canadian ${newest - 1}–${newest} fuel-consumption records plus battery-electric and plug-in hybrid records. Trims are separate records. Excludes unlisted, historical, and non-Canadian models.`,
+    });
+  } catch (error) {
+    console.error('Catalogue refresh failed:', error.message);
+    return res
+      .status(502)
+      .json({ error: 'Official data is temporarily unavailable. Use the included snapshot.' });
+  }
+}

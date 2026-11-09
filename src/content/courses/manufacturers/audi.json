@@ -1,0 +1,150 @@
+{
+  "id": "audi",
+  "name": "Audi",
+  "country": "Germany",
+  "intro": "Audi is a German brand. Learn A3/A5/A6 on the lower-car shelf and Q3/Q5/Q7/Q8 on the SUV shelf, then separate e-tron electric families and performance versions. Audi has changed naming strategies, so a year is part of a reliable comparison.",
+  "naming": "A and Q identify broad passenger-car and SUV naming contexts, not one engine. S line equipment is different from an S model; RS is another performance product. Sportback describes a body/roof context. e-tron identifies electric products, but the exact family and year still matter.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.audi.ca/en/models/",
+  "deep": true,
+  "models": [
+    {
+      "id": "a3",
+      "name": "A3",
+      "body": "Compact sedan family",
+      "role": "Smaller Audi passenger car",
+      "explanation": "A3 is a smaller Audi passenger-car family. It is distinct from A5 and A6, which occupy different roles in the broader passenger-car range.",
+      "tradeoff": "The A3 belongs in a comparison for smaller audi passenger car. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare A3 with a Q3 if deciding between a lower car and SUV. S3 and RS3 are specific performance models; an A3 with S line equipment is not automatically equivalent.",
+      "memory": "A = passenger-car shelf; A3 = smaller",
+      "scenario": "A friend mentions a A3. Explain its role as smaller audi passenger car, then ask for the year, powertrain and equipment before comparing it with another Audi.",
+      "power": "A3, S3 and RS3 are different mechanical products/versions. An A3 with S line equipment is not automatically equivalent to S3 or RS3.",
+      "source": "https://www.audi.ca/en/models/",
+      "knowledgeCheck": {
+        "prompt": "Is an A3 with S line equipment automatically an RS3?",
+        "correct": "No — these are distinct specifications",
+        "wrong": [
+          "Yes, every S-related badge means RS3",
+          "Only the paint differs",
+          "S line identifies a charging connector"
+        ],
+        "why": "A styling/equipment line and a dedicated performance product are different layers."
+      },
+      "photos": ["audi-a3"],
+      "image": "audi-a3"
+    },
+    {
+      "id": "q5",
+      "name": "Q5",
+      "body": "SUV family",
+      "role": "Core Audi family SUV",
+      "explanation": "Q5 is an Audi SUV family. Sportback describes a more sloping rear-body form on specific models; it is not a promise of a different energy source.",
+      "tradeoff": "The Q5 belongs in a comparison for core audi family suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Q5 with Q3 for a smaller SUV role and with Q7 for a larger passenger-carrying role. Compare the actual roof, rear-seat and cargo differences of Sportback versions.",
+      "memory": "Q = SUV shelf; Q5 = core family role",
+      "scenario": "A friend mentions a Q5. Explain its role as core audi family suv, then ask for the year, powertrain and equipment before comparing it with another Audi.",
+      "power": "Q5 powertrain and body specifications depend on year/version. Sportback changes the body/roof context; SQ5 is a performance product. Neither word should be treated as a universal energy-source code.",
+      "source": "https://www.audi.ca/en/models/",
+      "knowledgeCheck": {
+        "prompt": "What does Q5 Sportback mainly ask you to compare?",
+        "correct": "Body/roof packaging and the exact version",
+        "wrong": [
+          "Whether all Sportbacks are electric",
+          "Whether every Q5 has two doors",
+          "Whether the badge contains five cylinders"
+        ],
+        "why": "Sportback names a body context; powertrain and performance require the full specification."
+      },
+      "photos": ["audi-q5"],
+      "image": "audi-q5"
+    },
+    {
+      "id": "q6",
+      "name": "Q6 e-tron",
+      "body": "Electric SUV family",
+      "role": "Electric Audi SUV",
+      "explanation": "Q6 e-tron is an electric SUV family. The Q identifies an SUV role, while e-tron identifies electric positioning; neither alone tells you the exact battery or charging specification.",
+      "tradeoff": "The Q6 e-tron belongs in a comparison for electric audi suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Q6 e-tron with other electric SUVs using charging, trip needs and actual space. Do not assume it is just a gas Q5 with a different trim badge.",
+      "memory": "Q6 e-tron = electric SUV",
+      "scenario": "A friend mentions a Q6 e-tron. Explain its role as electric audi suv, then ask for the year, powertrain and equipment before comparing it with another Audi.",
+      "power": "Q6 e-tron is battery-electric, with different battery/drive and performance configurations. It is not simply an equipment trim of a gas Q5.",
+      "source": "https://www.audi.ca/en/models/",
+      "knowledgeCheck": {
+        "prompt": "What is Q6 e-tron’s energy category?",
+        "correct": "Battery-electric",
+        "wrong": [
+          "Gas-only because Q means petrol",
+          "Conventional hybrid without external charging",
+          "Diesel solely because it is an SUV"
+        ],
+        "why": "Q6 e-tron uses an externally charged electric powertrain."
+      },
+      "photos": ["audi-q6"],
+      "image": "audi-q6"
+    },
+    {
+      "id": "q3",
+      "name": "Q3",
+      "body": "Smaller luxury SUV",
+      "role": "Audi’s smaller everyday SUV",
+      "explanation": "Q3 is a smaller Audi SUV family than Q5 in this course’s map. A redesign can change its body and equipment while preserving the family name.",
+      "tradeoff": "Check actual rear-seat access, cargo and overall dimensions. Smaller luxury positioning is not evidence of a particular drivetrain on every version.",
+      "compare": "Compare Q3 with Q5 for SUV size/role and A3 for a lower-car alternative.",
+      "memory": "Q3 = smaller SUV; A3 = lower passenger car",
+      "scenario": "A friend hears “3” and assumes A3 and Q3 are identical. Explain the basic body-family distinction first.",
+      "power": "Engine, driven wheels and equipment are year-specific. quattro is Audi AWD branding in relevant configurations, not a cylinder count.",
+      "source": "https://www.audi.ca/en/models/",
+      "photos": ["audi-q3"],
+      "image": "audi-q3"
+    },
+    {
+      "id": "a5-a6",
+      "name": "A5 & A6",
+      "body": "Passenger-car families",
+      "role": "Audi lower-car names and naming changes",
+      "explanation": "A5 and A6 identify Audi passenger-car families with bodies that vary by generation. Older A4/A5 names remain familiar on the street; naming changes require a year/body check.",
+      "tradeoff": "Inspect the actual trunk or liftback opening, rear access and dimensions. A remembered coupe body does not describe every product with an A5 badge.",
+      "compare": "Compare the exact A5/A6 body and generation with A3 for size, then distinguish electric A6 e-tron from combustion products.",
+      "memory": "A5/A6 = ask the body and generation",
+      "scenario": "A friend says every A5 must be a two-door coupe. Ask which generation and body before explaining the name.",
+      "power": "Combustion and e-tron products need separate engine/battery specifications. Do not assume a family-number rule has remained unchanged across Audi’s naming revisions.",
+      "source": "https://www.audi.ca/en/models/",
+      "photos": ["audi-a5", "audi-a6"],
+      "image": "audi-a5"
+    },
+    {
+      "id": "q7-q8",
+      "name": "Q7 & Q8",
+      "body": "Larger SUV families",
+      "role": "Audi’s larger SUV roles",
+      "explanation": "Q7 and Q8 are different larger Audi SUV families. Q7 has a three-row role in relevant configurations, while Q8 uses a different body/roof and passenger arrangement.",
+      "tradeoff": "Check exact seats, third-row access, rear headroom and luggage. A larger model number does not guarantee more seats or a larger useful load area.",
+      "compare": "Compare Q7 and Q8 by actual passenger/cargo requirements. SQ/RS versions need their own mechanical specification rather than a styling inference.",
+      "memory": "Q7/Q8 = different roles, not a seat-count ladder",
+      "scenario": "A friend chooses Q8 because eight sounds like more seats than Q7. Use the real configuration instead of the number.",
+      "power": "Powertrain and drivetrain vary by product/year. A Q8 e-tron name also identifies a different electric product context, not every combustion Q8.",
+      "source": "https://www.audi.ca/en/models/",
+      "photos": ["audi-q7", "audi-q8"],
+      "image": "audi-q7"
+    },
+    {
+      "id": "electric",
+      "name": "Q4 e-tron, A6 e-tron & e-tron GT",
+      "body": "Electric SUV / car families",
+      "role": "Audi electric names beyond Q6",
+      "explanation": "Audi electric families span SUVs and lower cars: Q4 e-tron has an SUV role, A6 e-tron a passenger-car role, and e-tron GT a performance-oriented lower-car role. Electric does not tell you body size.",
+      "tradeoff": "Compare charging, passenger access and load shape in the exact product. A shared e-tron name is not proof of interchangeable batteries or charging capability.",
+      "compare": "Group by the job first, then compare exact EV versions. Do not borrow an e-tron GT charging or battery claim for every Audi EV.",
+      "memory": "e-tron = electric context; full name gives the family",
+      "scenario": "A friend says every e-tron is an SUV. Explain the lower-car examples before discussing range.",
+      "power": "Battery-electric; battery, drive and charging specifications depend on the actual model/year.",
+      "source": "https://www.audi.ca/en/models/",
+      "photos": ["audi-q4", "audi-a6-etron", "audi-gt"],
+      "image": "audi-q4"
+    }
+  ],
+  "comparisonAnchor": "q6",
+  "popular": true,
+  "streetOrder": 18
+}

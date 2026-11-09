@@ -1,0 +1,159 @@
+{
+  "id": "ram",
+  "name": "Ram",
+  "country": "United States",
+  "intro": "Ram is an American truck and commercial-vehicle brand. You may hear older pickups called Dodge Ram, but current Ram branding, truck class, cab/bed configuration and equipment grade are separate ideas. Begin with 1500 versus 2500/3500, then the specific work a truck must do.",
+  "naming": "1500, 2500 and 3500 are truck-class/model names, not universal payload values in kilograms. Big Horn, Laramie, Rebel and other grades describe versions. A Tradesman name on one product does not identify every Ram’s engine or body.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. Selected Canadian model families and clearly labelled recognition examples. Model year, exact version and availability must be checked before using a specification or price.",
+  "source": "https://www.ramtruck.ca/en",
+  "deep": true,
+  "popular": true,
+  "models": [
+    {
+      "id": "1500",
+      "name": "1500",
+      "body": "Full-size pickup",
+      "role": "Ram light-duty full-size pickup",
+      "explanation": "Ram 1500 is the brand’s light-duty full-size pickup family. Light-duty is a class description, not a statement that the truck has one fixed capacity.",
+      "tradeoff": "Check cab/bed layout, actual payload and towing for the configuration. Passengers and accessories use load capacity; a premium trim does not create a universal tow rating.",
+      "compare": "Compare Ram 1500 with matched F-150, Sierra 1500, Silverado 1500 and Tundra configurations for the actual job.",
+      "memory": "1500 = class name, not 1,500 kg payload",
+      "scenario": "A friend assumes the number on the side tells them how much weight to load. Show why the vehicle’s actual labels and manual are needed.",
+      "power": "Engines and hybrid-assistance systems have changed by year. A new or returning engine option does not describe every Ram 1500 on the street.",
+      "source": "https://www.ramtruck.ca/en",
+      "photos": ["ram-1500"],
+      "image": "ram-1500"
+    },
+    {
+      "id": "2500",
+      "name": "2500",
+      "body": "Heavy-duty pickup",
+      "role": "Ram heavier-duty pickup class",
+      "explanation": "Ram 2500 is a heavier-duty pickup class than 1500. It exists for different load/use requirements, not simply as the 1500’s luxury equipment grade.",
+      "tradeoff": "A more work-focused class can be unnecessary for ordinary use. Verify the actual load requirements, dimensions and running costs instead of buying the biggest class by default.",
+      "compare": "Compare specific 2500 and 1500 configurations on the job and ratings. Diesel/gas choice and equipment also need matching.",
+      "memory": "2500 = heavier-duty class, not higher trim",
+      "scenario": "A driver has no heavy-load requirement but likes the number. Explain what moving truck class is intended to change before discussing luxury options.",
+      "power": "Gas and diesel engine choices depend on year/configuration. Diesel is a fuel/engine system, not a synonym for all heavy-duty trucks.",
+      "source": "https://www.ramtruck.ca/en",
+      "photos": ["ram-2500"],
+      "image": "ram-2500"
+    },
+    {
+      "id": "3500",
+      "name": "3500",
+      "body": "Heavy-duty pickup",
+      "role": "Ram’s higher heavy-duty pickup class",
+      "explanation": "Ram 3500 is another heavy-duty pickup class, with configurations intended for different demanding load tasks. Single versus dual rear wheel is a configuration distinction, not a separate brand.",
+      "tradeoff": "Use the exact vehicle’s load ratings and the actual loaded trailer requirements. More wheels or a larger model number alone cannot determine a safe loading plan.",
+      "compare": "Compare matched heavy-duty configurations rather than a 3500 headline maximum with an unrelated 2500 base model.",
+      "memory": "3500 = configuration and load requirements first",
+      "scenario": "A friend shows a dual-rear-wheel truck. You can recognize a configuration clue while still needing the model/year and load labels.",
+      "power": "Engine, rear-wheel arrangement, axle and equipment affect capability. The family/class name is not enough to calculate payload or towing.",
+      "source": "https://www.ramtruck.ca/en",
+      "photos": ["ram-3500"],
+      "image": "ram-3500"
+    },
+    {
+      "id": "promaster",
+      "name": "ProMaster",
+      "body": "Commercial van",
+      "role": "Ram cargo/passenger conversion van family",
+      "explanation": "ProMaster is Ram’s commercial van family. A tall cargo van and a pickup solve different loading and access tasks, even if both can be used for work.",
+      "tradeoff": "Check roof height, wheelbase, interior dimensions and the specific conversion. A camper or passenger conversion may change how the available load capacity is used.",
+      "compare": "Compare ProMaster with exact Transit or other vans for the real cargo/interior task. A pickup’s open bed is not a substitute for an enclosed standing-height workspace.",
+      "memory": "ProMaster = van, not a pickup trim",
+      "scenario": "A friend wants a work van to carry tall equipment. Measure the inside and the doors, not only the vehicle’s outside height.",
+      "power": "Powertrain and configuration are year/product-specific. Electric or other variants, where offered, require their own availability and charging checks.",
+      "source": "https://www.ramtruck.ca/en",
+      "photos": ["ram-promaster"],
+      "image": "ram-promaster"
+    }
+  ],
+  "workshops": [
+    {
+      "id": "class-and-load",
+      "title": "Ram: classes, cab and bed",
+      "subtitle": "Read a pickup listing before comparing its price.",
+      "pages": [
+        {
+          "title": "Class is not trim",
+          "text": "1500, 2500 and 3500 are truck-class/model names. Laramie and other grades identify versions; those are different naming layers.",
+          "example": "A 2500 is not merely a 1500 with more screens and leather.",
+          "paragraphs": ["Truck class and equipment grade describe different choices."]
+        },
+        {
+          "title": "Cab and bed are practical dimensions",
+          "text": "A larger passenger cab and a particular bed length change both usefulness and total vehicle length. Know what you carry and where you park.",
+          "example": "Measure long tools and passengers rather than choosing from a side photograph alone.",
+          "paragraphs": ["Useful load space and parking fit are both physical requirements."]
+        },
+        {
+          "title": "Ratings are configuration-specific",
+          "text": "Engine, axle, wheel configuration, options and the actual load affect the relevant ratings. Do not substitute a range-wide advertisement maximum for the vehicle in front of you.",
+          "example": "Passengers/accessories use available load capacity, so the real job needs the actual vehicle documentation.",
+          "paragraphs": [
+            "Configuration and actual loaded requirements matter more than a generic maximum."
+          ]
+        },
+        {
+          "title": "ProMaster is a different body job",
+          "text": "An enclosed commercial van and an open-bed pickup can serve different work needs. A camper conversion also has its own load implications.",
+          "example": "For tall indoor workspace, measure interior height and access doors, not just the exterior body.",
+          "paragraphs": [
+            "A van’s usable interior and door openings determine whether the task fits."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What does 2500 primarily identify here?",
+          "options": [
+            "A truck class/model family",
+            "A universal leather-seat package",
+            "Exactly 2,500 kg on every configuration",
+            "The number of engine cylinders"
+          ],
+          "answer": 0,
+          "why": "Truck class and equipment grade describe different choices."
+        },
+        {
+          "prompt": "Which pair should be checked together for a work truck in a short stall?",
+          "options": [
+            "Bed/load fit and total vehicle length",
+            "Badge size and paint shine",
+            "Screen size and speaker count only",
+            "The number of letters in Ram"
+          ],
+          "answer": 0,
+          "why": "Useful load space and parking fit are both physical requirements."
+        },
+        {
+          "prompt": "Where should load/tow planning begin?",
+          "options": [
+            "The actual configured vehicle’s ratings and loaded requirements",
+            "The largest figure in any advert",
+            "The trim’s popularity",
+            "An assumed model-number formula"
+          ],
+          "answer": 0,
+          "why": "Configuration and actual loaded requirements matter more than a generic maximum."
+        },
+        {
+          "prompt": "Which measurement matters for a standing-height workspace?",
+          "options": [
+            "Usable interior height and access",
+            "Only the pickup bed paint",
+            "Only wheel diameter",
+            "A sedan trunk lid shape"
+          ],
+          "answer": 0,
+          "why": "A van’s usable interior and door openings determine whether the task fits."
+        }
+      ],
+      "source": "https://www.ramtruck.ca/en"
+    }
+  ],
+  "streetOrder": 11,
+  "comparisonAnchor": "promaster"
+}

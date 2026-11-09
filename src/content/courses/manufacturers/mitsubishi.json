@@ -1,0 +1,168 @@
+{
+  "id": "mitsubishi",
+  "name": "Mitsubishi",
+  "country": "Japan",
+  "intro": "Mitsubishi is a Japanese brand whose familiar Canadian SUV names include Outlander, Outlander PHEV, RVR and Eclipse Cross. Learn the plug-in distinction carefully: similar body names do not make gas and plug-in versions the same energy system.",
+  "naming": "Outlander is a family; PHEV means plug-in hybrid electric vehicle. ES, SE, SEL and GT are equipment grades whose contents vary by year. S-AWC is a drivetrain/control branding context, not a battery size or seat count. Eclipse Cross and new Eclipse electric naming need a complete model year and name.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. Selected Canadian model families and clearly labelled recognition examples. Model year, exact version and availability must be checked before using a specification or price.",
+  "source": "https://www.mitsubishi-motors.ca/en/vehicles",
+  "deep": true,
+  "popular": true,
+  "models": [
+    {
+      "id": "outlander",
+      "name": "Outlander",
+      "body": "SUV family",
+      "role": "Mitsubishi family SUV",
+      "explanation": "Outlander is Mitsubishi’s family-SUV name, distinct from the separately specified Outlander PHEV product. A new generation can change mechanical details and seating arrangements.",
+      "tradeoff": "Check actual seating and luggage with the required rows in use. An occasional back row, when fitted, does not guarantee that every adult will be comfortable on a long trip.",
+      "compare": "Compare Outlander with Outlander PHEV on exact powertrain, price and charging needs; compare with RVR for a smaller role.",
+      "memory": "Outlander = ask gas or PHEV and which year",
+      "scenario": "A friend offers an Outlander for a group trip. Confirm the actual usable seats and remaining bags space before relying on the family name.",
+      "power": "Gas and newer mild-hybrid-assistance specifications differ by generation. Do not infer external charging from the presence of any hybrid-related technology.",
+      "source": "https://www.mitsubishi-motors.ca/en/vehicles",
+      "image": "mitsubishi-outlander",
+      "photos": ["mitsubishi-outlander"]
+    },
+    {
+      "id": "outlander-phev",
+      "name": "Outlander PHEV",
+      "body": "Plug-in-hybrid SUV",
+      "role": "Mitsubishi SUV with an externally rechargeable battery",
+      "explanation": "Outlander PHEV is a plug-in-hybrid SUV product combining a combustion engine with electric propulsion and an externally rechargeable battery. It is not a battery-only EV.",
+      "tradeoff": "It makes sense to evaluate a real charging routine along with longer-trip engine use. Seat/cargo fit and purchase price still need a separate comparison.",
+      "compare": "Compare Outlander PHEV with a conventional hybrid and a battery-only SUV by how each uses energy. A plug-in badge does not guarantee zero petrol use on every trip.",
+      "memory": "PHEV = plug-in battery plus an engine",
+      "scenario": "A commuter can charge reliably overnight but sometimes takes long trips. Explain the two energy sources without promising a fixed electric range in all weather.",
+      "power": "Plug-in-hybrid. External charging and engine/motor operation are different from a conventional hybrid routine. Exact battery/range and charging hardware are model-year-specific.",
+      "source": "https://www.mitsubishi-motors.ca/en/vehicles/outlander-phev",
+      "price": {
+        "amount": 46998,
+        "year": 2026,
+        "label": "Outlander PHEV — manufacturer starting reference",
+        "source": "https://www.mitsubishi-motors.ca/en/vehicles/outlander-phev",
+        "note": "Manufacturer Canadian starting MSRP reference for the 2026 product, checked November 8, 2026. Extra charges, taxes, options and current availability require an itemized quote; incentives are not assumed."
+      },
+      "photos": ["mitsubishi-outlander-phev"],
+      "image": "mitsubishi-outlander-phev"
+    },
+    {
+      "id": "rvr",
+      "name": "RVR",
+      "body": "Smaller SUV",
+      "role": "Mitsubishi smaller crossover",
+      "explanation": "RVR is Mitsubishi’s smaller crossover family in Canada. Related international ASX naming and generations should not be assumed mechanically identical to every Canadian RVR.",
+      "tradeoff": "Check the exact year, rear-seat/cargo fit and drivetrain. A family’s presence in an overseas video is not evidence that the Canadian version has the same engine.",
+      "compare": "Compare RVR with Outlander for size/seat needs, using actual dimensions rather than a brand-wide size assumption.",
+      "memory": "RVR = smaller Canadian crossover name",
+      "scenario": "A friend found an ASX review abroad and applies all its specifications to a Canadian RVR. Ask whether the year and product actually match.",
+      "power": "Gas engine and driven-wheel choices depend on Canadian model year and version. Market-specific naming needs a specification check.",
+      "source": "https://www.mitsubishi-motors.ca/en/vehicles",
+      "photos": ["mitsubishi-rvr"],
+      "image": "mitsubishi-rvr"
+    },
+    {
+      "id": "eclipse",
+      "name": "Eclipse Cross / Eclipse recognition",
+      "body": "Crossover / historical sports-car names",
+      "role": "Mitsubishi names that need the full body and year",
+      "explanation": "Eclipse Cross is an SUV/crossover family, distinct from older Eclipse sports coupes. New Eclipse electric naming also makes the full name and year essential; the shared word does not define one unchanged car.",
+      "tradeoff": "Identify the actual body and powertrain first. A historic sports-car image or engine specification should not be applied to a crossover or newly introduced EV.",
+      "compare": "Compare Eclipse Cross with RVR and Outlander for the SUV role. Treat older Eclipse coupes and newer electric names as separate recognition/product contexts.",
+      "memory": "Cross changes the family; year resolves the name",
+      "scenario": "A friend says they saw an Eclipse. Ask whether they mean an older coupe, an Eclipse Cross SUV or a new product, before picturing it.",
+      "power": "Gas, historical sports-car and new electric products need separate mechanical specifications. A reused name is not a promise of unchanged propulsion.",
+      "source": "https://www.mitsubishi-motors.ca/en/vehicles",
+      "photos": ["mitsubishi-eclipse-cross", "mitsubishi-eclipse"],
+      "image": "mitsubishi-eclipse-cross"
+    }
+  ],
+  "workshops": [
+    {
+      "id": "phev-in-plain-words",
+      "title": "Mitsubishi: Outlander or Outlander PHEV?",
+      "subtitle": "Distinguish energy sources, seats and familiar badges.",
+      "pages": [
+        {
+          "title": "The full powertrain name matters",
+          "text": "Outlander PHEV has an engine and an externally rechargeable battery. A petrol-only example and a plug-in product have different energy/charging questions.",
+          "example": "Do not assume that a plug-in badge means the engine disappears or that every trip uses no petrol.",
+          "paragraphs": ["Plug-in hybrid and battery-electric are different propulsion categories."]
+        },
+        {
+          "title": "Charging must fit the routine",
+          "text": "Evaluate the actual charging access, commuting needs and longer trips. A theoretical ability to plug in is not the same as dependable access where the owner parks.",
+          "example": "A condo resident should check building/work/public access rather than assuming a home installation is available.",
+          "paragraphs": [
+            "Real charging access and usage determine how a plug-in system fits someone’s routine."
+          ]
+        },
+        {
+          "title": "Seat count needs a configuration check",
+          "text": "An occasional third row does not tell you whether the required passengers and luggage fit. Equipment and powertrain variants can have different practical layouts.",
+          "example": "Try the actual vehicle with the people and objects it must carry.",
+          "paragraphs": [
+            "Real passenger/cargo fit is a physical requirement, not a badge inference."
+          ]
+        },
+        {
+          "title": "RVR and Eclipse names",
+          "text": "RVR is the smaller Canadian crossover name. Eclipse Cross is separate from older Eclipse coupes, and new naming adds another reason to ask for the year.",
+          "example": "Do not import a different market/generation’s engine into a Canadian used-car comparison.",
+          "paragraphs": [
+            "A familiar name can span different markets and products; the full identity resolves the specification."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Does PHEV mean battery-electric with no combustion engine?",
+          "options": [
+            "No — it combines an engine and externally rechargeable battery",
+            "Yes, there is never a fuel tank",
+            "Only if it is a large SUV",
+            "It means a larger wheel size"
+          ],
+          "answer": 0,
+          "why": "Plug-in hybrid and battery-electric are different propulsion categories."
+        },
+        {
+          "prompt": "What makes a plug-in comparison practical?",
+          "options": [
+            "A dependable charging plan and actual trip needs",
+            "Only the word Hybrid",
+            "Assuming every building has a charger",
+            "Using a European price as a Canadian quote"
+          ],
+          "answer": 0,
+          "why": "Real charging access and usage determine how a plug-in system fits someone’s routine."
+        },
+        {
+          "prompt": "What should resolve a group-trip seating question?",
+          "options": [
+            "The actual seat layout, passenger fit and bags",
+            "A family name alone",
+            "The largest screen",
+            "The colour of the PHEV badge"
+          ],
+          "answer": 0,
+          "why": "Real passenger/cargo fit is a physical requirement, not a badge inference."
+        },
+        {
+          "prompt": "What comes first with a reused or international name?",
+          "options": [
+            "Confirm the year, market and actual product",
+            "Assume every name has one permanent engine",
+            "Only compare the emblem",
+            "Treat a coupe and crossover as identical"
+          ],
+          "answer": 0,
+          "why": "A familiar name can span different markets and products; the full identity resolves the specification."
+        }
+      ],
+      "source": "https://www.mitsubishi-motors.ca/en/vehicles"
+    }
+  ],
+  "streetOrder": 12,
+  "comparisonAnchor": "eclipse"
+}

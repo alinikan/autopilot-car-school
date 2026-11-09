@@ -1,0 +1,255 @@
+{
+  "id": "hyundai",
+  "name": "Hyundai",
+  "country": "South Korea",
+  "intro": "Hyundai is a South Korean brand with lower cars, several SUV sizes and dedicated electric families. Learn Elantra, Tucson and IONIQ 5 first, then distinguish Kona, Santa Fe, Palisade and the other passenger-car/EV names. A familiar badge can cover different generations.",
+  "naming": "Essential, Preferred, Ultimate and other grades are equipment names used differently by family/year. N Line and dedicated N models are different concepts. HEV means conventional hybrid; PHEV means plug-in hybrid. IONIQ 5, 6 and 9 identify different electric families rather than equipment grades of one car.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles",
+  "deep": true,
+  "models": [
+    {
+      "id": "elantra",
+      "name": "Elantra",
+      "body": "Compact sedan family",
+      "role": "Everyday Hyundai sedan",
+      "explanation": "Elantra is Hyundai’s compact sedan family. Hybrid versions and the dedicated Elantra N performance model are separate specifications within the broader name.",
+      "tradeoff": "The Elantra belongs in a comparison for everyday hyundai sedan. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Elantra with Kona or Tucson when deciding between a lower car and SUV. Do not treat N Line appearance as proof that a car has Elantra N mechanics.",
+      "memory": "Elantra = compact sedan",
+      "scenario": "A friend mentions a Elantra. Explain its role as everyday hyundai sedan, then ask for the year, powertrain and equipment before comparing it with another Hyundai.",
+      "power": "Elantra gas, Hybrid and dedicated Elantra N products have different powertrains. N Line equipment/styling is not equivalent to the full N model. A hybrid remains a sedan and is not automatically plug-in.",
+      "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles",
+      "knowledgeCheck": {
+        "prompt": "Does N Line mean the same mechanical specification as Elantra N?",
+        "correct": "No — read the distinct product specifications",
+        "wrong": [
+          "Yes, all N-related badges are identical",
+          "Only the paint is different",
+          "Every Elantra is an N car"
+        ],
+        "why": "N Line and dedicated N products must be distinguished."
+      },
+      "photos": ["hyundai-elantra"],
+      "image": "hyundai-elantra"
+    },
+    {
+      "id": "tucson",
+      "name": "Tucson",
+      "body": "Compact SUV family",
+      "role": "Core Hyundai family SUV",
+      "explanation": "Tucson is a core Hyundai compact SUV family. Kona occupies a smaller SUV role; Santa Fe and Palisade occupy different larger-family roles.",
+      "tradeoff": "The Tucson belongs in a comparison for core hyundai family suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare exact gas, hybrid and plug-in versions by how you use the car. A plug-in system only supports a regular charging plan if you actually have somewhere convenient to recharge it.",
+      "memory": "Tucson = core family SUV",
+      "scenario": "A condo resident and a homeowner consider the same Tucson Plug-in Hybrid. Their charging access differs; a useful comparison explains that difference instead of assuming one powertrain is best for both.",
+      "power": "The Canadian Tucson range includes gas, conventional-hybrid and plug-in-hybrid choices in relevant years. Those require different energy and charging comparisons. The plug-in system has a rechargeable battery but still includes an engine.",
+      "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles",
+      "knowledgeCheck": {
+        "prompt": "Which Tucson system is designed for external charging?",
+        "correct": "The Plug-in Hybrid version",
+        "wrong": [
+          "Every gas version",
+          "A conventional hybrid solely because it says Hybrid",
+          "Only a larger wheel package"
+        ],
+        "why": "A PHEV has an externally rechargeable battery; a conventional hybrid does not use that routine."
+      },
+      "practicalDetails": [
+        "Tucson, Kona and Santa Fe are different families. Start with the required body/seat arrangement, then compare the actual gas, Hybrid and Plug-in Hybrid versions on similar equipment.",
+        "A plug-in battery is useful to evaluate against dependable charging access, not just a marketing range headline. A conventional hybrid does not require the same routine, and neither system changes a two-row body into a three-row one."
+      ],
+      "photos": ["hyundai-tucson"],
+      "image": "hyundai-tucson"
+    },
+    {
+      "id": "ioniq5",
+      "name": "IONIQ 5",
+      "body": "Electric crossover",
+      "role": "Hyundai electric crossover",
+      "explanation": "IONIQ 5 is an electric crossover family. Its broad hatch-like shape in a picture can make its size hard to judge without a reference. IONIQ 6 is a differently shaped electric family.",
+      "tradeoff": "The IONIQ 5 belongs in a comparison for hyundai electric crossover. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare IONIQ 5 with IONIQ 6 on body, loading and passenger needs, and with other EVs on charging and trip requirements. Check a model year’s charging port and capabilities directly.",
+      "memory": "IONIQ 5 = electric crossover",
+      "scenario": "A friend mentions a IONIQ 5. Explain its role as hyundai electric crossover, then ask for the year, powertrain and equipment before comparing it with another Hyundai.",
+      "power": "IONIQ 5 is battery-electric. Standard/range, drive and performance configurations vary by year; IONIQ 5 N is a dedicated performance product, not every IONIQ 5. Charging-port and charging capability changes require a year-specific check.",
+      "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles",
+      "knowledgeCheck": {
+        "prompt": "Is an IONIQ 5 a conventional gas/electric hybrid?",
+        "correct": "No — it is battery-electric",
+        "wrong": [
+          "Yes, all Hyundai electrified vehicles use petrol",
+          "Only if it has rear-wheel drive",
+          "Only the N version is electric"
+        ],
+        "why": "IONIQ 5 uses battery-electric propulsion, unlike conventional or plug-in hybrids."
+      },
+      "photos": ["hyundai-ioniq5"],
+      "image": "hyundai-ioniq5"
+    },
+    {
+      "id": "kona",
+      "name": "Kona & Kona Electric",
+      "body": "Small SUV families",
+      "role": "Hyundai’s smaller SUV names",
+      "explanation": "Kona is Hyundai’s smaller SUV family, with Kona Electric identifying a battery-electric product in the range. The same broad name does not let you ignore the energy system.",
+      "tradeoff": "Check actual passenger/cargo space and whether charging fits your routine. The electric and gas versions need their own exact equipment and mechanical specifications.",
+      "compare": "Compare Kona with Tucson for size/packaging and compare Kona Electric with IONIQ 5 as distinct EV products.",
+      "memory": "Kona = smaller SUV; Electric adds an energy distinction",
+      "scenario": "A friend says the Kona needs an oil change. Ask which powertrain they own before assuming their electric-car routine is the same as the gas version.",
+      "power": "Gas and electric versions are different propulsion choices. Check the exact model year rather than assuming each market offers identical versions.",
+      "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles",
+      "photos": ["hyundai-kona", "hyundai-kona-electric"],
+      "image": "hyundai-kona"
+    },
+    {
+      "id": "santa-fe",
+      "name": "Santa Fe",
+      "body": "Three-row SUV family",
+      "role": "Hyundai’s distinctively shaped family SUV",
+      "explanation": "Santa Fe is a Hyundai family-SUV name that has changed substantially across generations. Current three-row/boxier versions should be distinguished from older two-row examples on the street.",
+      "tradeoff": "Check the actual seat layout, cargo behind upright seats and parking dimensions. A current shape or seat count is not a description of every older Santa Fe.",
+      "compare": "Compare the chosen Santa Fe generation with Tucson for a smaller SUV and Palisade for a different larger-family role.",
+      "memory": "Santa Fe = ask the generation and seat layout",
+      "scenario": "A friend remembers an older Santa Fe with two rows. Explain why that memory cannot identify the seating arrangement of a redesigned example.",
+      "power": "Gas/hybrid choices depend on year and market. New-generation powertrains are not automatically the same as older models with the same name.",
+      "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles",
+      "photos": ["hyundai-santafe"],
+      "image": "hyundai-santafe"
+    },
+    {
+      "id": "palisade",
+      "name": "Palisade",
+      "body": "Large three-row SUV",
+      "role": "Hyundai’s larger three-row family SUV",
+      "explanation": "Palisade is Hyundai’s larger three-row SUV family. It is a different family from Santa Fe, even when both can carry a larger group.",
+      "tradeoff": "Test third-row access and bags, especially with child seats installed. A larger-family role should be compared against actual trips rather than a maximum seat-count headline.",
+      "compare": "Compare Palisade with Santa Fe and a minivan on passenger access, cargo and physical size. A high equipment grade does not replace a suitable seating layout.",
+      "memory": "Palisade = larger three-row SUV",
+      "scenario": "A household regularly carries adults in the back row. Try their actual access and seating rather than assuming all three-row SUVs fit them equally.",
+      "power": "Engine and hybrid availability change by generation. Do not apply a previous-generation V6 review to a newer hybrid version without checking.",
+      "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles",
+      "photos": ["hyundai-palisade"],
+      "image": "hyundai-palisade"
+    },
+    {
+      "id": "sonata",
+      "name": "Sonata",
+      "body": "Midsize sedan",
+      "role": "Hyundai’s larger everyday sedan",
+      "explanation": "Sonata is Hyundai’s larger sedan family, distinct from compact Elantra. A lower car and a taller SUV can serve the same household with different loading and seating-position trade-offs.",
+      "tradeoff": "Check rear-seat/trunk fit and the exact version’s energy use. A larger engine badge does not itself add passenger room.",
+      "compare": "Compare Sonata with Elantra for sedan size and Tucson for an SUV body. N Line and hybrid versions involve different mechanical choices.",
+      "memory": "Sonata = larger sedan; Elantra = compact sedan",
+      "scenario": "A driver wants comfortable adult rear seating but does not need an SUV. Include larger sedans in the fit comparison.",
+      "power": "Gas, hybrid and performance-positioned powertrains are year-specific. Do not assume every Sonata has the same engine or drivetrain.",
+      "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles",
+      "photos": ["hyundai-sonata"],
+      "image": "hyundai-sonata"
+    },
+    {
+      "id": "ioniq6",
+      "name": "IONIQ 6 & IONIQ 9",
+      "body": "Electric sedan / three-row SUV families",
+      "role": "Hyundai electric names beyond IONIQ 5",
+      "explanation": "IONIQ 6 occupies an electric-sedan role and IONIQ 9 a larger three-row electric-SUV role. These are different vehicle families, not a sequence of equipment grades on IONIQ 5.",
+      "tradeoff": "The low-car and people-carrying SUV jobs differ. Compare passenger access, cargo and exterior size alongside charging and trip needs.",
+      "compare": "Compare IONIQ 6 with lower EV cars and IONIQ 9 with three-row vehicles. A larger number is not a universal better-value or longer-range guarantee.",
+      "memory": "6 = lower car; 9 = three-row SUV role",
+      "scenario": "A friend says an IONIQ 9 is just an IONIQ 5 with more options. Explain the distinct size and passenger role.",
+      "power": "Battery-electric. Battery/drive and charging specifications depend on model/year; the family number is not the battery capacity.",
+      "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles",
+      "photos": ["hyundai-ioniq6", "hyundai-ioniq9"],
+      "image": "hyundai-ioniq6"
+    }
+  ],
+  "comparisonAnchor": "ioniq5",
+  "popular": true,
+  "workshops": [
+    {
+      "id": "badges-hybrids",
+      "title": "Hyundai: N, N Line and electrified choices",
+      "subtitle": "Untangle equipment, performance and energy systems.",
+      "pages": [
+        {
+          "title": "N versus N Line",
+          "text": "N Line is an equipment/performance-positioning context; a dedicated N model is a distinct mechanical product. You need the exact full specification, not a similar letter on the badge.",
+          "example": "Do not use an Elantra N acceleration review as proof of an ordinary Elantra N Line’s hardware.",
+          "paragraphs": [
+            "A styling/equipment line and a dedicated performance product are different concepts."
+          ]
+        },
+        {
+          "title": "Tucson gas, Hybrid and Plug-in Hybrid",
+          "text": "The Tucson family can involve different energy systems. Gas, conventional hybrid and plug-in hybrid require different fuel/charging routines even though they share an SUV family name.",
+          "example": "Compare the actual year/version with your access to charging, then the total price.",
+          "paragraphs": [
+            "A PHEV has an externally rechargeable battery; not every electrified product uses the same routine."
+          ]
+        },
+        {
+          "title": "Kona Electric versus IONIQ 5",
+          "text": "Kona Electric and IONIQ 5 are different battery-electric products. Do not assume all Hyundai EVs share body size, battery or charging specifications.",
+          "example": "Try actual rear access/load space, then compare exact drive/battery versions.",
+          "paragraphs": [
+            "A common brand and electric energy source do not guarantee identical charging hardware."
+          ]
+        },
+        {
+          "title": "Santa Fe generations",
+          "text": "The Santa Fe family has changed body design, seating and mechanical details across generations. Older two-row examples and newer three-row products must be identified separately.",
+          "example": "Ask the year before using a remembered seat count to plan a group trip.",
+          "paragraphs": ["A continuing family name does not freeze its seat arrangement or body."]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Does N Line guarantee the same hardware as a dedicated N product?",
+          "options": [
+            "No — read the exact product specification",
+            "Yes, all N names are interchangeable",
+            "Only the seat fabric differs",
+            "Only electric cars use N"
+          ],
+          "answer": 0,
+          "why": "A styling/equipment line and a dedicated performance product are different concepts."
+        },
+        {
+          "prompt": "Which Tucson type is designed for external battery charging?",
+          "options": [
+            "Plug-in Hybrid",
+            "Gas-only",
+            "Conventional Hybrid solely because it says Hybrid",
+            "Any version with heated seats"
+          ],
+          "answer": 0,
+          "why": "A PHEV has an externally rechargeable battery; not every electrified product uses the same routine."
+        },
+        {
+          "prompt": "Can an IONIQ 5 charging specification automatically describe Kona Electric?",
+          "options": [
+            "No — check the exact family and model year",
+            "Yes, all Hyundai EV hardware is identical",
+            "Only paint changes",
+            "Both have petrol engines instead"
+          ],
+          "answer": 0,
+          "why": "A common brand and electric energy source do not guarantee identical charging hardware."
+        },
+        {
+          "prompt": "What resolves a Santa Fe seating disagreement across generations?",
+          "options": [
+            "The exact year and configuration",
+            "The largest wheel size",
+            "The badge colour",
+            "A rule that names freeze seat count"
+          ],
+          "answer": 0,
+          "why": "A continuing family name does not freeze its seat arrangement or body."
+        }
+      ],
+      "source": "https://www.hyundaicanada.com/en/vehicles/all-vehicles"
+    }
+  ],
+  "streetOrder": 3
+}

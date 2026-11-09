@@ -1,13 +1,148 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {readFileSync,existsSync} from 'node:fs';import {stripTypeScriptTypes} from 'node:module';import {finishLesson,initialProgress,studyMinutes,validateProgress} from '../src/learning.mjs';
-const photos=JSON.parse(readFileSync(new URL('../src/photo-manifest.json',import.meta.url),'utf8'));
-const data=JSON.parse(readFileSync(new URL('../src/academy-data.json',import.meta.url),'utf8'));
-const runtime=stripTypeScriptTypes(readFileSync(new URL('../src/academy.ts',import.meta.url),'utf8')).replace("import data from './academy-data.json';",`const data=${JSON.stringify(data)};`);
-const {manufacturerLessons:lessons,brandCourses:brands,courseLessons}=await import('data:text/javascript;base64,'+Buffer.from(runtime).toString('base64'));
-test('25 connected courses include every guide, workshop and both applied lessons',()=>{assert.equal(brands.length,25);assert.equal(lessons.length,252);assert.equal(brands.filter(c=>c.deep).length,19);for(const c of brands){const ls=courseLessons(c.id);assert.equal(ls.length,c.models.length+3+(c.workshops?.length||0));assert.equal(ls[0].id,`brand-${c.id}-map`);assert.equal(ls.at(-2).activity,'match');assert.equal(ls.at(-1).activity,'budget');for(const m of c.models)assert.ok(ls.some(l=>l.id===`brand-${c.id}-${m.id}`));}});
-test('spaced-review questions have stable unique ids, distinct options and valid answers',()=>{const ids=new Set(),counts=[0,0,0,0];for(const l of lessons){assert.ok(l.pages.length>=4);assert.ok(l.minutes>=8);assert.ok(l.questions.length>=4);for(const q of l.questions){assert.ok(!ids.has(q.id),q.id);ids.add(q.id);assert.ok(q.options.length>=3&&q.options.length<=4,q.id);assert.equal(new Set(q.options).size,q.options.length,q.id);assert.ok(q.answer>=0&&q.answer<q.options.length);counts[q.answer]++;assert.ok(q.why.length>20);}}assert.ok(counts.every(n=>n>20));});
-test('model photos exist and price snapshots preserve a version, year, source and exclusions',()=>{for(const c of brands)for(const m of c.models){if(m.image)assert.ok(existsSync(new URL('../public/cars/'+photos[m.image].file,import.meta.url)),m.image);if(m.price){assert.ok(m.price.amount>10000);assert.ok(m.price.year>=2026);assert.match(m.price.source,/^https:\/\//);assert.ok(m.price.note.length>50);assert.ok(m.price.label);}}});
-test('long lessons save into existing progress, and old backups retain their estimated minutes',()=>{const old=initialProgress();old.activity.push({date:'2026-11-08',xp:30,lesson:'shapes'});assert.equal(validateProgress(old),true);const l=lessons[0],p=finishLesson(old,l.id,[{id:l.questions[0].id,correct:false}],Date.parse('2026-11-08T20:00Z'),l.minutes);assert.ok(p.completed.includes(l.id));assert.ok(p.cards[l.questions[0].id]);assert.equal(studyMinutes(p,'2026-11-08'),5+l.minutes);assert.equal(validateProgress(p),true);assert.equal(validateProgress({...p,activity:[{date:'2026-11-08',xp:10,minutes:-1}]}),false);});
-test('report coverage',()=>console.log(JSON.stringify({brands:brands.length,families:brands.reduce((s,c)=>s+c.models.length,0),lessons:lessons.length,questions:lessons.reduce((s,l)=>s+l.questions.length,0),detailed:brands.filter(c=>c.deep).map(c=>({name:c.name,lessons:courseLessons(c.id).length,minutes:courseLessons(c.id).reduce((s,l)=>s+l.minutes,0)}))})));
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync, existsSync } from 'node:fs';
+import {
+  finishLesson,
+  initialProgress,
+  studyMinutes,
+  validateProgress,
+} from '../src/domain/learning.mjs';
+import {
+  manufacturerLessons as lessons,
+  brandCourses as brands,
+  courseLessons,
+} from '../src/content/courses/lesson-builder.ts';
+const photos = JSON.parse(
+  readFileSync(new URL('../src/content/photos/manifest.json', import.meta.url), 'utf8'),
+);
+test('25 connected courses include every guide, workshop and both applied lessons', () => {
+  assert.equal(brands.length, 25);
+  assert.equal(lessons.length, 252);
+  assert.equal(brands.filter((c) => c.deep).length, 19);
+  for (const c of brands) {
+    const ls = courseLessons(c.id);
+    assert.equal(ls.length, c.models.length + 3 + (c.workshops?.length || 0));
+    assert.equal(ls[0].id, `brand-${c.id}-map`);
+    assert.equal(ls.at(-2).activity, 'match');
+    assert.equal(ls.at(-1).activity, 'budget');
+    for (const m of c.models) assert.ok(ls.some((l) => l.id === `brand-${c.id}-${m.id}`));
+  }
+});
+test('spaced-review questions have stable unique ids, distinct options and valid answers', () => {
+  const ids = new Set(),
+    counts = [0, 0, 0, 0];
+  for (const l of lessons) {
+    assert.ok(l.pages.length >= 4);
+    assert.ok(l.minutes >= 8);
+    assert.ok(l.questions.length >= 4);
+    for (const q of l.questions) {
+      assert.ok(!ids.has(q.id), q.id);
+      ids.add(q.id);
+      assert.ok(q.options.length >= 3 && q.options.length <= 4, q.id);
+      assert.equal(new Set(q.options).size, q.options.length, q.id);
+      assert.ok(q.answer >= 0 && q.answer < q.options.length);
+      counts[q.answer]++;
+      assert.ok(q.why.length > 20);
+    }
+  }
+  assert.ok(counts.every((n) => n > 20));
+});
+test('model photos exist and price snapshots preserve a version, year, source and exclusions', () => {
+  for (const c of brands)
+    for (const m of c.models) {
+      if (m.image)
+        assert.ok(
+          existsSync(new URL('../public/cars/' + photos[m.image].file, import.meta.url)),
+          m.image,
+        );
+      if (m.price) {
+        assert.ok(m.price.amount > 10000);
+        assert.ok(m.price.year >= 2026);
+        assert.match(m.price.source, /^https:\/\//);
+        assert.ok(m.price.note.length > 50);
+        assert.ok(m.price.label);
+      }
+    }
+});
+test('long lessons save into existing progress, and old backups retain their estimated minutes', () => {
+  const old = initialProgress();
+  old.activity.push({ date: '2026-11-08', xp: 30, lesson: 'shapes' });
+  assert.equal(validateProgress(old), true);
+  const l = lessons[0],
+    p = finishLesson(
+      old,
+      l.id,
+      [{ id: l.questions[0].id, correct: false }],
+      Date.parse('2026-11-08T20:00Z'),
+      l.minutes,
+    );
+  assert.ok(p.completed.includes(l.id));
+  assert.ok(p.cards[l.questions[0].id]);
+  assert.equal(studyMinutes(p, '2026-11-08'), 5 + l.minutes);
+  assert.equal(validateProgress(p), true);
+  assert.equal(
+    validateProgress({ ...p, activity: [{ date: '2026-11-08', xp: 10, minutes: -1 }] }),
+    false,
+  );
+});
+test('report coverage', () =>
+  console.log(
+    JSON.stringify({
+      brands: brands.length,
+      families: brands.reduce((s, c) => s + c.models.length, 0),
+      lessons: lessons.length,
+      questions: lessons.reduce((s, l) => s + l.questions.length, 0),
+      detailed: brands
+        .filter((c) => c.deep)
+        .map((c) => ({
+          name: c.name,
+          lessons: courseLessons(c.id).length,
+          minutes: courseLessons(c.id).reduce((s, l) => s + l.minutes, 0),
+        })),
+    }),
+  ));
 
-test('all previously learned question IDs retain their correct answer',()=>{const legacy=JSON.parse(readFileSync(new URL('./fixtures/legacy-course-answers.json',import.meta.url),'utf8'));const qs=new Map(lessons.flatMap(l=>l.questions.map(q=>[q.id,q])));for(const [id,answer] of Object.entries(legacy)){assert.ok(qs.has(id),id);const q=qs.get(id);assert.equal(q.options[q.answer],answer,id);}});
-test('popular tracks are detailed in content, with mechanical teaching pages and complete model coverage',()=>{const popular=['tesla','toyota','honda','ford','chevrolet','hyundai','kia','nissan','subaru','volkswagen','gmc','ram','mitsubishi','jeep','lexus','audi'];for(const id of popular){const c=brands.find(c=>c.id===id);assert.ok(c?.deep,id);assert.ok(c.models.length>=4,id);const ls=courseLessons(id);for(const m of c.models){const l=ls.find(l=>l.id===`brand-${id}-${m.id}`);assert.equal(l.pages.length,6,l.id);assert.ok(m.power.length>70,m.id);assert.equal(l.pages[2].text,m.power);assert.ok(l.questions.length>=6);}}});
+test('all previously learned question IDs retain their correct answer', () => {
+  const legacy = JSON.parse(
+    readFileSync(new URL('./fixtures/legacy-course-answers.json', import.meta.url), 'utf8'),
+  );
+  const qs = new Map(lessons.flatMap((l) => l.questions.map((q) => [q.id, q])));
+  for (const [id, answer] of Object.entries(legacy)) {
+    assert.ok(qs.has(id), id);
+    const q = qs.get(id);
+    assert.equal(q.options[q.answer], answer, id);
+  }
+});
+test('popular tracks are detailed in content, with mechanical teaching pages and complete model coverage', () => {
+  const popular = [
+    'tesla',
+    'toyota',
+    'honda',
+    'ford',
+    'chevrolet',
+    'hyundai',
+    'kia',
+    'nissan',
+    'subaru',
+    'volkswagen',
+    'gmc',
+    'ram',
+    'mitsubishi',
+    'jeep',
+    'lexus',
+    'audi',
+  ];
+  for (const id of popular) {
+    const c = brands.find((c) => c.id === id);
+    assert.ok(c?.deep, id);
+    assert.ok(c.models.length >= 4, id);
+    const ls = courseLessons(id);
+    for (const m of c.models) {
+      const l = ls.find((l) => l.id === `brand-${id}-${m.id}`);
+      assert.equal(l.pages.length, 6, l.id);
+      assert.ok(m.power.length > 70, m.id);
+      assert.equal(l.pages[2].text, m.power);
+      assert.ok(l.questions.length >= 6);
+    }
+  }
+});

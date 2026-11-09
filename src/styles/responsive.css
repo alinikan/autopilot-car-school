@@ -1,0 +1,1375 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes piston {
+  from {
+    transform: translateY(-8px);
+  }
+  to {
+    transform: translateY(36px);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 1600px) {
+  .sidebar {
+    width: 244px;
+    padding: 35px 22px;
+  }
+  .main-shell {
+    margin-left: 244px;
+  }
+  .topbar {
+    height: 82px;
+    padding: 0 44px;
+  }
+  main {
+    padding: 42px 44px 45px;
+  }
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1fr) 284px;
+    gap: 32px;
+  }
+  .lesson-feature {
+    min-height: 390px;
+  }
+  .feature-copy {
+    padding: 31px;
+  }
+  .feature-copy h2 {
+    font-size: 39px;
+  }
+  .feature-copy p {
+    font-size: 14px;
+  }
+  .feature-kicker {
+    font-size: 10px;
+  }
+  .hero-meta {
+    font-size: 11px;
+  }
+  .feature-photo figcaption {
+    padding: 18px 23px;
+  }
+  .feature-photo figcaption > b {
+    font-size: 14px;
+  }
+  .feature-photo figcaption > span:last-child {
+    font-size: 10px;
+  }
+  .daily-card {
+    padding: 25px;
+  }
+  .daily-card h3 {
+    font-size: 15px;
+  }
+  .daily-card > p,
+  .review-card p,
+  .local-card p {
+    font-size: 12px;
+  }
+  .discovery-visual {
+    height: 158px;
+  }
+  .discovery-visual > img {
+    height: 126px;
+  }
+  .discovery-copy h3 {
+    font-size: 15px;
+  }
+  .discovery-copy p {
+    font-size: 12px;
+  }
+  .lesson-row {
+    padding: 20px;
+  }
+  .lesson-description b {
+    font-size: 14px;
+  }
+  .lesson-description small {
+    font-size: 11px;
+  }
+  .page-footer {
+    padding: 0 44px 30px;
+  }
+}
+@media (max-width: 1180px) {
+  .sidebar {
+    width: 208px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .main-shell {
+    margin-left: 208px;
+  }
+  .topbar {
+    padding: 0 27px;
+  }
+  .topbar-brand {
+    display: none;
+  }
+  .breadcrumb > svg {
+    display: none;
+  }
+  main {
+    padding: 31px 27px;
+  }
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1fr) 232px;
+    gap: 22px;
+  }
+  .feature-copy {
+    padding: 23px 20px;
+  }
+  .feature-copy h2 {
+    font-size: 29px;
+  }
+  .feature-copy p {
+    font-size: 11px;
+  }
+  .feature-kicker {
+    font-size: 8px;
+    gap: 8px;
+  }
+  .hero-meta {
+    gap: 9px;
+    font-size: 9px;
+  }
+  .hero-meta span:last-child {
+    display: none;
+  }
+  .feature-unit {
+    font-size: 9px;
+  }
+  .feature-bottom .btn {
+    font-size: 11px;
+    gap: 15px;
+  }
+  .lesson-feature {
+    min-height: 345px;
+  }
+  .daily-card,
+  .review-card {
+    padding: 20px;
+  }
+  .local-card {
+    padding: 20px;
+  }
+  .review-card h3 {
+    font-size: 16px;
+  }
+  .discovery-visual {
+    height: 125px;
+  }
+  .discovery-visual > img {
+    height: 95px;
+  }
+  .discovery-copy {
+    padding: 15px;
+  }
+  .discovery-copy h3 {
+    font-size: 12px;
+  }
+  .technical-mark {
+    font-size: 47px;
+  }
+  .technical-visual {
+    padding: 16px;
+    gap: 11px;
+  }
+  .technical-caption > span:first-child {
+    font-size: 6px;
+  }
+  .technical-caption b {
+    font-size: 10px;
+  }
+  .technical-caption > span:last-child {
+    font-size: 5px;
+  }
+  .date-pill {
+    font-size: 10px;
+  }
+  .section-heading h1 {
+    font-size: 29px;
+  }
+  .section-heading p {
+    font-size: 12px;
+  }
+  .curriculum {
+    grid-template-columns: 1fr;
+  }
+  .vehicle-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brand-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .filters {
+    flex-wrap: wrap;
+  }
+  .filters > .search-box {
+    flex-basis: 100%;
+  }
+  .filters select {
+    flex: 1;
+    max-width: none;
+  }
+  .dictionary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .page-footer {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .location {
+    font-size: 10px;
+    padding-right: 15px;
+  }
+  .topbar-stats {
+    gap: 15px;
+  }
+  .practice-feature {
+    padding: 28px;
+  }
+  .memory-card {
+    padding: 25px;
+  }
+  .practice-feature h2 {
+    font-size: 25px;
+  }
+  .unit-progress {
+    font-size: 9px;
+  }
+  .unit-preview p {
+    font-size: 10px;
+  }
+  .unit-preview h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 960px) {
+  .sidebar {
+    width: 184px;
+  }
+  .main-shell {
+    margin-left: 184px;
+  }
+  .logo {
+    font-size: 22px;
+    margin-left: 9px;
+  }
+  .logo > span:first-child {
+    width: 27px;
+    height: 29px;
+  }
+  .logo svg {
+    width: 25px;
+  }
+  .nav-link {
+    font-size: 11px;
+    gap: 10px;
+    padding: 12px;
+  }
+  .sidebar-label {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+  }
+  .sidebar-course {
+    padding: 18px 10px;
+  }
+  .sidebar-course b {
+    font-size: 11px;
+  }
+  .sidebar-course > div > span {
+    font-size: 10px;
+  }
+  .profile b {
+    font-size: 10px;
+  }
+  .profile small {
+    font-size: 9px;
+  }
+  .sidebar-footer {
+    font-size: 10px;
+  }
+  .topbar .location {
+    display: none;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .daily-card {
+    grid-row: span 2;
+  }
+  .course-overview {
+    padding: 17px 3px;
+  }
+  .lesson-feature {
+    min-height: 345px;
+  }
+  .feature-copy {
+    padding: 28px;
+  }
+  .feature-copy h2 {
+    font-size: 35px;
+  }
+  .feature-copy p {
+    font-size: 13px;
+  }
+  .feature-unit {
+    font-size: 10px;
+  }
+  .hero-meta {
+    font-size: 10px;
+  }
+  .hero-meta span:last-child {
+    display: flex;
+  }
+  .feature-kicker {
+    font-size: 9px;
+  }
+  .discovery-visual {
+    height: 145px;
+  }
+  .discovery-visual > img {
+    height: 115px;
+  }
+  .discovery-copy h3 {
+    font-size: 14px;
+  }
+  .discovery-copy p {
+    font-size: 12px;
+  }
+  .technical-visual {
+    gap: 19px;
+    padding: 22px;
+  }
+  .technical-mark {
+    font-size: 60px;
+  }
+  .technical-caption > span:first-child {
+    font-size: 7px;
+  }
+  .technical-caption b {
+    font-size: 12px;
+  }
+  .technical-caption > span:last-child {
+    font-size: 6px;
+  }
+  .library-intro img {
+    height: 110px;
+  }
+  .library-intro span {
+    padding: 13px;
+  }
+  .library-intro b {
+    font-size: 11px;
+  }
+  .library-intro small {
+    font-size: 9px;
+  }
+  .stat-grid {
+    gap: 13px;
+  }
+  .stat-card {
+    padding: 21px;
+  }
+  .stat-card > span {
+    font-size: 10px;
+  }
+  .progress-columns {
+    grid-template-columns: 1fr;
+  }
+  .sync-panel {
+    flex-wrap: wrap;
+  }
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+  .practice-feature {
+    min-height: 350px;
+  }
+  .labs-grid {
+    grid-template-columns: 1fr;
+  }
+  .date-pill {
+    font-size: 9px;
+    margin-top: 31px;
+  }
+  .section-heading h1 {
+    font-size: 27px;
+  }
+  .section-heading .eyebrow {
+    font-size: 9px;
+  }
+  .page-footer {
+    font-size: 9px;
+  }
+  .page-footer button {
+    font-size: 9px;
+  }
+  .section-heading {
+    gap: 15px;
+  }
+  .technical-mark {
+    font-size: 55px;
+  }
+}
+@media (max-width: 720px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebar.open {
+    display: flex;
+    width: 244px;
+    box-shadow: 8px 0 30px #14203426;
+  }
+  .mobile-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #111b2b66;
+    z-index: 29;
+  }
+  .main-shell {
+    margin-left: 0;
+  }
+  .topbar {
+    height: 66px;
+    padding: 0 21px;
+  }
+  .menu-toggle {
+    display: flex;
+    margin-right: 4px;
+    color: #506683;
+    padding: 4px;
+  }
+  .menu-toggle svg {
+    width: 19px;
+  }
+  .breadcrumb {
+    font-size: 11px;
+    gap: 9px;
+  }
+  .breadcrumb b {
+    font-size: 12px;
+  }
+  .topbar-stats {
+    gap: 13px;
+  }
+  .streak {
+    font-size: 11px;
+  }
+  .streak > span {
+    display: none;
+  }
+  .xp {
+    font-size: 11px;
+  }
+  .header-avatar {
+    width: 29px;
+    height: 29px;
+  }
+  .topbar-stats svg {
+    width: 16px;
+  }
+  main {
+    padding: 28px 21px 32px;
+  }
+  .section-heading {
+    margin-bottom: 25px;
+  }
+  .section-heading h1 {
+    font-size: 29px;
+    letter-spacing: -1px;
+  }
+  .section-heading p {
+    font-size: 13px;
+    line-height: 1.85;
+    margin-top: 10px;
+  }
+  .section-heading .eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+  }
+  .date-pill {
+    display: none;
+  }
+  .lesson-feature {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .feature-copy {
+    padding: 26px;
+    gap: 24px;
+  }
+  .feature-kicker {
+    font-size: 9px;
+  }
+  .feature-copy h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    max-width: 320px;
+  }
+  .feature-copy p {
+    font-size: 13px;
+    margin-top: 11px;
+  }
+  .feature-unit {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .feature-bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  .hero-meta {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .hero-meta span:last-child {
+    display: none;
+  }
+  .feature-bottom .btn {
+    font-size: 12px;
+    gap: 15px;
+    padding: 12px 15px;
+  }
+  .feature-photo {
+    display: block;
+  }
+  .feature-photo > img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 55%;
+    display: block;
+  }
+  .feature-photo figcaption {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px 10px;
+    padding: 16px 23px;
+  }
+  .feature-photo figcaption > span:first-child {
+    font-size: 8px;
+    grid-column: 1;
+  }
+  .feature-photo figcaption > b {
+    font-size: 12px;
+    grid-column: 1;
+  }
+  .feature-photo figcaption > span:last-child {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    font-size: 9px;
+    gap: 10px;
+  }
+  .route-section {
+    margin-top: 29px;
+  }
+  .section-row h2 {
+    font-size: 18px;
+  }
+  .section-row .eyebrow {
+    font-size: 8px;
+  }
+  .section-row > .text-button {
+    font-size: 11px;
+  }
+  .unit-preview {
+    padding: 18px 0;
+    gap: 12px;
+  }
+  .unit-preview h3 {
+    font-size: 14px;
+  }
+  .unit-preview p {
+    font-size: 11px;
+    max-width: 190px;
+  }
+  .unit-number {
+    font-size: 28px;
+    min-width: 33px;
+  }
+  .unit-progress {
+    font-size: 9px;
+    max-width: 57px;
+    white-space: normal;
+    text-align: right;
+    line-height: 1.8;
+  }
+  .lesson-row {
+    gap: 11px;
+    padding: 16px 14px;
+    min-height: 76px;
+  }
+  .lesson-description b {
+    font-size: 12px;
+  }
+  .lesson-description small {
+    font-size: 10px;
+  }
+  .lesson-duration {
+    font-size: 10px;
+  }
+  .lesson-row .row-arrow,
+  .lesson-row .completion-mark {
+    width: 15px;
+  }
+  .lesson-node {
+    width: 29px;
+    height: 29px;
+  }
+  .discovery-grid {
+    gap: 14px;
+  }
+  .discovery-visual {
+    height: 120px;
+  }
+  .discovery-visual > img {
+    height: 90px;
+  }
+  .discovery-visual > span {
+    font-size: 7px;
+    letter-spacing: 0.8px;
+    padding: 10px 13px;
+  }
+  .discovery-copy {
+    padding: 15px;
+  }
+  .discovery-copy h3 {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+  .discovery-copy p {
+    font-size: 11px;
+  }
+  .discovery-copy > span {
+    font-size: 10px;
+    gap: 5px;
+    line-height: 1.7;
+    padding-top: 18px;
+  }
+  .technical-visual {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 13px;
+  }
+  .technical-mark {
+    font-size: 39px;
+    line-height: 1;
+  }
+  .technical-caption {
+    gap: 4px;
+  }
+  .technical-caption > span:first-child {
+    font-size: 6px;
+  }
+  .technical-caption b {
+    font-size: 9px;
+  }
+  .technical-caption > span:last-child {
+    display: none;
+  }
+  .dashboard-aside {
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .daily-card {
+    padding: 21px 17px;
+  }
+  .daily-card h3 {
+    font-size: 12px;
+  }
+  .daily-card .section-row > svg {
+    width: 16px;
+  }
+  .daily-count {
+    gap: 7px;
+    margin-top: 22px;
+  }
+  .daily-count > b {
+    font-size: 45px;
+  }
+  .daily-count > span {
+    font-size: 22px;
+  }
+  .daily-count small {
+    font-size: 9px;
+  }
+  .daily-card > p {
+    font-size: 11px;
+  }
+  .week-dots {
+    padding-top: 14px;
+    gap: 3px;
+  }
+  .week-dots b {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+  }
+  .week-dots > div > span {
+    font-size: 8px;
+  }
+  .goal-estimate {
+    font-size: 9px;
+    line-height: 1.7;
+  }
+  .review-card {
+    padding: 20px 17px;
+  }
+  .review-card h3 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .review-card p {
+    font-size: 11px;
+  }
+  .review-card .btn {
+    font-size: 10px;
+    padding: 10px 9px;
+    gap: 5px;
+    white-space: normal;
+    text-align: left;
+  }
+  .review-icon {
+    height: 30px;
+    width: 30px;
+  }
+  .review-count {
+    font-size: 25px;
+  }
+  .local-card {
+    padding: 19px 17px;
+  }
+  .local-card h3 {
+    font-size: 13px;
+  }
+  .local-card p {
+    font-size: 11px;
+  }
+  .local-card-link {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+  .local-card-head {
+    margin-bottom: 14px;
+  }
+  .bc-label {
+    font-size: 10px;
+  }
+  .course-overview {
+    grid-column: 1 / -1;
+    padding: 15px 1px;
+  }
+  .course-overview .eyebrow {
+    font-size: 9px;
+  }
+  .course-overview b {
+    font-size: 24px;
+  }
+  .course-overview > div > span {
+    font-size: 11px;
+  }
+  .course-overview > p {
+    font-size: 11px;
+  }
+  .page-footer {
+    padding: 0 21px 25px;
+    align-items: flex-start;
+    font-size: 9px;
+    line-height: 1.8;
+    gap: 25px;
+  }
+  .page-footer > span {
+    max-width: 185px;
+  }
+  .page-footer button {
+    font-size: 9px;
+    text-align: left;
+    line-height: 1.8;
+  }
+  .sidebar .nav-link {
+    font-size: 13px;
+    min-height: 46px;
+  }
+  .sidebar-footer {
+    font-size: 11px;
+  }
+  .profile b {
+    font-size: 11px;
+  }
+  .profile small {
+    font-size: 10px;
+  }
+  .skip-link {
+    left: 20px;
+  }
+  .curriculum-head {
+    padding: 21px 19px;
+  }
+  .curriculum-head > .soft-badge {
+    display: none;
+  }
+  .path-summary {
+    padding: 20px;
+    gap: 15px;
+  }
+  .path-summary > div:first-child {
+    font-size: 11px;
+  }
+  .path-summary svg {
+    width: 18px;
+  }
+  .path-summary > .progress-track {
+    display: none;
+  }
+  .path-summary > span {
+    margin-left: auto;
+  }
+  .path-lesson {
+    padding: 17px 19px;
+  }
+  .path-lesson small {
+    font-size: 10px;
+    max-width: 220px;
+    line-height: 1.7;
+  }
+  .path-lesson b {
+    font-size: 12px;
+  }
+  .tabs {
+    gap: 23px;
+  }
+  .tabs button {
+    font-size: 12px;
+    min-height: 45px;
+  }
+  .spot-game,
+  .badge-game {
+    padding: 25px 19px;
+  }
+  .spot-game h2,
+  .badge-game h2 {
+    font-size: 25px;
+  }
+  .spot-game > img {
+    max-height: 250px;
+  }
+  .spot-game .section-row .eyebrow {
+    font-size: 8px;
+  }
+  .spot-game .soft-badge {
+    font-size: 8px;
+  }
+  .answer {
+    font-size: 12px;
+    padding: 15px 12px;
+    min-height: 50px;
+  }
+  .explanation p {
+    font-size: 12px;
+  }
+  .library-intro {
+    gap: 11px;
+  }
+  .library-intro img {
+    height: 95px;
+  }
+  .library-intro small {
+    font-size: 9px;
+    line-height: 1.7;
+    display: block;
+  }
+  .library-intro small svg {
+    display: none;
+  }
+  .library-intro span {
+    padding: 12px;
+  }
+  .library-intro b {
+    font-size: 11px;
+  }
+  .section-heading > .soft-badge {
+    display: none;
+  }
+  .vehicle-grid {
+    gap: 14px;
+  }
+  .vehicle-card {
+    padding: 15px;
+  }
+  .vehicle-title h3 {
+    font-size: 15px;
+  }
+  .vehicle-title > small {
+    font-size: 9px;
+  }
+  .vehicle-title {
+    min-height: 133px;
+    padding: 19px 0;
+  }
+  .vehicle-title > span {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+  .vehicle-stats > div {
+    display: block;
+  }
+  .vehicle-stats small {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 10px;
+  }
+  .vehicle-stats b {
+    font-size: 12px;
+  }
+  .vehicle-stats b span {
+    font-size: 10px;
+  }
+  .vehicle-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .vehicle-actions .text-button {
+    font-size: 10px;
+    min-height: 34px;
+  }
+  .compare-button {
+    font-size: 10px;
+    min-height: 35px;
+  }
+  .vehicle-top > .soft-badge {
+    font-size: 9px;
+    padding: 4px 6px;
+    line-height: 1.7;
+  }
+  .vehicle-top > .icon-button {
+    padding: 2px;
+    min-width: 25px;
+  }
+  .vehicle-top > .icon-button svg {
+    width: 15px;
+  }
+  .results-bar {
+    font-size: 11px;
+  }
+  .results-bar .muted {
+    display: none;
+  }
+  .filters select {
+    font-size: 12px;
+    padding: 11px 8px;
+    max-width: 100%;
+  }
+  .search-box input,
+  .account-form input,
+  .fuel-lab input[type='number'] {
+    font-size: 16px;
+  }
+  .catalogue-source {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .catalogue-source > div {
+    flex-basis: 80%;
+  }
+  .catalogue-source p {
+    font-size: 11px;
+  }
+  .catalogue-source small {
+    font-size: 10px;
+    line-height: 1.85;
+  }
+  .history-callout {
+    padding: 21px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .history-callout p {
+    font-size: 12px;
+  }
+  .brand-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brand-card {
+    padding: 23px 13px;
+  }
+  .brand-card small {
+    font-size: 10px;
+    text-align: center;
+  }
+  .dictionary-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .term-card {
+    padding: 23px;
+  }
+  .term-card h3 {
+    font-size: 17px;
+  }
+  .term-card > p {
+    font-size: 13px;
+    min-height: 0;
+  }
+  .term-card > small {
+    font-size: 12px;
+  }
+  .term-card > section > p {
+    font-size: 13px;
+  }
+  .popular-terms {
+    gap: 8px;
+  }
+  .popular-terms button {
+    font-size: 11px;
+    min-height: 36px;
+  }
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .stat-card {
+    padding: 24px;
+  }
+  .stat-card > span {
+    font-size: 11px;
+  }
+  .progress-panel {
+    padding: 25px;
+  }
+  .sync-panel {
+    padding: 22px;
+  }
+  .sync-panel .btn {
+    width: 100%;
+  }
+  .sync-panel > div {
+    flex-basis: 80%;
+  }
+  .compare-dock {
+    gap: 10px;
+    padding: 15px 13px;
+    bottom: 12px;
+  }
+  .compare-dock > span {
+    font-size: 10px;
+    max-width: calc(100% - 120px);
+  }
+  .compare-dock b {
+    font-size: 11px;
+  }
+  .compare-dock .btn {
+    font-size: 10px;
+    padding: 10px;
+    gap: 6px;
+  }
+  .compare-dock > button:last-child {
+    padding: 0;
+  }
+  .comparison {
+    padding: 20px;
+  }
+  .activity-panel {
+    padding: 23px 19px;
+  }
+  .activity-chart {
+    height: 230px;
+  }
+  .activity-total {
+    font-size: 9px;
+  }
+  .activity-total b {
+    font-size: 18px;
+  }
+  .modal {
+    padding: 25px 21px;
+    max-height: calc(100dvh - 24px);
+    width: calc(100% - 24px);
+    border-radius: 10px;
+  }
+  .modal-header h2 {
+    font-size: 19px;
+  }
+  .lesson-content {
+    padding: 27px 0 11px;
+    min-height: 330px;
+  }
+  .lesson-content h2 {
+    font-size: 27px;
+  }
+  .lesson-text {
+    font-size: 15px;
+    line-height: 1.95;
+    margin-top: 20px;
+  }
+  .example-box {
+    padding: 18px;
+    gap: 12px;
+  }
+  .example-box p {
+    font-size: 13px;
+  }
+  .lesson-actions {
+    gap: 12px;
+    align-items: center;
+  }
+  .lesson-actions > span {
+    font-size: 10px;
+    max-width: 140px;
+    line-height: 1.85;
+  }
+  .lesson-actions .btn {
+    min-width: 130px;
+    font-size: 12px;
+    padding: 12px 15px;
+  }
+  .quiz-option {
+    font-size: 13px;
+    padding: 15px;
+  }
+  .quiz-feedback p {
+    font-size: 13px;
+  }
+  .quiz-feedback b {
+    font-size: 13px;
+  }
+  .lesson-topline {
+    font-size: 9px;
+  }
+  .lesson-photo img {
+    max-height: 220px;
+  }
+  .lesson-photo figcaption {
+    font-size: 10px;
+  }
+  .completion {
+    padding: 21px 0 11px;
+  }
+  .completion h2 {
+    font-size: 27px;
+  }
+  .completion p {
+    font-size: 13px;
+  }
+  .completion-stats {
+    gap: 14px;
+  }
+  .completion-stats > span {
+    padding: 22px;
+  }
+  .goal-options {
+    gap: 9px;
+  }
+  .goal-options button {
+    padding: 22px 11px;
+  }
+  .goal-options b {
+    font-size: 18px;
+  }
+  .goal-options span {
+    font-size: 9px;
+  }
+  .backup-buttons {
+    gap: 9px;
+  }
+  .backup-buttons .btn {
+    padding: 12px 11px;
+    font-size: 11px;
+    gap: 8px;
+  }
+  .badge-study {
+    gap: 23px;
+  }
+  .badge-study svg {
+    width: 58px;
+  }
+  .source-items b {
+    font-size: 12px;
+  }
+  .source-items span {
+    font-size: 10px;
+  }
+  .credit-list img {
+    width: 82px;
+    height: 62px;
+  }
+  .credit-list a {
+    font-size: 10px;
+  }
+  .brand-detail {
+    gap: 17px;
+    padding: 16px;
+  }
+  .brand-detail > .soft-badge {
+    font-size: 10px;
+    white-space: normal;
+    line-height: 1.7;
+  }
+  .brand-detail > svg {
+    width: 85px;
+  }
+  .segmented button {
+    min-height: 42px;
+  }
+  .lab > p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 390px) {
+  main {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .topbar {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .feature-copy {
+    padding: 23px;
+  }
+  .feature-copy h2 {
+    font-size: 32px;
+  }
+  .feature-bottom {
+    gap: 10px;
+  }
+  .feature-bottom .btn {
+    font-size: 11px;
+    padding: 12px;
+    gap: 10px;
+  }
+  .hero-meta {
+    font-size: 9px;
+    gap: 8px;
+  }
+  .section-heading h1 {
+    font-size: 27px;
+  }
+  .discovery-copy {
+    padding: 14px 12px;
+  }
+  .discovery-copy h3 {
+    font-size: 12px;
+  }
+  .discovery-copy p {
+    font-size: 10px;
+  }
+  .discovery-copy > span {
+    font-size: 9px;
+  }
+  .discovery-copy > span > svg {
+    width: 13px;
+  }
+  .daily-card {
+    padding: 20px 14px;
+  }
+  .review-card {
+    padding: 20px 15px;
+  }
+  .local-card {
+    padding: 19px 15px;
+  }
+  .topbar-stats {
+    gap: 10px;
+  }
+  .header-avatar {
+    width: 27px;
+    height: 27px;
+  }
+  .section-row h2 {
+    font-size: 17px;
+  }
+  .section-row > .text-button {
+    font-size: 10px;
+  }
+  .filters select {
+    font-size: 10px;
+    padding: 11px 6px;
+  }
+  .feature-photo figcaption {
+    padding: 15px 21px;
+  }
+  .vehicle-grid {
+    gap: 11px;
+  }
+  .vehicle-card {
+    padding: 13px;
+  }
+  .vehicle-title h3 {
+    font-size: 14px;
+  }
+  .lesson-duration {
+    font-size: 9px;
+  }
+  .lesson-row {
+    gap: 10px;
+    padding: 16px 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .piston {
+    transform: translateY(15px);
+  }
+}
+.brand-emblem {
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+.brand-wordmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 11px;
+  font-weight: 650;
+  color: #47536a;
+}
+.brand-card > .brand-emblem,
+.brand-card > .brand-wordmark {
+  margin-bottom: 18px;
+}
+.brand-detail > .brand-emblem {
+  max-width: 110px;
+}
+.badge-study .brand-emblem {
+  object-fit: contain;
+}
+@media (max-width: 720px) {
+  .brand-detail > .brand-emblem {
+    width: 85px;
+    height: 85px;
+  }
+  .badge-study .brand-emblem {
+    width: 58px;
+    height: 58px;
+  }
+}

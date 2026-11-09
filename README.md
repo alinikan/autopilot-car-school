@@ -10,14 +10,14 @@ A visual car school for complete beginners, built around the cars seen on Canadi
 
 Autopilot starts with shapes, badges, engines and fuel, then introduces individual manufacturers and their model families. Plain-language explanations, worked examples, photo activities and quizzes help connect a car's name with what it does and why someone might choose it.
 
-| Learn | Put it into practice |
-| --- | --- |
-| Car fundamentals | 24 lessons covering shapes, names, badges, cylinders, powertrains and Canadian ownership basics |
-| Manufacturer courses | 25 brands, including 19 detailed tracks, with 166 model-family guides |
-| Visual recognition | 214 credited reference photos, labelled galleries, enlargement and picture quizzes |
-| Lasting recall | Spaced review, matching activities, XP, levels, streaks and a flexible daily goal |
-| Canadian comparisons | Official fuel-consumption records, exact year/trim/powertrain comparisons and saved cars |
-| Saved progress | Guest persistence, Supabase accounts, cloud sync, retry and import/export backups |
+| Learn                | Put it into practice                                                                            |
+| -------------------- | ----------------------------------------------------------------------------------------------- |
+| Car fundamentals     | 24 lessons covering shapes, names, badges, cylinders, powertrains and Canadian ownership basics |
+| Manufacturer courses | 25 brands, including 19 detailed tracks, with 166 model-family guides                           |
+| Visual recognition   | 214 credited reference photos, labelled galleries, enlargement and picture quizzes              |
+| Lasting recall       | Spaced review, matching activities, XP, levels, streaks and a flexible daily goal               |
+| Canadian comparisons | Official fuel-consumption records, exact year/trim/powertrain comparisons and saved cars        |
+| Saved progress       | Guest persistence, Supabase accounts, cloud sync, retry and import/export backups               |
 
 The current edition contains **276 lessons and 1,394 quiz questions**. Lessons and photos are curated; live catalogue updates do not automatically rewrite the curriculum.
 
@@ -64,36 +64,54 @@ Only public client configuration belongs in `VITE_*` variables. Local environmen
 
 ## Commands
 
-| Command | Purpose |
-| --- | --- |
-| `npm run dev` | Start Vite and the local catalogue API middleware |
-| `npm test` | Check review scheduling, BC dates, backups, catalogue parsing, course integrity, photo coverage and existing question answers |
-| `npm run build` | Type-check and build the production application |
-| `npm run preview` | Serve the built frontend; use `npm run dev` for the local catalogue API |
-| `npm run verify:photos -- https://autopilot-car-school.vercel.app` | Check all hosted photo responses against the local asset hashes |
-| `python3 scripts/refresh-catalog.py` | Refresh the included government-data snapshot |
+| Command                                                            | Purpose                                                                                                                       |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| `npm run dev`                                                      | Start Vite and the local catalogue API middleware                                                                             |
+| `npm test`                                                         | Check review scheduling, BC dates, backups, catalogue parsing, course integrity, photo coverage and existing question answers |
+| `npm run format`                                                   | Apply the project’s Prettier formatting                                                                                       |
+| `npm run format:check`                                             | Check readable, consistent formatting without changing files                                                                  |
+| `npm run build`                                                    | Type-check and build the production application                                                                               |
+| `npm run preview`                                                  | Serve the built frontend; use `npm run dev` for the local catalogue API                                                       |
+| `npm run verify:photos -- https://autopilot-car-school.vercel.app` | Check all hosted photo responses against the local asset hashes                                                               |
+| `python3 scripts/refresh-catalog.py`                               | Refresh the included government-data snapshot                                                                                 |
 
-GitHub Actions runs the tests and production build on pushes and pull requests. Its workflow has read-only repository permissions and uses no deployment credentials.
+GitHub Actions checks formatting, runs the tests and builds the app on pushes and pull requests. The protected `main` branch requires a pull request, an up-to-date branch and the passing **Test and build** check; force pushes and branch deletion are blocked. Its workflow has read-only repository permissions and uses no deployment credentials.
 
 ## Project layout
 
 ```text
-src/                       React UI, course content and learning logic
-  academy-data.json        Manufacturer and model-family teaching content
-  academy.ts               Builds lessons and stable review questions
-  photo-manifest.json      Pictured identities, local files and source credits
-  CarPhoto.tsx             Shared full-frame photos, galleries and enlarged views
-  learning.mjs             Progress, scheduling and BC-date calculations
-  useProgress.ts           Device persistence and Supabase sync
-api/catalog.js             Vercel API for official Canadian ratings
-public/cars/               Locally hosted, optimized reference photographs
-public/brands/             Brand reference assets and attribution
-supabase/schema.sql        New-project database bootstrap and ownership policies
-scripts/                   Snapshot refresh and deployed-photo verification
-tests/                     Node test suite and answer-compatibility fixtures
-docs/                      Architecture, deployment, content guide and screenshots
-.github/                   CI, dependency updates and contribution templates
+src/
+  main.tsx                  Application entry point
+  app/                      Root state, routing and navigation definitions
+  components/               Shared layout, UI controls, media and illustrations
+  features/                 Screens and behaviour grouped by learner task
+    account/                Email-link, password and recovery dialogs
+    dashboard/              Daily learning dashboard
+    dictionary/             Searchable car terminology
+    learning/               Courses, lesson player and teaching activities
+    library/                Canadian vehicle records and comparison UI
+    practice/               Review, recognition games and learning labs
+    preferences/            Goals and progress backup controls
+    progress/               Progress screen, chart and cloud-sync hook
+    sources/                Sources and image-credit dialog
+  content/                  Curated teaching data, independent of UI
+    courses/manufacturers/  One JSON file for each of the 25 manufacturers
+    foundations/            Starter lessons and unit definitions
+    photos/                 Photo identities, assets and attribution metadata
+    reference/              Brand passports, glossary and recognition references
+  domain/                   Pure learning, review scheduling and progress logic
+  lib/                      External service clients and small shared utilities
+  styles/                   Ordered, named stylesheets by responsibility
+api/                        Vercel catalogue endpoint
+public/                     Browser-served photos, badges and catalogue snapshot
+supabase/                   Database bootstrap and ownership policies
+scripts/                    Data refresh and deployed-photo verification
+tests/                     Behaviour, curriculum and photo-integrity checks
+docs/                       Architecture, deployment, content and workflow guides
+.github/                    CI, dependency updates and contribution templates
 ```
+
+[Folder responsibilities and development workflow](docs/project-structure.md) explain where new code belongs. Root configuration files remain at the locations required by Vite, Vercel, npm and GitHub.
 
 ## Content, data and scope
 
@@ -101,7 +119,7 @@ The course covers selected manufacturers and model families, including labelled 
 
 The vehicle library uses [Natural Resources Canada's fuel-consumption ratings](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64) and an included fallback snapshot. Exact trims and powertrains can be separate records. Standardized ratings are not guaranteed real-world results. Manufacturer prices are dated Canadian examples with their source and exclusions; they are not live dealer quotes.
 
-Photo identity, photographer, licence and source links are recorded in [src/photo-manifest.json](src/photo-manifest.json) and [public/image-credits.json](public/image-credits.json), and displayed inside the app. Images are resized and compressed without layout cropping. Read [the content guide](docs/content-and-photography.md) before adding or replacing one.
+Photo identity, photographer, licence and source links are recorded in [src/content/photos/manifest.json](src/content/photos/manifest.json) and [public/image-credits.json](public/image-credits.json), and displayed inside the app. Images are resized and compressed without layout cropping. Read [the content guide](docs/content-and-photography.md) before adding or replacing one.
 
 ## Progress and account behaviour
 

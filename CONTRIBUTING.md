@@ -6,7 +6,7 @@ Autopilot teaches complete beginners. Prefer clear explanations, concrete exampl
 
 1. Use Node 24 (`nvm use`) and install dependencies with `npm ci`.
 2. Create a branch for a focused change.
-3. Run `npm test` and `npm run build`.
+3. Run `npm run format:check`, `npm test` and `npm run build`.
 4. For a UI change, check a narrow phone, desktop and landscape viewport. Inspect the actual rendered result.
 5. Describe the problem, resulting behaviour and validation in the pull request.
 
@@ -14,7 +14,7 @@ Guest mode works without a Supabase project. Use your own Supabase project to te
 
 ## Curriculum changes
 
-Manufacturer content lives in `src/academy-data.json`; foundations live in `src/content.ts`. Use an official Canadian source for current local specifications or price examples, and record the model year, version, exclusions and source date. Distinguish a model family from a particular trim or market.
+Manufacturer content lives in `src/content/courses/manufacturers/`; foundations live in `src/content/foundations/lessons.ts`. Use an official Canadian source for current local specifications or price examples, and record the model year, version, exclusions and source date. Distinguish a model family from a particular trim or market.
 
 Question IDs are saved in learners' review history. Preserve an existing ID's correct answer. If the underlying meaning changes, give the replacement question a new ID and consider how existing progress should behave. The compatibility fixture in `tests/fixtures/legacy-course-answers.json` guards previously learned answers.
 
@@ -27,3 +27,7 @@ Follow [docs/content-and-photography.md](docs/content-and-photography.md). Verif
 ## Pull requests
 
 Keep changes focused. Include a screenshot when the UI changes and describe any source or account configuration needed. Tests should check meaningful behaviour or data integrity. Do not add a test that merely repeats a styling implementation.
+
+## Branch workflow
+
+`main` is protected. Use a feature branch and a pull request; the **Test and build** job must pass, the branch must be up to date and review conversations must be resolved. Force pushes and deletion are blocked. Required approvals are zero for the sole-maintainer workflow. See [the structure guide](docs/project-structure.md) for ownership and module boundaries.

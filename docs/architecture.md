@@ -1,35 +1,39 @@
 # Architecture
 
-Autopilot is a Vite React application with one Vercel catalogue endpoint. Curated teaching content and photographs ship with the frontend; learner accounts and progress use Supabase.
+Autopilot is a Vite React application with a Vercel catalogue endpoint and Supabase account/progress storage. Its source is separated into the application shell, feature modules, shared components, curated content and pure learning logic.
 
-| Area | Files | Responsibility |
-| --- | --- | --- |
-| Navigation and screens | `src/main.tsx`, `src/AcademyUI.tsx`, `src/UI.tsx` | Dashboard, courses, library, practice and accessible modal/tab interactions |
-| Curriculum | `src/content.ts`, `src/academy.ts`, `src/academy-data.json` | Foundation content, manufacturer guides and stable quiz IDs |
-| Teaching activities | `src/LessonActivities.tsx`, `src/Diagrams.tsx` | Matching, worked examples, diagrams and interactive fundamentals |
-| Photography | `src/CarPhoto.tsx`, `src/photo-manifest.json` | Verified identities, local URLs, full-frame fitting, captions and enlargement |
-| Learning logic | `src/learning.mjs` | Review intervals, XP, streaks, backups and BC calendar dates |
-| Persistence | `src/useProgress.ts`, `src/supabase.ts` | Device state, account sessions, delayed cloud writes and retry |
-| Vehicle catalogue | `api/catalog.js`, `vite.config.js` | Fetch/normalize official records; expose the same handler during development |
-| Fallback data | `public/catalog.json`, `scripts/refresh-catalog.py` | Included government-data snapshot and its refresh script |
-| Database | `supabase/schema.sql` | One private progress row per authenticated user, with ownership RLS |
+| Layer           | Main files                                                    | Responsibility                                                                       |
+| --------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Entry point     | `src/main.tsx`                                                | Mount React and load the stylesheet entry point                                      |
+| Application     | `src/app/App.tsx`, `navigation.ts`                            | Root state, navigation and feature composition                                       |
+| Layout          | `src/components/layout/AppShell.tsx`                          | Sidebar, header, page transition and footer                                          |
+| Feature screens | `src/features/`                                               | Dashboard, courses, practice, library, dictionary, progress, account and preferences |
+| Shared UI       | `src/components/ui/`, `media/`, `branding/`, `illustrations/` | Accessible controls, dialogs, full-frame photographs, badges and silhouettes         |
+| Curriculum      | `src/content/courses/`, `foundations/`, `reference/`          | Per-manufacturer content, starter lessons, glossary and references                   |
+| Photo registry  | `src/content/photos/manifest.json`, `photos.ts`               | Pictured identities, source credits and local asset resolution                       |
+| Learning domain | `src/domain/learning.mjs`                                     | Progress validation, review scheduling, XP, streaks and BC dates                     |
+| Persistence     | `src/features/progress/useProgress.ts`, `src/lib/supabase.ts` | Device saves, account sessions, debounced cloud writes and retry                     |
+| Catalogue       | `api/catalog.js`, `public/catalog.json`                       | Official Canadian records and bundled fallback                                       |
+| Database        | `supabase/schema.sql`                                         | User-owned progress records and row-level ownership policies                         |
 
-## Content and photo flow
+## Teaching and photographs
 
-`academy.ts` builds manufacturer lessons from the JSON course data. A model guide points to one or more photo IDs; the manifest resolves those IDs to local WebP files and source credits. `CarPhoto` supplies the shared image frame. `PhotoGallery` adds model labels, navigation and a separate photo dialog. Quiz mode withholds identity captions and uses a neutral accessible description.
+`content/courses/catalog.ts` assembles 25 individual manufacturer JSON files in a stable editorial order. `lesson-builder.ts` turns their typed records into manufacturer lessons. `content/index.ts` combines those lessons with the starter course for the application.
 
-Images load lazily except where a priority image is appropriate. The source photo's full frame is fitted with `contain`; the frame has a bounded viewport-aware height. The image is positioned inside that frame to avoid intrinsic grid sizing making it taller than its container.
+A model guide points to one or more stable photo IDs. The photo registry resolves them to local WebP files and source credits. Shared `CarPhoto` and `PhotoGallery` components fit the complete source frame, provide labelled navigation and offer a viewport-bounded enlarged dialog. Quiz mode withholds identity captions.
 
-## Learning and sync flow
+## Progress and account flow
 
-Reading and quiz UI call the pure learning functions, then persist progress on the device. Signed-in sessions sync the whole progress object to a user-owned Supabase row after a short debounce. Errors expose a retry. When devices write concurrently, the latest stored whole record wins; there is no per-field merge.
+Feature screens call the pure domain functions, persist locally first, then sync a signed-in user's whole progress object after a short debounce. Errors expose retry. Concurrent devices use the latest stored whole record; there is no per-field merge. Reading drafts remain device-local.
 
-A reading draft is device-local. An existing cloud record is restored on sign-in; a missing cloud record can be initialized from local progress. Stable question IDs allow spaced-review history to survive curriculum expansion.
+The refactor preserves the existing account flow, client initialization, local-storage keys, progress schema and question IDs. Moving files does not require a database migration.
 
 ## Catalogue flow
 
-The browser loads the bundled snapshot and requests `/api/catalog`. A live failure retains the snapshot with an explanatory state. Vercel caches official responses; a historical request can extend coverage back to 1995. The library distinguishes exact government records from curated family-level lessons and visual references.
+The library loads the bundled snapshot and requests `/api/catalog`. A live failure retains the snapshot with an explanatory state. Vite's development middleware exposes the same handler that runs as a Vercel function. Exact government records remain distinct from family-level teaching content and visual references.
 
-## Boundaries
+## Styling
 
-The application does not generate an exhaustive catalogue, automatically rewrite lessons, store service-role credentials, or promise real-world fuel use. Current specifications and prices require the exact year, version and Canadian source. These boundaries are reflected in the UI and content notes.
+`src/styles/index.css` is the single stylesheet entry point. It imports named sections for tokens/base rules, layout, shared controls, feature screens, responsive rules, courses, navigation reachability and photographs. The original rule order is preserved so moving styles does not alter the existing cascade.
+
+See [project-structure.md](project-structure.md) for folder responsibilities, dependency direction and the protected-branch development workflow.

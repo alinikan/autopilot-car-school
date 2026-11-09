@@ -1,0 +1,150 @@
+{
+  "id": "lexus",
+  "name": "Lexus",
+  "country": "Japan",
+  "intro": "Lexus is a Japanese luxury brand associated with Toyota, with its own model families. IS and ES occupy different sedan roles; NX and RX are everyday SUV anchors; UX, TX, GX, LX and RZ add different sizes, utility roles and energy systems.",
+  "naming": "h commonly identifies a hybrid, and a plus on specific hybrid names can identify a plug-in system. F SPORT equipment is not equivalent to a dedicated F model. Lexus model numbers are version names rather than a universal literal engine-displacement code.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.lexus.ca/en/vehicles/brochures/",
+  "deep": true,
+  "models": [
+    {
+      "id": "is",
+      "name": "IS",
+      "body": "Sports sedan family",
+      "role": "Smaller Lexus sedan",
+      "explanation": "IS is a Lexus sports-sedan family. It is different from ES, a separate sedan family, even though both names are short and both carry Lexus badges.",
+      "tradeoff": "The IS belongs in a comparison for smaller lexus sedan. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare IS and ES on actual layout, comfort, passenger fit and powertrain. Do not assume alphabetical order gives a universal performance ranking.",
+      "memory": "IS = smaller sports-sedan role",
+      "scenario": "A friend mentions a IS. Explain its role as smaller lexus sedan, then ask for the year, powertrain and equipment before comparing it with another Lexus.",
+      "power": "IS versions have year-specific engine and drivetrain configurations. F SPORT equipment should not be treated as the same thing as a dedicated high-performance F product.",
+      "source": "https://www.lexus.ca/en/vehicles/brochures/",
+      "knowledgeCheck": {
+        "prompt": "Does F SPORT equipment make every Lexus a dedicated F performance model?",
+        "correct": "No — check the actual mechanical product",
+        "wrong": [
+          "Yes, all F-related badges mean the same engine",
+          "Only the badge colour differs",
+          "F SPORT means a plug-in battery"
+        ],
+        "why": "Equipment/styling lines and dedicated performance products are separate."
+      },
+      "photos": ["lexus-is"],
+      "image": "lexus-is"
+    },
+    {
+      "id": "nx",
+      "name": "NX",
+      "body": "Compact luxury SUV",
+      "role": "Smaller core Lexus SUV",
+      "explanation": "NX is a Lexus luxury-SUV family smaller in role than RX. Specific NX versions can have different gas, hybrid or plug-in systems depending on year.",
+      "tradeoff": "The NX belongs in a comparison for smaller core lexus suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare NX with RX on real cabin/cargo needs. NX 350, 350h and 450h+ badges identify different mechanical choices, not simply more equipment on an identical engine.",
+      "memory": "NX = smaller SUV; suffix tells another layer",
+      "scenario": "A friend mentions a NX. Explain its role as smaller core lexus suv, then ask for the year, powertrain and equipment before comparing it with another Lexus.",
+      "power": "NX gas, hybrid and plug-in-hybrid version names describe different powertrains in relevant years. The h and plus badges are useful clues, but the exact full name and specification still matter.",
+      "source": "https://www.lexus.ca/en/vehicles/brochures/",
+      "knowledgeCheck": {
+        "prompt": "What is the useful first check on an NX 450h+?",
+        "correct": "Its plug-in-hybrid system and charging needs",
+        "wrong": [
+          "Whether NX means nine cylinders",
+          "Whether plus only adds paint",
+          "Whether all NX versions are battery-only EVs"
+        ],
+        "why": "The full powertrain badge distinguishes a plug-in product from other NX configurations."
+      },
+      "photos": ["lexus-nx"],
+      "image": "lexus-nx"
+    },
+    {
+      "id": "rx",
+      "name": "RX",
+      "body": "Larger luxury crossover",
+      "role": "Larger core Lexus SUV",
+      "explanation": "RX is a larger Lexus crossover family than NX. TX, GX and LX are separate family names with different seating or utility roles; they are not all RX trims.",
+      "tradeoff": "The RX belongs in a comparison for larger core lexus suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare RX with NX for size/role, and verify exact seating before treating it as a three-row people carrier. A year-specific version matters more than a remembered family reputation.",
+      "memory": "RX = larger core crossover",
+      "scenario": "A friend mentions a RX. Explain its role as larger core lexus suv, then ask for the year, powertrain and equipment before comparing it with another Lexus.",
+      "power": "RX gas, conventional-hybrid, performance-hybrid and plug-in choices depend on year/version. An RX number is not a universal literal engine size, and the chosen drivetrain does not settle seat count by itself.",
+      "source": "https://www.lexus.ca/en/vehicles/brochures/",
+      "knowledgeCheck": {
+        "prompt": "Can RX 500h be decoded as a universal five-litre engine rule?",
+        "correct": "No — read the exact engine/motor specification",
+        "wrong": [
+          "Yes, every model number is literal litres",
+          "Only in an SUV",
+          "Yes, h always means five cylinders"
+        ],
+        "why": "Lexus version numbering is not a universal displacement formula."
+      },
+      "photos": ["lexus-rx"],
+      "image": "lexus-rx"
+    },
+    {
+      "id": "es",
+      "name": "ES",
+      "body": "Sedan families",
+      "role": "Lexus comfort-oriented everyday sedan",
+      "explanation": "ES is a Lexus sedan family distinct from IS. New electric and hybrid-era names also require a model-year/powertrain check rather than treating every ES as mechanically identical.",
+      "tradeoff": "Test the actual rear-seat, trunk/loading shape and controls. A brand’s luxury positioning cannot decide which seat fits your body comfortably.",
+      "compare": "Compare ES with IS for different sedan priorities and with RX for a taller SUV body. Check the exact generation and energy system.",
+      "memory": "ES = a different sedan family from IS",
+      "scenario": "A friend says IS and ES are the same car with different trim. Start by clarifying the product family, then compare actual versions.",
+      "power": "Powertrain and drivetrain change by generation and version. A current electric ES product should not be described using an older gas ES engine specification.",
+      "source": "https://www.lexus.ca/en/vehicles/brochures/",
+      "photos": ["lexus-es"],
+      "image": "lexus-es"
+    },
+    {
+      "id": "ux-rz",
+      "name": "UX & RZ",
+      "body": "Smaller hybrid SUV / electric SUV families",
+      "role": "Lexus electrified SUV names to distinguish",
+      "explanation": "UX and RZ are different Lexus SUV families. UX occupies a smaller role; RZ identifies a battery-electric family. Electrified is a broad word and does not mean every product has the same charging routine.",
+      "tradeoff": "Compare actual rear access/cargo and energy needs. A small hybrid crossover and a battery-electric SUV can suit very different charging situations.",
+      "compare": "Compare UX with NX by role and RZ with other EVs by charging and space. Use the exact year/powertrain rather than a blanket Lexus-hybrid assumption.",
+      "memory": "UX = smaller role; RZ = battery-electric family",
+      "scenario": "A friend thinks every Lexus with a battery plugs in. Distinguish conventional hybrid, plug-in hybrid and battery-electric systems.",
+      "power": "A conventional hybrid and a battery-electric vehicle have different engine/charging systems. Full model names and model years are essential.",
+      "source": "https://www.lexus.ca/en/vehicles/brochures/",
+      "photos": ["lexus-ux", "lexus-rz"],
+      "image": "lexus-ux"
+    },
+    {
+      "id": "tx",
+      "name": "TX",
+      "body": "Three-row crossover",
+      "role": "Lexus three-row passenger crossover",
+      "explanation": "TX is a Lexus three-row crossover family. It is distinct from RX and from the utility-oriented GX/LX names. More rows create a passenger-layout question, not an automatic quality ranking.",
+      "tradeoff": "Try third-row access and luggage with your group. Luxury equipment cannot compensate for a seat arrangement that fails a must-have.",
+      "compare": "Compare TX with RX if five seats suffice and with GX/LX only after identifying the different passenger-versus-utility role.",
+      "memory": "TX = three-row crossover",
+      "scenario": "A friend needs adult back-row room. Ask them to test the exact seating layout rather than choose the most expensive Lexus SUV.",
+      "power": "Gas and electrified configurations vary by version. Powertrain and exact seating configuration must be checked separately.",
+      "source": "https://www.lexus.ca/en/vehicles/brochures/",
+      "photos": ["lexus-tx"],
+      "image": "lexus-tx"
+    },
+    {
+      "id": "gx-lx",
+      "name": "GX & LX",
+      "body": "Utility/luxury SUV families",
+      "role": "Lexus utility-focused large SUV names",
+      "explanation": "GX and LX are distinct Lexus SUV families with utility/luxury roles. They are not equipment grades that can be added to an RX or TX.",
+      "tradeoff": "Check actual passenger layout, loading, exterior dimensions and configured capability. A utility-oriented family may have daily size and running-cost compromises.",
+      "compare": "Compare the chosen GX/LX with TX for a different utility-versus-passenger priority. More expensive does not automatically mean more useful for your commute.",
+      "memory": "GX/LX = utility/luxury families, not RX trims",
+      "scenario": "Someone only needs city passenger transport but wants utility hardware. Separate the styling preference from a task that actually requires it.",
+      "power": "Powertrain choices change by generation. Do not assume all current GX/LX examples use the older V8 engines you may remember.",
+      "source": "https://www.lexus.ca/en/vehicles/brochures/",
+      "photos": ["lexus-gx", "lexus-lx"],
+      "image": "lexus-gx"
+    }
+  ],
+  "comparisonAnchor": "rx",
+  "popular": true,
+  "streetOrder": 17
+}

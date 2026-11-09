@@ -1,0 +1,267 @@
+{
+  "id": "kia",
+  "name": "Kia",
+  "country": "South Korea",
+  "intro": "Kia is a South Korean brand with everyday cars, small and large SUVs, minivans and electric families. This course places K4, Seltos, Sportage, Sorento, Telluride, Carnival, EV6 and EV9 on different shelves so you can understand a friend’s model choice.",
+  "naming": "LX, EX, SX and other grades are version names with year-dependent contents. GT-Line is not the same thing as a dedicated GT mechanical specification. HEV and PHEV distinguish conventional and plug-in hybrids. K4 is a newer compact-car family; older Forte and Rio names remain useful on the street.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.kia.ca/en/vehicles",
+  "deep": true,
+  "models": [
+    {
+      "id": "sportage",
+      "name": "Sportage",
+      "body": "Compact SUV family",
+      "role": "Core Kia family SUV",
+      "explanation": "Sportage is Kia’s compact SUV family. Different gas and electrified versions require their own year-specific specifications rather than one assumed engine.",
+      "tradeoff": "The Sportage belongs in a comparison for core kia family suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Sportage with Seltos for a smaller SUV role and with Sorento if an extra seating row is part of the requirement.",
+      "memory": "Sportage = core family SUV",
+      "scenario": "A friend wants a higher-grade Sportage to carry more passengers. Verify whether the body offers the required seats; optional comfort equipment cannot add a row it does not have.",
+      "power": "Sportage gas, Hybrid and Plug-in Hybrid versions differ mechanically and in charging needs. A PHEV adds an externally rechargeable battery; the family name itself does not settle which system is fitted.",
+      "source": "https://www.kia.ca/en/vehicles",
+      "knowledgeCheck": {
+        "prompt": "What must you ask before discussing a Sportage’s charging needs?",
+        "correct": "Which powertrain and model year it is",
+        "wrong": [
+          "Only its paint colour",
+          "Whether every Sportage is electric",
+          "Whether SX means a charging standard"
+        ],
+        "why": "Gas, conventional hybrid and plug-in configurations need different energy routines."
+      },
+      "practicalDetails": [
+        "Sportage and Seltos occupy different SUV roles; Sorento and Telluride introduce other seating/size choices. Begin with actual passengers and cargo before selecting a powertrain or equipment grade.",
+        "A Hybrid-versus-Plug-in Hybrid comparison needs matching model years and equipment. Read the charging routine and price differences as separate issues from styling packages."
+      ],
+      "photos": ["kia-sportage"],
+      "image": "kia-sportage"
+    },
+    {
+      "id": "sorento",
+      "name": "Sorento",
+      "body": "SUV family with three-row role",
+      "role": "Kia SUV for an extra seating row",
+      "explanation": "Sorento fills a different role from Sportage, with three-row configurations in its family. Check the particular layout and room rather than equating an extra row with adult comfort.",
+      "tradeoff": "The Sorento belongs in a comparison for kia suv for an extra seating row. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Sorento with Sportage if five seats suffice and with larger SUV alternatives if the third row is used often. Test luggage capacity with the required seats upright.",
+      "memory": "Sorento = check the third row",
+      "scenario": "A friend mentions a Sorento. Explain its role as kia suv for an extra seating row, then ask for the year, powertrain and equipment before comparing it with another Kia.",
+      "power": "Sorento powertrain and seating configurations differ by version. Hybrid and plug-in systems are distinct; the engine/motor choice does not by itself prove a particular seat layout.",
+      "source": "https://www.kia.ca/en/vehicles",
+      "knowledgeCheck": {
+        "prompt": "Can the word Hybrid alone tell you a Sorento’s exact seat layout?",
+        "correct": "No — check the configuration",
+        "wrong": [
+          "Yes, it always means eight seats",
+          "Yes, it deletes the rear seats",
+          "Only the wheel size matters"
+        ],
+        "why": "Powertrain and seating configuration are separate specifications."
+      },
+      "photos": ["kia-sorento"],
+      "image": "kia-sorento"
+    },
+    {
+      "id": "ev9",
+      "name": "EV9",
+      "body": "Large electric SUV",
+      "role": "Kia electric SUV with three-row role",
+      "explanation": "EV9 is Kia’s large electric SUV family with a three-row role. EV6 is a different, lower electric crossover family, not simply a lower equipment grade of EV9.",
+      "tradeoff": "The EV9 belongs in a comparison for kia electric suv with three-row role. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare EV9 with other three-row vehicles by passenger fit and trip needs, then evaluate charging. A larger EV number is not a universal ranking for every buyer.",
+      "memory": "EV9 = electric plus three-row role",
+      "scenario": "A friend mentions a EV9. Explain its role as kia electric suv with three-row role, then ask for the year, powertrain and equipment before comparing it with another Kia.",
+      "power": "EV9 is battery-electric with a three-row SUV role. Battery/drive and seat configurations vary by version. EV6 is a different electric family with a different body and passenger role.",
+      "source": "https://www.kia.ca/en/vehicles",
+      "knowledgeCheck": {
+        "prompt": "Is EV9 simply the highest equipment grade of EV6?",
+        "correct": "No — it is a different SUV family",
+        "wrong": [
+          "Yes, the bodies are identical",
+          "Yes, 9 means nine trim options",
+          "Only the screens are different"
+        ],
+        "why": "EV9 and EV6 are different product families, not grades of the same vehicle."
+      },
+      "photos": ["kia-ev9"],
+      "image": "kia-ev9"
+    },
+    {
+      "id": "k4",
+      "name": "K4 / earlier Forte",
+      "body": "Compact-car families",
+      "role": "Kia everyday compact-car names",
+      "explanation": "K4 is Kia’s newer compact-car family; Forte is an earlier compact-car name you will still encounter. Year and body are essential before comparing their dimensions or equipment.",
+      "tradeoff": "Test rear access, luggage opening and normal controls. A new family name does not by itself prove that every version has the equipment you expect from a review.",
+      "compare": "Compare K4 with Elantra, Civic and Corolla configurations of similar year and equipment. Treat older Forte listings as their own family/year rather than new K4 trims.",
+      "memory": "K4 = newer compact car; Forte = earlier familiar name",
+      "scenario": "A friend is choosing between a used Forte and a newer K4. Compare condition, exact equipment and total costs rather than assuming the badge is the only difference.",
+      "power": "Engines, transmissions and body availability depend on model year. GT-Line appearance/equipment naming does not automatically equal a dedicated GT performance model.",
+      "source": "https://www.kia.ca/en/vehicles",
+      "photos": ["kia-k4", "kia-forte"],
+      "image": "kia-k4"
+    },
+    {
+      "id": "seltos",
+      "name": "Seltos",
+      "body": "Smaller SUV",
+      "role": "Kia’s smaller everyday SUV",
+      "explanation": "Seltos is a smaller Kia SUV family than Sportage in this course’s role map. The family has its own packaging and year-specific equipment.",
+      "tradeoff": "Check the actual rear-seat and cargo fit, and whether the drive configuration matches your needs. Being an SUV does not prove every version has AWD.",
+      "compare": "Compare Seltos with Sportage for size and K4 for a lower-car alternative. Compare the actual engine and equipment, not only the price headline.",
+      "memory": "Seltos = smaller SUV; Sportage = core family SUV",
+      "scenario": "A city driver wants easy entry but has a limited stall. Look at dimensions and visibility rather than assuming a bigger SUV is automatically more useful.",
+      "power": "Gas engine and driven-wheel configurations vary by year/version. A turbo option is a separate mechanical choice, not the name of every Seltos.",
+      "source": "https://www.kia.ca/en/vehicles",
+      "photos": ["kia-seltos"],
+      "image": "kia-seltos"
+    },
+    {
+      "id": "telluride",
+      "name": "Telluride",
+      "body": "Large three-row SUV",
+      "role": "Kia’s larger three-row SUV",
+      "explanation": "Telluride is Kia’s larger three-row SUV family. It is separate from Sorento, even where both are considered by households needing more than five places.",
+      "tradeoff": "Compare third-row adult fit, access and luggage with the required seats upright. Larger exterior size can be relevant to both usefulness and daily parking compromises.",
+      "compare": "Compare Telluride with Sorento for size/seat needs and Carnival for minivan door/access advantages. Check the generation before using a remembered engine specification.",
+      "memory": "Telluride = larger three-row SUV",
+      "scenario": "A household uses the back row every day. Make rear access and bags a primary test, rather than treating the third row as an occasional marketing extra.",
+      "power": "Powertrain availability changes across generations. A review of an earlier gas Telluride is not proof of the configuration of a newer electrified version.",
+      "source": "https://www.kia.ca/en/vehicles",
+      "photos": ["kia-telluride"],
+      "image": "kia-telluride"
+    },
+    {
+      "id": "carnival",
+      "name": "Carnival",
+      "body": "Minivan / multipurpose vehicle",
+      "role": "Kia sliding-door people carrier",
+      "explanation": "Carnival is Kia’s minivan-style people carrier, sometimes marketed as a multipurpose vehicle. Sliding rear doors and the passenger layout are the important body clues.",
+      "tradeoff": "Test seat movement, child-seat access and luggage with your group. Marketing terminology does not change the practical task the doors and cabin must perform.",
+      "compare": "Compare Carnival with Telluride or Sorento for access and passenger/cargo needs. Choose the body that does the job rather than treating minivan as a lower status category.",
+      "memory": "Carnival = sliding-door people carrier",
+      "scenario": "A friend insists it cannot be a minivan because the advert says MPV. Explain the body features in everyday terms.",
+      "power": "Gas and hybrid versions have different mechanical specifications in relevant years. A hybrid badge is not proof of plug-in charging.",
+      "source": "https://www.kia.ca/en/vehicles",
+      "photos": ["kia-carnival"],
+      "image": "kia-carnival"
+    },
+    {
+      "id": "ev6",
+      "name": "EV6 — road & used-car recognition",
+      "body": "Electric crossover",
+      "role": "Kia’s lower electric crossover",
+      "explanation": "EV6 is Kia’s electric crossover family, distinct from the larger three-row EV9. A low, swept-back outline does not tell you its real size without a reference. This guide includes road/used-car recognition; confirm current new-car availability directly.",
+      "tradeoff": "Check rear access, cargo shape and charging on actual trips. A performance configuration may change wheels, energy use and costs without adding passenger capacity.",
+      "compare": "Compare EV6 with IONIQ 5 and Model Y configurations, then EV9 if a third row is essential. GT and GT-Line need separate mechanical checks.",
+      "memory": "EV6 = lower electric crossover",
+      "scenario": "A friend confuses EV6 GT-Line with EV6 GT. Ask for the exact specification instead of treating the shared letters as identical hardware.",
+      "power": "Battery-electric. Battery, motor/drive and performance versions differ; charging-port capability needs a model-year check.",
+      "source": "https://www.kia.ca/en/vehicles",
+      "photos": ["kia-ev6"],
+      "image": "kia-ev6"
+    },
+    {
+      "id": "ev4-ev5",
+      "name": "EV4 & EV5",
+      "body": "Electric sedan / SUV families",
+      "role": "Kia’s newer Canadian electric-car and SUV names",
+      "explanation": "EV4 has an electric-sedan role and EV5 a family electric-SUV role in the Canadian range. They are different products from EV6 and the larger three-row EV9.",
+      "tradeoff": "Compare actual body, passenger/cargo fit and charging. A model sold in Canada may not have the same availability in the US, so an American lineup is not a complete Canadian list.",
+      "compare": "Compare EV4 with lower electric cars and EV5 with family electric SUVs. Verify the Canadian configuration rather than assuming a family-number range formula.",
+      "memory": "EV4 = sedan; EV5 = family SUV role",
+      "scenario": "A friend says a Kia model cannot exist in Canada because it is missing from an American website. Check the Canadian range and product page.",
+      "power": "Battery-electric. Battery/drive, connector and charging specifications require exact Canadian model-year information.",
+      "source": "https://www.kia.ca/en/dealers/green-vehicles/lineup",
+      "photos": ["kia-ev4", "kia-ev5"],
+      "image": "kia-ev4"
+    }
+  ],
+  "comparisonAnchor": "ev9",
+  "popular": true,
+  "workshops": [
+    {
+      "id": "badges-and-bodies",
+      "title": "Kia: GT, GT-Line and the family map",
+      "subtitle": "Understand the car/SUV/minivan and electric names.",
+      "pages": [
+        {
+          "title": "GT is not GT-Line",
+          "text": "A GT-Line version and a dedicated GT product do not automatically have the same powertrain or performance hardware. Read the complete model name and year.",
+          "example": "Do not transfer an EV6 GT test result to a GT-Line listing just because the badge looks similar.",
+          "paragraphs": [
+            "Equipment/styling identity and dedicated performance product are separate layers."
+          ]
+        },
+        {
+          "title": "Sportage, Sorento and Telluride",
+          "text": "These are distinct SUV families with different size/seating roles. Sportage is a core compact family, while Sorento and Telluride introduce different three-row comparisons.",
+          "example": "For a regular larger group, test the actual third row and bags rather than ranking by badge size.",
+          "paragraphs": [
+            "Usable passenger and luggage fit must be tested with the required seating arrangement."
+          ]
+        },
+        {
+          "title": "Carnival is a people-carrier choice",
+          "text": "Carnival’s sliding rear doors and passenger-focused body create a different use case from a conventional SUV. MPV is marketing/category language, not an engine specification.",
+          "example": "A family loading child seats in tight stalls may value the door layout more than rugged styling.",
+          "paragraphs": [
+            "Carnival has the minivan/MPV role, distinct from the brand’s sedans and SUVs."
+          ]
+        },
+        {
+          "title": "Electric numbers are family names",
+          "text": "EV4, EV5, EV6 and EV9 identify different product families/roles, not a simple sequence of option packages. A number is not a universal battery-size or range guarantee.",
+          "example": "Compare the actual body and Canadian configuration before transferring an overseas range figure.",
+          "paragraphs": [
+            "Range depends on the actual battery/drive/version and conditions, not a family-number ladder."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Does GT-Line automatically mean the dedicated GT hardware?",
+          "options": [
+            "No — compare the exact specification",
+            "Yes, all GT-related names are identical",
+            "Only the paint changes",
+            "Every GT-Line is a petrol car"
+          ],
+          "answer": 0,
+          "why": "Equipment/styling identity and dedicated performance product are separate layers."
+        },
+        {
+          "prompt": "Which is the best first check for regular back-row passengers?",
+          "options": [
+            "Their actual seating access and fit",
+            "Maximum boot space with all seats folded",
+            "Only the screen diagonal",
+            "Whether every SUV has identical rows"
+          ],
+          "answer": 0,
+          "why": "Usable passenger and luggage fit must be tested with the required seating arrangement."
+        },
+        {
+          "prompt": "Which Kia family has a sliding-door people-carrier role?",
+          "options": ["Carnival", "Sportage", "K4", "EV6"],
+          "answer": 0,
+          "why": "Carnival has the minivan/MPV role, distinct from the brand’s sedans and SUVs."
+        },
+        {
+          "prompt": "Does a larger EV family number guarantee longer range?",
+          "options": [
+            "No — compare the actual rated configurations",
+            "Yes, it is a battery-size formula",
+            "Only if the paint is dark",
+            "Yes, all family numbers are kilometres"
+          ],
+          "answer": 0,
+          "why": "Range depends on the actual battery/drive/version and conditions, not a family-number ladder."
+        }
+      ],
+      "source": "https://www.kia.ca/en/vehicles"
+    }
+  ],
+  "streetOrder": 7
+}

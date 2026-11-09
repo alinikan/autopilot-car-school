@@ -1,0 +1,42 @@
+export const spotCars = [
+  {
+    id: 'corolla',
+    name: 'Toyota Corolla',
+    make: 'Toyota',
+    body: 'Sedan',
+    clue: 'Look for the Toyota oval and the low body with a separate trunk.',
+    note: 'Reference photo: 2024 Corolla LE sedan. Year, market and trim may differ from Canadian catalogue records.',
+  },
+  {
+    id: 'civic',
+    name: 'Honda Civic',
+    make: 'Honda',
+    body: 'Hatchback',
+    clue: 'A Honda H, a low roof, and a rear hatch distinguish this example.',
+    note: 'Reference photo: Civic e:HEV Sport (11th generation), European-market example.',
+  },
+  {
+    id: 'model3',
+    name: 'Tesla Model 3',
+    make: 'Tesla',
+    body: 'Sedan',
+    clue: 'Smooth, mostly closed front and the Tesla T. Check model details to distinguish it from a Model Y.',
+    note: 'Reference photo: Model 3 at a European event. Not a Canadian trim specification.',
+  },
+  {
+    id: 'cx5',
+    name: 'Mazda CX-5',
+    make: 'Mazda',
+    body: 'SUV',
+    clue: 'Wing-like Mazda emblem inside a wide grille and a taller SUV profile.',
+    note: 'Reference photo: 2024 CX-5 2.5 S Select. Illustrates recognition, not a 2026 record.',
+  },
+  {
+    id: '911',
+    name: 'Porsche 911',
+    make: 'Porsche',
+    body: 'Sports car',
+    clue: 'Rounded headlights, a low nose and a sloping rear are familiar 911 clues.',
+    note: 'Reference photo: the one-millionth Porsche 911. A special historical example.',
+  },
+];

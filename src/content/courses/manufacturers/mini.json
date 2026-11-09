@@ -1,0 +1,58 @@
+{
+  "id": "mini",
+  "name": "MINI",
+  "country": "United Kingdom",
+  "intro": "MINI originated in United Kingdom. This course teaches selected recognizable model families, organized by the jobs they do. It is a guided starting map, not a claim that these are every current or historical model.",
+  "naming": "MINI originated in Britain and is part of BMW Group. Cooper, Countryman and Convertible names describe families/bodies whose naming has evolved. ALL4 identifies MINI all-wheel drive; John Cooper Works names performance-related products, not every MINI.",
+  "warning": "The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.mini.ca/en",
+  "deep": false,
+  "models": [
+    {
+      "id": "cooper",
+      "name": "Cooper 3 Door & 5 Door",
+      "body": "Small hatchback families",
+      "role": "MINI everyday hatchback roles",
+      "explanation": "MINI Cooper hatchback names include different door configurations. Count the rear hatch when a manufacturer says 3 Door or 5 Door: it is a door too, even though passengers do not normally enter through it.",
+      "tradeoff": "The Cooper 3 Door & 5 Door belongs in a comparison for mini everyday hatchback roles. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare actual rear access, cabin fit and current gas/electric variants. A model name reused across generations does not guarantee identical mechanical systems.",
+      "memory": "3 Door/5 Door counts the hatch",
+      "scenario": "A friend mentions a Cooper 3 Door & 5 Door. Explain its role as mini everyday hatchback roles, then ask for the year, powertrain and equipment before comparing it with another MINI.",
+      "power": "Check the exact Canadian model year and version for the available engine, hybrid or electric system. Do not infer the powertrain from the family name alone.",
+      "source": "https://www.mini.ca/en",
+      "photos": ["mini-hatch", "mini-5door"],
+      "image": "mini-hatch"
+    },
+    {
+      "id": "countryman",
+      "name": "Countryman",
+      "body": "SUV family",
+      "role": "Larger MINI SUV",
+      "explanation": "Countryman is MINI’s SUV family, larger in role than the small hatchback. The name MINI is the brand, not a guarantee that every model is tiny.",
+      "tradeoff": "The Countryman belongs in a comparison for larger mini suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Countryman with Cooper by real exterior dimensions and passenger/cargo fit. ALL4 describes all-wheel drive, not a body style or a universal engine specification.",
+      "memory": "Countryman = MINI SUV",
+      "scenario": "A friend mentions a Countryman. Explain its role as larger mini suv, then ask for the year, powertrain and equipment before comparing it with another MINI.",
+      "power": "Check the exact Canadian model year and version for the available engine, hybrid or electric system. Do not infer the powertrain from the family name alone.",
+      "source": "https://www.mini.ca/en",
+      "photos": ["mini-countryman"],
+      "image": "mini-countryman"
+    },
+    {
+      "id": "convertible",
+      "name": "MINI Convertible",
+      "body": "Open-top small car",
+      "role": "MINI with an opening roof",
+      "explanation": "MINI Convertible is the open-top body role. A roof that opens is the first distinction from a closed hatchback; power and equipment still depend on version.",
+      "tradeoff": "The MINI Convertible belongs in a comparison for mini with an opening roof. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare roof operation, cargo space, passenger fit and intended year-round use with the hatchback. A performance badge does not tell you the roof arrangement.",
+      "memory": "Convertible = opening roof",
+      "scenario": "A friend mentions a MINI Convertible. Explain its role as mini with an opening roof, then ask for the year, powertrain and equipment before comparing it with another MINI.",
+      "power": "Check the exact Canadian model year and version for the available engine, hybrid or electric system. Do not infer the powertrain from the family name alone.",
+      "source": "https://www.mini.ca/en",
+      "photos": ["mini-convertible"],
+      "image": "mini-convertible"
+    }
+  ],
+  "comparisonAnchor": "convertible"
+}

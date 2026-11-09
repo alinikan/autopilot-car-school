@@ -1,0 +1,11 @@
+import { foundationLessons } from './foundations/lessons.ts';
+import { manufacturerLessons } from './courses/lesson-builder.ts';
+import type { Lesson } from './types.ts';
+export { foundationLessons };
+export { units } from './foundations/units.ts';
+export { brands } from './reference/brands.ts';
+export { glossary } from './reference/glossary.ts';
+export { spotCars } from './reference/recognition-cars.ts';
+export type { Lesson, LessonPage, Question } from './types.ts';
+export const lessons: Lesson[] = [...foundationLessons, ...manufacturerLessons];
+export const allQuestions = lessons.flatMap((l) => l.questions);

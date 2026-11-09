@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Organize source into feature screens, shared components, curated content, domain logic and ordered styles.
+- Split manufacturer content into one file per brand and import the actual lesson builder in tests.
+- Pin Prettier and require formatting checks in CI.
+- Protect main with pull requests, required CI, up-to-date branches, conversation resolution and blocked force pushes/deletion.
+
 ## 1.0.0 — 2026-11-09
 
 - Beginner foundations and 25 manufacturer courses, with 19 detailed tracks.

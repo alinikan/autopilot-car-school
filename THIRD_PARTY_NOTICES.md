@@ -6,7 +6,7 @@ The application source notice in `LICENSE` does not replace any third-party lice
 
 The 214 locally hosted reference photographs come from Wikimedia Commons. Each photograph's author, source, licence name and licence URL are recorded in:
 
-- `src/photo-manifest.json`
+- `src/content/photos/manifest.json`
 - `public/image-credits.json`
 - The in-app **Sources & image credits** view and individual gallery credit links.
 

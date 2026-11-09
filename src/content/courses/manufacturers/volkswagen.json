@@ -1,0 +1,154 @@
+{
+  "id": "volkswagen",
+  "name": "Volkswagen",
+  "country": "Germany",
+  "intro": "Volkswagen, or VW, is a German brand. Jetta is the everyday sedan name, Golf GTI/R are performance hatchbacks, and Taos, Tiguan and Atlas sit on different SUV shelves. ID. electric families need a separate charging conversation.",
+  "naming": "Comfortline, Highline and other grades describe equipment on particular products. GTI and R are performance products, while R-Line is a distinct styling/equipment context. ID.4 and ID. Buzz are different electric families. A model family can change seat configuration across generations.",
+  "warning": "The course includes selected Canadian families plus explicitly labelled older/current road-recognition examples. Check the exact year, body, engine/drive configuration and current availability before using specifications or prices. The families below are selected for learning and recognition. Check the linked official range for current Canadian availability, model years, equipment and pricing. A familiar name may remain on used cars after new-car availability changes.",
+  "source": "https://www.vw.ca/en/models/new-vehicles.html",
+  "deep": true,
+  "models": [
+    {
+      "id": "jetta",
+      "name": "Jetta",
+      "body": "Compact sedan",
+      "role": "Everyday Volkswagen sedan",
+      "explanation": "Jetta is a compact Volkswagen sedan. It is a different body and family from Golf hatchbacks, even when drivers discuss both as everyday compact cars.",
+      "tradeoff": "The Jetta belongs in a comparison for everyday volkswagen sedan. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare Jetta with Golf GTI on body, practicality and purpose. GLI is a particular performance-oriented Jetta version, not the name of every Jetta.",
+      "memory": "Jetta = sedan",
+      "scenario": "A friend mentions a Jetta. Explain its role as everyday volkswagen sedan, then ask for the year, powertrain and equipment before comparing it with another Volkswagen.",
+      "power": "Jetta and Jetta GLI are different specifications in the sedan family. GLI is a performance-oriented product, not a claim that every Jetta has identical hardware.",
+      "source": "https://www.vw.ca/en/models/new-vehicles.html",
+      "knowledgeCheck": {
+        "prompt": "Does a Jetta family badge prove that it has GLI specifications?",
+        "correct": "No — check the exact version",
+        "wrong": [
+          "Yes, every Jetta is a GLI",
+          "Only the trim colour differs",
+          "GLI means a hatchback door"
+        ],
+        "why": "Family and performance version are separate layers."
+      },
+      "photos": ["vw-jetta"],
+      "image": "vw-jetta"
+    },
+    {
+      "id": "gti",
+      "name": "Golf GTI & Golf R",
+      "body": "Performance hatchbacks",
+      "role": "Volkswagen performance hatchback families",
+      "explanation": "Golf GTI and Golf R are performance hatchback names. Hatchback describes the lifting rear door; GTI and R describe distinct mechanical products, not just the hatch opening.",
+      "tradeoff": "The Golf GTI & Golf R belongs in a comparison for volkswagen performance hatchback families. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare GTI and R using exact drivetrain, power, equipment and costs. Do not assume every ordinary Golf from every year is mechanically the same as a GTI or R.",
+      "memory": "Golf = hatch; GTI/R = ask the version",
+      "scenario": "A friend mentions a Golf GTI & Golf R. Explain its role as volkswagen performance hatchback families, then ask for the year, powertrain and equipment before comparing it with another Volkswagen.",
+      "power": "Golf GTI and Golf R are distinct turbo performance hatchbacks. Drive layouts and mechanical specifications differ by product/year; an R-Line package on another VW is not a Golf R.",
+      "source": "https://www.vw.ca/en/models/new-vehicles.html",
+      "knowledgeCheck": {
+        "prompt": "Is R-Line equipment on another VW the same product as Golf R?",
+        "correct": "No — the names refer to different specifications",
+        "wrong": [
+          "Yes, all R-related names mean the same engine",
+          "Only badge size differs",
+          "R-Line is a battery size"
+        ],
+        "why": "A performance model and a styling/equipment line must be distinguished."
+      },
+      "photos": ["vw-gti", "vw-golf-r"],
+      "image": "vw-gti"
+    },
+    {
+      "id": "tiguan",
+      "name": "Tiguan",
+      "body": "SUV family",
+      "role": "Core Volkswagen family SUV",
+      "explanation": "Tiguan is a Volkswagen SUV family. Taos is a separate smaller SUV family and Atlas a larger one. The same model family can change seating configuration across generations and markets.",
+      "tradeoff": "The Tiguan belongs in a comparison for core volkswagen family suv. Check actual passenger fit, cargo access, exterior dimensions and the exact version’s running costs. Its category is a starting point, not a promise that it fits every person or task.",
+      "compare": "Compare the actual model year’s seat count and cargo arrangement. If a third row is essential, do not assume that a remembered Tiguan specification applies to a redesigned one.",
+      "memory": "Tiguan = core SUV; check the generation",
+      "scenario": "Someone promises a third row based on an older Tiguan brochure. Confirm the actual generation and configuration before planning a group trip.",
+      "power": "Tiguan’s engine, equipment and seat configuration depend on generation and market. A redesign can change the seating arrangement; do not assume a remembered third row applies to every newer Canadian Tiguan.",
+      "source": "https://www.vw.ca/en/models/new-vehicles.html",
+      "knowledgeCheck": {
+        "prompt": "Can an older Tiguan review prove the seat count of a redesigned model?",
+        "correct": "No — check that generation and configuration",
+        "wrong": [
+          "Yes, names guarantee unchanged seat counts",
+          "Only if it has large wheels",
+          "Yes, all SUVs have three rows"
+        ],
+        "why": "A continuing family name does not freeze the body and seating specifications."
+      },
+      "practicalDetails": [
+        "Taos, Tiguan and Atlas are different SUV families. A redesigned Tiguan can change body and seating details while retaining the name, so a remembered seat count from an older vehicle is not enough.",
+        "Compare the exact family/body and year before choosing Comfortline, Highline or another grade. Equipment grade and seating-row configuration are separate decisions."
+      ],
+      "photos": ["vw-tiguan"],
+      "image": "vw-tiguan"
+    },
+    {
+      "id": "taos",
+      "name": "Taos",
+      "body": "Small SUV",
+      "role": "VW’s smaller everyday SUV",
+      "explanation": "Taos is Volkswagen’s smaller SUV family, distinct from Tiguan. A smaller-SUV role is a starting point for comparing body size and packaging, not a score of quality.",
+      "tradeoff": "Try rear access and luggage, then check dimensions and the exact driven-wheel configuration. Do not infer AWD simply because it is an SUV.",
+      "compare": "Compare Taos with Tiguan for size/packaging and Jetta for a lower-car alternative.",
+      "memory": "Taos = smaller SUV; Tiguan = different family",
+      "scenario": "A city driver wants easier access but has a short parking stall. Test both the cabin entry and the actual exterior size.",
+      "power": "Gas engine and drivetrain choices are year/version-specific. Equipment grades do not by themselves identify every mechanical detail.",
+      "source": "https://www.vw.ca/en/models/new-vehicles.html",
+      "photos": ["vw-taos"],
+      "image": "vw-taos"
+    },
+    {
+      "id": "atlas",
+      "name": "Atlas & Atlas Cross Sport",
+      "body": "Three-row / two-row SUV families",
+      "role": "VW’s larger SUV names",
+      "explanation": "Atlas occupies VW’s larger three-row SUV role; Atlas Cross Sport is a distinct two-row, differently shaped family. Cross Sport is not simply a higher trim that adds the same body to every Atlas.",
+      "tradeoff": "Compare actual row count, rear roof/headroom and luggage with the required seats up. Two rows do not necessarily mean a small exterior.",
+      "compare": "Compare Atlas and Cross Sport by passenger role, then Tiguan for a smaller SUV.",
+      "memory": "Atlas = three-row role; Cross Sport = two-row role",
+      "scenario": "A friend assumes Cross Sport means it has more seats. Ask about the actual body and seating configuration.",
+      "power": "Powertrain and driven-wheel specifications depend on year/version. A sport-related family name is not proof of a particular engine output.",
+      "source": "https://www.vw.ca/en/models/new-vehicles.html",
+      "photos": ["vw-atlas", "vw-atlas-cross"],
+      "image": "vw-atlas"
+    },
+    {
+      "id": "id4",
+      "name": "ID.4",
+      "body": "Electric SUV",
+      "role": "VW battery-electric family SUV",
+      "explanation": "ID.4 is Volkswagen’s electric SUV family. It is separate from Tiguan rather than merely an electric equipment package on it.",
+      "tradeoff": "Check charging access, trip needs and the actual cabin/cargo shape. Drive and battery configurations can affect price and efficiency without changing the family name.",
+      "compare": "Compare ID.4 with Model Y, IONIQ 5 and other exact electric SUV versions. Do not transfer a gas Tiguan’s energy routine to it.",
+      "memory": "ID.4 = electric SUV",
+      "scenario": "A friend likes a particular ID.4 listing. Ask which battery/drive configuration and year before using another review’s range figure.",
+      "power": "Battery-electric; battery/motor and charging specifications vary by version and year. The number 4 is not the motor count.",
+      "source": "https://www.vw.ca/en/models/new-vehicles.html",
+      "photos": ["vw-id4"],
+      "image": "vw-id4"
+    },
+    {
+      "id": "idbuzz",
+      "name": "ID. Buzz",
+      "body": "Electric people carrier",
+      "role": "VW electric van-style family",
+      "explanation": "ID. Buzz is Volkswagen’s electric van-style people carrier, with a different passenger/access role from ID.4. Retro-inspired styling does not make it an old gas van underneath.",
+      "tradeoff": "Check seat layout, sliding-door access, luggage and charging on group trips. Exact configuration matters more than counting windows in a photograph.",
+      "compare": "Compare ID. Buzz with electric SUVs and minivans on the actual people-and-luggage task. Confirm current Canadian availability and year.",
+      "memory": "ID. Buzz = electric people carrier",
+      "scenario": "A group wants electric transport with frequent rear access. Compare the door and seating layout alongside charging stops.",
+      "power": "Battery-electric. The design recalls VW vans, but the current powertrain and charging system need their own specification.",
+      "source": "https://www.vw.ca/en/models/new-vehicles.html",
+      "photos": ["vw-idbuzz"],
+      "image": "vw-idbuzz"
+    }
+  ],
+  "comparisonAnchor": "tiguan",
+  "popular": true,
+  "streetOrder": 9
+}

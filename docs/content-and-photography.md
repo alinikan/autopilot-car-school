@@ -12,9 +12,9 @@ Use official Canadian manufacturer references for current local claims. A source
 2. Verify the actual make and model, then the distinction the lesson teaches: sedan versus hatchback, SUV versus coupe body, gas versus EV, and so on. A shared platform, badge or redirected article is not sufficient evidence of identity.
 3. Look at the downloaded image. Confirm it shows the intended car and retains the useful body details. Avoid an interior, concept or prototype when the activity asks learners to recognize an exterior production model.
 4. Add an optimized local WebP asset in `public/cars/`. Resize/compress without cropping the source frame.
-5. Add a stable photo ID to `src/photo-manifest.json`, recording the pictured label, manufacturer, asset filename, dimensions, photographer, licence, licence URL, source URL, description and a short reference note.
+5. Add a stable photo ID to `src/content/photos/manifest.json`, recording the pictured label, manufacturer, asset filename, dimensions, photographer, licence, licence URL, source URL, description and a short reference note.
 6. Update `public/image-credits.json`, including the resize/compression notice.
-7. Add the photo ID to the appropriate model's `photos` list in `src/academy-data.json`. Its `image` field is the primary quiz reference and should be the first photo ID.
+7. Add the photo ID to the appropriate model's `photos` list in its manufacturer JSON file under `src/content/courses/manufacturers/`. Its `image` field is the primary quiz reference and should be the first photo ID.
 8. Run the tests and inspect the rendered lesson, quiz and enlarged view on phone and desktop. For a release, verify the hosted bytes with `npm run verify:photos`.
 
 Group lessons should show separately labelled examples for the distinct families or bodies being contrasted. A family guide does not promise a photo of every model year, engine, trim or regional variant.
