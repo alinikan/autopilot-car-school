@@ -1,0 +1,15 @@
+name: Feature or lesson request
+description: Suggest a learning improvement, activity or model-family lesson.
+title: "[Idea]: "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to learn or do?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: A useful example
+      description: Describe a real conversation, comparison or activity this would help with.

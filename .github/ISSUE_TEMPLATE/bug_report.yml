@@ -1,0 +1,33 @@
+name: Bug report
+description: Report an application, content or photo problem.
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the screen, lesson or pictured model. Do not attach passwords, tokens or progress backups.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      placeholder: Safari on iPhone, Chrome on Windows, etc.
+  - type: textarea
+    id: context
+    attributes:
+      label: Screenshots or source reference
+      description: For a mistaken photo or specification, include the model/year and an authoritative source if available.

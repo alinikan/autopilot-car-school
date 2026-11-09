@@ -1,0 +1,3 @@
+Car brand SVG assets extracted without changing their paths from Cardog Icons v1.2.0, https://github.com/cardog-ai/icons
+Library: MIT, copyright Cardog; see LICENSE.txt.
+All logos and trademarks remain property of their respective owners. Used as educational recognition references.
